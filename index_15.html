@@ -1,0 +1,1029 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title id="pageTitle">Samer AlRaqas — Project & Operations Manager | PMP, CISCP, CISCM</title>
+<meta name="description" id="pageDesc" content="Samer AlRaqas — Results-driven Project & Operations Manager leading government and national programs across Saudi Arabia." />
+<link rel="icon" type="image/png" href="assets/favicon.png" />
+<link rel="shortcut icon" href="favicon.ico" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://samer-alraqas.github.io/" />
+<meta property="og:title" content="Samer AlRaqas — Project & Operations Manager" />
+<meta property="og:description" content="Results-driven Project & Operations Manager leading government and national programs across Saudi Arabia." />
+<meta property="og:image" content="https://samer-alraqas.github.io/assets/og-image.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    color-scheme: dark;
+    --bg-0:           #0a0a13;
+    --bg-1:           #0e0f1c;
+    --surface:        #14162a;
+    --surface-2:      #1b1e3a;
+    --border:         rgba(255,255,255,0.08);
+    --border-2:       rgba(255,255,255,0.16);
+    --text-primary:   #f4f5f9;
+    --text-secondary: #a9adc9;
+    --text-muted:     #6d7194;
+    --accent:         #3f6fd6;
+    --accent-2:       #7ea2e8;
+    --accent-dim:     rgba(63,111,214,0.16);
+    --accent-2-dim:   rgba(126,162,232,0.14);
+    --radius:         18px;
+    font-size: 16px;
+  }
+
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+
+  body {
+    margin: 0;
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+    color: var(--text-primary);
+    background: var(--bg-0);
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+
+  a { color: inherit; text-decoration: none; }
+  ::selection { background: var(--accent); color: #0a0a13; }
+
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 0 24px; }
+
+  /* ---------- scroll progress ---------- */
+  #progress {
+    position: fixed; top: 0; left: 0; height: 3px; width: 0%;
+    background: linear-gradient(90deg, var(--accent), var(--accent-2));
+    z-index: 100;
+    transition: width .08s linear;
+  }
+
+  /* ---------- NAV ---------- */
+  header.nav {
+    position: sticky; top: 0; z-index: 50;
+    background: rgba(10,10,19,0.72);
+    backdrop-filter: saturate(180%) blur(14px);
+    border-bottom: 1px solid var(--border);
+  }
+  .nav-inner {
+    max-width: 1080px; margin: 0 auto; padding: 16px 24px;
+    display: flex; align-items: center; justify-content: space-between; gap: 16px;
+  }
+  .brand { font-weight: 800; font-size: 15px; letter-spacing: 0.02em; color: var(--text-primary); }
+  .brand span { color: var(--text-primary); }
+  nav.links { display: flex; gap: 22px; flex-wrap: wrap; }
+  nav.links a {
+    font-size: 13.5px; font-weight: 600; color: var(--text-secondary);
+    padding: 6px 2px; border-bottom: 2px solid transparent;
+    transition: color .15s ease, border-color .15s ease;
+  }
+  nav.links a:hover { color: var(--accent-2); border-color: var(--accent-2); }
+  .lang-toggle {
+    font-size: 12.5px; font-weight: 700; color: var(--text-primary);
+    border: 1px solid var(--border-2); border-radius: 999px;
+    padding: 7px 16px; white-space: nowrap; transition: border-color .15s ease, color .15s ease;
+  }
+  .lang-toggle:hover { border-color: var(--accent-2); color: var(--accent-2); }
+
+  /* ---------- HERO ---------- */
+  .hero { position: relative; padding: 100px 0 84px 0; overflow: hidden; }
+  .blob { position: absolute; border-radius: 50%; filter: blur(100px); opacity: .3; z-index: 0; }
+  .blob-1 { width: 480px; height: 480px; background: var(--accent); top: -220px; left: -160px; }
+  .blob-2 { width: 420px; height: 420px; background: var(--accent-2); bottom: -280px; right: -140px; opacity: .2; }
+
+  .hero-grid { position: relative; z-index: 1; max-width: 640px; }
+  .eyebrow { display: block; font-size: 14px; font-weight: 600; letter-spacing: 0.01em; color: var(--accent-2); }
+  .eyebrow .sep { color: var(--text-muted); margin: 0 4px; }
+  .hero h1 {
+    font-size: clamp(36px, 5.4vw, 58px);
+    line-height: 1.04; margin: 18px 0 0 0; font-weight: 800; letter-spacing: -0.02em;
+  }
+  .hero .role {
+    font-size: clamp(16px, 2.1vw, 19px); color: var(--text-secondary); font-weight: 400;
+    max-width: 560px; margin-top: 14px;
+  }
+  .hero .tagline { font-size: 15px; color: var(--text-muted); max-width: 540px; margin-top: 12px; }
+  .hero-cta { display: flex; align-items: center; gap: 20px; margin-top: 28px; flex-wrap: wrap; }
+  .btn {
+    display: inline-flex; align-items: center; gap: 8px;
+    font-size: 14px; font-weight: 700; padding: 12px 22px; border-radius: 12px;
+    cursor: pointer; border: 1px solid var(--border-2); transition: transform .15s ease, border-color .15s ease, color .15s ease;
+  }
+  .btn:hover { transform: translateY(-2px); border-color: var(--accent); }
+  .btn-link { border: none; padding: 12px 2px; color: var(--accent-2); }
+  .btn-link:hover { color: var(--accent); }
+
+  .hero-meta { display: flex; flex-wrap: wrap; gap: 18px; margin-top: 26px; font-size: 13px; color: var(--text-muted); }
+  .hero-meta span { display: inline-flex; align-items: center; gap: 7px; }
+  .hero-meta a { transition: color .15s ease; }
+  .hero-meta a:hover { color: var(--accent-2); }
+  .dot { width: 4px; height: 4px; border-radius: 50%; background: currentColor; }
+
+  /* ---------- FULL-WIDTH STATS BAND ---------- */
+  .stats-band {
+    background: linear-gradient(120deg, #0f1d3d 0%, #16305e 55%, #123061 100%);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    padding: 44px 0;
+  }
+  .stats-band-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
+  .stats-band .stat-num { font-size: clamp(28px, 3.6vw, 40px); font-weight: 800; color: #ffffff; letter-spacing: -0.01em; }
+  .stats-band .stat-lbl {
+    margin-top: 6px; font-size: 12px; font-weight: 600; letter-spacing: 0.05em;
+    text-transform: uppercase; color: rgba(255,255,255,0.62);
+  }
+
+  /* ---------- SECTIONS ---------- */
+  section { padding: 76px 0; position: relative; }
+  .section-head { max-width: 660px; margin-bottom: 36px; }
+  .kicker {
+    display: inline-flex; align-items: center; gap: 10px;
+    font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent-2);
+  }
+  .kicker::before { content: ""; width: 20px; height: 2px; background: var(--accent-2); display: inline-block; }
+  h2.section-title { font-size: clamp(24px, 3.2vw, 32px); margin: 10px 0 10px 0; font-weight: 800; letter-spacing: -0.01em; }
+  .section-sub { color: var(--text-secondary); font-size: 15px; }
+  .section-divider { border: none; border-top: 1px solid var(--border); margin-top: 56px; }
+
+  /* reveal animation */
+  .reveal { opacity: 0; transform: translateY(18px); transition: opacity .6s ease, transform .6s ease; }
+  .reveal.in { opacity: 1; transform: translateY(0); }
+
+  /* ---------- PROFESSIONAL SUMMARY (plain, no card) ---------- */
+  .summary-text { max-width: 760px; font-size: 15.5px; color: var(--text-secondary); }
+  .summary-text p { margin: 0 0 18px 0; }
+  .summary-text p:last-child { margin-bottom: 0; }
+  body.lang-ar .summary-text p:empty { display: none; margin: 0; }
+
+  /* ---------- EXPERTISE (numbered cards) ---------- */
+  .comp-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+  .comp-card {
+    background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
+    padding: 22px 20px; transition: transform .2s ease, border-color .2s ease, background .2s ease;
+  }
+  .comp-card:hover { transform: translateY(-3px); border-color: rgba(63,111,214,0.45); background: var(--surface-2); }
+  .comp-idx {
+    font-size: 12px; font-weight: 800; color: var(--accent-2);
+    background: var(--accent-dim); width: 30px; height: 30px; border-radius: 9px;
+    display: flex; align-items: center; justify-content: center; margin-bottom: 14px;
+  }
+  .comp-card h3 { font-size: 14.5px; margin: 0 0 6px 0; font-weight: 700; }
+  .comp-card p { font-size: 12.5px; color: var(--text-muted); margin: 0; line-height: 1.5; }
+
+  /* ---------- ACHIEVEMENTS ---------- */
+  .ach-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+  .ach-card {
+    background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
+    padding: 24px; transition: transform .2s ease, border-color .2s ease;
+  }
+  .ach-card:hover { transform: translateY(-3px); border-color: rgba(63,111,214,0.45); }
+  .ach-card h3 { font-size: 15.5px; font-weight: 800; margin: 0 0 10px 0; }
+  .ach-card p { font-size: 13.5px; color: var(--text-secondary); margin: 0; }
+  .proj-link { display: inline-block; font-size: 12.5px; font-weight: 700; color: var(--accent-2); margin-top: 10px; }
+  .proj-link:hover { color: var(--accent); }
+
+  /* ---------- TRACK RECORD (Experience - fixed timeline) ---------- */
+  .track-list { display: flex; flex-direction: column; }
+  .track-item {
+    display: grid; grid-template-columns: 150px 1fr; gap: 28px;
+    padding: 30px 0; border-bottom: 1px solid var(--border);
+  }
+  .track-list .track-item:first-child { padding-top: 0; }
+  .track-list .track-item:last-child { border-bottom: none; padding-bottom: 0; }
+  .track-period { font-size: 13px; font-weight: 700; color: var(--accent-2); white-space: nowrap; padding-top: 2px; }
+  .track-role { font-size: 18px; font-weight: 800; }
+  .track-org { font-size: 13.5px; color: var(--text-secondary); margin-top: 3px; margin-bottom: 14px; }
+  .track-block { margin-bottom: 16px; }
+  .track-block:last-child { margin-bottom: 0; }
+  .track-block h4 {
+    font-size: 12.5px; font-weight: 800; color: var(--accent-2); margin: 0 0 8px 0;
+    text-transform: uppercase; letter-spacing: 0.03em;
+  }
+  .track-block ul { margin: 0; padding-left: 0; list-style: none; }
+  .track-block ul li {
+    position: relative; padding-left: 20px; margin-bottom: 8px; font-size: 14.5px; color: var(--text-secondary);
+  }
+  .track-block ul li::before {
+    content: ""; position: absolute; left: 0; top: 8px; width: 6px; height: 6px; border-radius: 50%;
+    background: var(--accent);
+  }
+
+  /* ---------- FREELANCE (same visual, accordion) ---------- */
+  .free-item { border-bottom: 1px solid var(--border); }
+  .free-list .free-item:last-child { border-bottom: none; }
+  .free-header {
+    all: unset; box-sizing: border-box; cursor: pointer; width: 100%;
+    display: grid; grid-template-columns: 150px 1fr 24px; gap: 28px; align-items: start;
+    padding: 26px 0;
+  }
+  .free-period { font-size: 13px; font-weight: 700; color: var(--accent-2); white-space: nowrap; padding-top: 2px; }
+  .free-role { font-size: 17px; font-weight: 800; }
+  .free-org { font-size: 13.5px; color: var(--text-secondary); margin-top: 3px; }
+  .free-chevron {
+    width: 22px; height: 22px; display: flex; align-items: center; justify-content: center;
+    color: var(--text-muted); transition: transform .3s ease, color .3s ease; margin-top: 2px;
+  }
+  .free-item.open .free-chevron { transform: rotate(180deg); color: var(--accent-2); }
+  .free-collapse { display: grid; grid-template-rows: 0fr; transition: grid-template-rows .4s cubic-bezier(.4,0,.2,1); }
+  .free-item.open .free-collapse { grid-template-rows: 1fr; }
+  .free-collapse-inner { overflow: hidden; }
+  .free-body { padding: 0 0 28px 178px; }
+  .free-body ul { margin: 0; padding-left: 0; list-style: none; }
+  .free-body ul li {
+    position: relative; padding-left: 20px; margin-bottom: 8px; font-size: 14.5px; color: var(--text-secondary);
+  }
+  .free-body ul li::before {
+    content: ""; position: absolute; left: 0; top: 8px; width: 6px; height: 6px; border-radius: 50%;
+    background: var(--accent);
+  }
+  .free-meta-row { display: flex; gap: 10px; flex-wrap: wrap; }
+  .meta-chip {
+    font-size: 12px; color: var(--text-muted); background: var(--surface-2);
+    border: 1px solid var(--border); padding: 5px 11px; border-radius: 999px;
+  }
+
+  /* ---------- SKILLS & TOOLS (grouped tag columns) ---------- */
+  .skills-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+  .skill-col {
+    background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 20px;
+  }
+  .skill-col h4 {
+    font-size: 12.5px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--accent-2);
+    font-weight: 800; margin: 0 0 12px 0;
+  }
+  .tag {
+    display: inline-block; font-size: 12.5px; color: var(--text-secondary);
+    background: var(--surface-2); border: 1px solid var(--border);
+    border-radius: 999px; padding: 6px 12px; margin: 0 6px 8px 0;
+  }
+
+  /* ---------- education + certs ---------- */
+  .ed-highlight {
+    background: var(--surface-2); border: 1px solid var(--border); border-radius: 14px;
+    padding: 20px 24px; margin-bottom: 28px;
+  }
+  .ed-highlight .deg { font-weight: 700; font-size: 16px; }
+  .ed-highlight .school { color: var(--text-secondary); font-size: 13.5px; margin-top: 3px; }
+  .cert-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px 32px; margin-bottom: 30px; }
+  .cert-item { font-size: 14.5px; font-weight: 600; padding-bottom: 12px; border-bottom: 1px solid var(--border); }
+  .cert-item .cert-full { display: block; font-size: 12px; font-weight: 500; color: var(--text-muted); margin-top: 3px; }
+  .cert-item-top { display: flex; align-items: center; gap: 12px; margin-bottom: 8px; }
+  .cert-logo-wrap {
+    background: #ffffff; border-radius: 8px; padding: 5px 8px; flex-shrink: 0;
+    display: inline-flex; align-items: center; justify-content: center;
+  }
+  .cert-logo { display: block; height: 30px; width: auto; object-fit: contain; }
+  .cert-verify { display: inline-block; font-size: 11.5px; font-weight: 700; color: var(--accent-2); margin-top: 2px; }
+  .cert-verify:hover { color: var(--accent); }
+  .lang-row { display: flex; gap: 26px; }
+  .lang-item { font-size: 14px; font-weight: 600; }
+  .lang-item .lv { font-size: 11.5px; color: var(--text-muted); font-weight: 500; }
+
+  /* ---------- FOOTER (centered CTA) ---------- */
+  footer.contact {
+    background: linear-gradient(160deg, #0f1c38 0%, #0e0f1c 65%);
+    border-top: 1px solid var(--border);
+    padding: 72px 0 40px 0; text-align: center;
+  }
+  footer.contact h2 { font-size: clamp(24px, 3.4vw, 34px); font-weight: 800; margin: 0 auto 14px auto; max-width: 620px; }
+  footer.contact > .wrap > p { color: var(--text-secondary); font-size: 15px; margin: 0 auto; max-width: 560px; }
+  .contact-pills { display: flex; justify-content: center; gap: 14px; margin-top: 30px; flex-wrap: wrap; }
+  .contact-pill {
+    display: inline-flex; align-items: center; gap: 9px;
+    font-size: 14px; font-weight: 700; padding: 12px 20px;
+    border: 1px solid var(--border-2); border-radius: 12px; transition: border-color .15s ease, color .15s ease;
+  }
+  .contact-pill:hover { border-color: var(--accent); color: var(--accent-2); }
+  .byline { margin-top: 40px; font-size: 13px; color: var(--text-muted); }
+  .copyright {
+    margin-top: 24px; padding-top: 20px; border-top: 1px solid var(--border);
+    font-size: 12.5px; color: var(--text-muted);
+  }
+
+  /* responsive */
+  @media (max-width: 900px) {
+    .comp-grid { grid-template-columns: repeat(2, 1fr); }
+    .ach-grid { grid-template-columns: repeat(2, 1fr); }
+    .skills-grid { grid-template-columns: repeat(2, 1fr); }
+    .cert-grid { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 640px) {
+    .comp-grid { grid-template-columns: 1fr; }
+    .ach-grid { grid-template-columns: 1fr; }
+    .skills-grid { grid-template-columns: 1fr; }
+    nav.links { display: none; }
+    .nav-inner { justify-content: center; }
+    .stats-band-grid { grid-template-columns: repeat(2, 1fr); gap: 28px; }
+    .track-item { grid-template-columns: 1fr; gap: 8px; }
+    .free-header { grid-template-columns: 1fr 24px; gap: 6px 12px; }
+    .free-period { grid-column: 1 / 2; grid-row: 1; }
+    .free-header > div:nth-child(2) { grid-column: 1 / 2; grid-row: 2; }
+    .free-chevron { grid-column: 2 / 3; grid-row: 1; }
+    .free-body { padding-left: 0; }
+  }
+
+  /* ---------- ARABIC / RTL ---------- */
+  body.lang-ar {
+    font-family: 'Tajawal', system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+  body.lang-ar h1,
+  body.lang-ar h2.section-title,
+  body.lang-ar .brand,
+  body.lang-ar .kicker,
+  body.lang-ar .eyebrow,
+  body.lang-ar .stats-band .stat-num,
+  body.lang-ar .stat-lbl,
+  body.lang-ar .track-block h4,
+  body.lang-ar .skill-col h4,
+  body.lang-ar .free-role,
+  body.lang-ar .track-role {
+    letter-spacing: normal;
+  }
+  body.lang-ar h1 { line-height: 1.3; }
+  body.lang-ar h2.section-title { line-height: 1.35; }
+  body.lang-ar .lang-toggle { font-family: system-ui, -apple-system, "Segoe UI", sans-serif; }
+
+  [dir="rtl"] .track-block ul li,
+  [dir="rtl"] .free-body ul li {
+    padding-left: 0; padding-right: 20px;
+  }
+  [dir="rtl"] .track-block ul li::before,
+  [dir="rtl"] .free-body ul li::before {
+    left: auto; right: 0;
+  }
+  [dir="rtl"] .free-body { padding: 0 178px 28px 0; }
+  @media (max-width: 640px) {
+    [dir="rtl"] .free-body { padding-right: 0; }
+  }
+  [dir="rtl"] .tag { margin: 0 0 8px 6px; }
+  [dir="rtl"] .stat-num,
+  [dir="rtl"] a[href^="tel:"] {
+    direction: ltr; unicode-bidi: isolate; display: inline-block;
+  }
+  /* Arabic month/period strings run longer than their English equivalents —
+     widen the date column and allow wrapping so nothing overlaps. */
+  body.lang-ar .track-period,
+  body.lang-ar .free-period {
+    white-space: normal; font-size: 12.5px; line-height: 1.4;
+  }
+  @media (min-width: 641px) {
+    body.lang-ar .track-item { grid-template-columns: 210px 1fr; }
+    body.lang-ar .free-header { grid-template-columns: 210px 1fr 24px; }
+    body.lang-ar.lang-ar [dir="rtl"] .free-body,
+    [dir="rtl"] body.lang-ar .free-body {
+      padding: 0 238px 28px 0;
+    }
+  }
+</style>
+</head>
+<body>
+
+<div id="progress"></div>
+
+<header class="nav">
+  <div class="nav-inner">
+    <div class="brand" data-i18n="brand">SAMER <span>ALRAQAS</span></div>
+    <nav class="links">
+      <a href="#profile" data-i18n="nav.profile">Profile</a>
+      <a href="#expertise" data-i18n="nav.expertise">Expertise</a>
+      <a href="#achievements" data-i18n="nav.achievements">Achievements</a>
+      <a href="#experience" data-i18n="nav.experience">Experience</a>
+      <a href="#freelance" data-i18n="nav.freelance">Freelance</a>
+      <a href="#education" data-i18n="nav.education">Education</a>
+      <a href="#contact" data-i18n="nav.contact">Contact</a>
+    </nav>
+    <a class="lang-toggle" href="#" id="langToggle">العربية</a>
+  </div>
+</header>
+
+<section class="hero" id="profile">
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+  <div class="wrap hero-grid">
+    <span class="eyebrow" data-i18n="hero.eyebrow">Project &amp; Operations Management <span class="sep">·</span> National Program Delivery</span>
+    <h1 data-i18n="hero.name">Samer AlRaqas</h1>
+    <p class="role" data-i18n="hero.role">Project &amp; Operations Management <span class="sep">|</span> Supply Chain &amp; Logistics <span class="sep">|</span> National Initiatives</p>
+    <p class="tagline" data-i18n="hero.tagline">A results-driven Project and Operations Manager who leads strategic projects and national programs across Saudi Arabia's government and private sectors — combining project execution, supply chain operations, and governance to deliver structured, measurable, and sustainable impact.</p>
+    <div class="hero-cta">
+      <a class="btn" href="mailto:s.alraqas@outlook.sa" data-i18n="hero.cta1">Get in touch</a>
+      <a class="btn-link" href="#experience" data-i18n="hero.cta2">View Experience →</a>
+    </div>
+    <div class="hero-meta">
+      <span data-i18n="hero.location">Riyadh, Saudi Arabia</span>
+      <span class="dot"></span>
+      <span><a href="tel:+966566836783">+966 56 683 6783</a></span>
+      <span class="dot"></span>
+      <span><a href="mailto:s.alraqas@outlook.sa">s.alraqas@outlook.sa</a></span>
+      <span class="dot"></span>
+      <span><a href="https://www.linkedin.com/in/samer-alraqas-pmp®-ciscp-ciscm-294056158" target="_blank" rel="noopener">LinkedIn</a></span>
+    </div>
+  </div>
+</section>
+
+<div class="stats-band">
+  <div class="wrap stats-band-grid">
+    <div><div class="stat-num">5 +</div><div class="stat-lbl" data-i18n="stats.lbl1">Years of Experience</div></div>
+    <div><div class="stat-num">10 +</div><div class="stat-lbl" data-i18n="stats.lbl2">Projects Delivered</div></div>
+    <div><div class="stat-num">500 +</div><div class="stat-lbl" data-i18n="stats.lbl3">Beneficiaries Reached</div></div>
+    <div><div class="stat-num">3</div><div class="stat-lbl" data-i18n="stats.lbl4">Professional Certifications</div></div>
+  </div>
+</div>
+
+<section>
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="kicker" data-i18n="summary.kicker">Professional Profile</div>
+      <h2 class="section-title" data-i18n="summary.title">Turning Strategy Into Operational Delivery</h2>
+    </div>
+    <div class="summary-text reveal">
+      <p data-i18n="summary.p1">A results-driven Project and Operations Manager with 5+ years of experience leading government programs and large-scale national initiatives across Saudi Arabia — PMP and CISCP certified, with proven expertise in project execution, supply chain operations, logistics coordination, and operational workflow optimization.</p>
+      <p data-i18n="summary.p2">Successfully managed strategic projects for the Ministry of Industry and Mineral Resources and contributed to Vision 2030 programs, driving operational efficiency, managing cross-functional teams, and ensuring seamless delivery across all project phases in both public and private sector environments.</p>
+    </div>
+    <hr class="section-divider" />
+  </div>
+</section>
+
+<section id="expertise">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="kicker" data-i18n="expertise.kicker">Areas of Expertise</div>
+      <h2 class="section-title" data-i18n="expertise.title">Where I Add the Most Value</h2>
+    </div>
+    <div class="comp-grid">
+      <div class="comp-card reveal">
+        <div class="comp-idx">01</div>
+        <h3 data-i18n="expertise.1.h3">National Programs &amp; Events</h3>
+        <p data-i18n="expertise.1.p">Leading and coordinating large-scale government and industry programs across Saudi Arabia.</p>
+      </div>
+      <div class="comp-card reveal">
+        <div class="comp-idx">02</div>
+        <h3 data-i18n="expertise.2.h3">Human Capacity Development</h3>
+        <p data-i18n="expertise.2.p">Building team readiness and capability through structured training and workforce development.</p>
+      </div>
+      <div class="comp-card reveal">
+        <div class="comp-idx">03</div>
+        <h3 data-i18n="expertise.3.h3">Project Governance &amp; Strategy</h3>
+        <p data-i18n="expertise.3.p">Establishing policies, KPIs, and governance frameworks that align execution with strategic objectives.</p>
+      </div>
+      <div class="comp-card reveal">
+        <div class="comp-idx">04</div>
+        <h3 data-i18n="expertise.4.h3">Project &amp; Operations Management</h3>
+        <p data-i18n="expertise.4.p">End-to-end delivery across the full project lifecycle, from planning through closeout.</p>
+      </div>
+      <div class="comp-card reveal">
+        <div class="comp-idx">05</div>
+        <h3 data-i18n="expertise.5.h3">Supply Chain &amp; Logistics</h3>
+        <p data-i18n="expertise.5.p">Managing vendor relationships, procurement, and logistics operations end-to-end.</p>
+      </div>
+      <div class="comp-card reveal">
+        <div class="comp-idx">06</div>
+        <h3 data-i18n="expertise.6.h3">Saudi Vision 2030 Initiatives</h3>
+        <p data-i18n="expertise.6.p">Contributing to national transformation programs aligned with Saudi Arabia's Vision 2030.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="achievements">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="kicker" data-i18n="ach.kicker">Key Achievements</div>
+    </div>
+    <div class="ach-grid">
+      <div class="ach-card reveal">
+        <h3 data-i18n="ach.1.h3">Engineering Hackathon 2026</h3>
+        <p data-i18n="ach.1.p">Corrected faulty operational workflows for the Saudi Council of Engineers hackathon through hands-on consulting leadership and restructured action plans.</p>
+        <a class="proj-link" href="https://iece.saudieng.sa/hackathon?lang=ar" target="_blank" rel="noopener" data-i18n="ach.1.link">View hackathon page ↗</a>
+      </div>
+      <div class="ach-card reveal">
+        <h3 data-i18n="ach.2.h3">Vision Office 2030 Governance</h3>
+        <p data-i18n="ach.2.p">Led strategic project governance for the Ministry of Industry and Mineral Resources — policies, KPIs, and risk management — resulting in four new projects initiated under a single program.</p>
+      </div>
+      <div class="ach-card reveal">
+        <h3 data-i18n="ach.3.h3">SIDF Industrial Hackathon 2025</h3>
+        <p data-i18n="ach.3.p">Directed end-to-end operations for the Saudi Industrial Development Fund's Industrial Hackathon, from platform development to stakeholder alignment — documented across official SIDF media coverage.</p>
+        <a class="proj-link" href="https://www.youtube.com/hashtag/%D9%87%D8%A7%D9%83%D8%A7%D8%AB%D9%88%D9%86_%D8%A7%D9%84%D8%B5%D9%86%D8%A7%D8%B9%D8%A9" target="_blank" rel="noopener" data-i18n="ach.3.link">Watch coverage on YouTube ↗</a>
+      </div>
+      <div class="ach-card reveal">
+        <h3 data-i18n="ach.4.h3">Confidential Government Project<br>"Fakhoor Hackathon"</h3>
+        <p data-i18n="ach.4.p">Managed daily operations, resource allocation, and event readiness, resolving bottlenecks across multiple teams.</p>
+      </div>
+      <div class="ach-card reveal">
+        <h3 data-i18n="ach.5.h3">Beban Forum — 2023 &amp; 2024</h3>
+        <p data-i18n="ach.5.p">Supervised operations across two consecutive editions of Beban Forum — Saudi Arabia's leading SME and entrepreneurship event, organized by the General Authority for Small and Medium Enterprises (Monsha'at).</p>
+      </div>
+      <div class="ach-card reveal">
+        <h3 data-i18n="ach.6.h3">FIFA World Cup 2022, Qatar</h3>
+        <p data-i18n="ach.6.p">Served as VVIP Operations Officer at one of the world's largest sporting events, coordinating high-profile guest logistics on an international stage.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="kicker" data-i18n="exp.kicker">Professional Experience</div>
+      <h2 class="section-title" data-i18n="exp.title">Track Record</h2>
+    </div>
+
+    <div class="track-list">
+
+      <div class="track-item reveal">
+        <div class="track-period" data-i18n="track.1.period">Jun 2025 — Present</div>
+        <div>
+          <div class="track-role" data-i18n="track.1.role">OceanX</div>
+          <div class="track-org" data-i18n="track.1.org">Project Manager</div>
+
+          <div class="track-block">
+            <h4 data-i18n="track.1.block1.h4">Ministry of Industry &amp; Mineral Resources — Vision Office 2030</h4>
+            <ul>
+              <li data-i18n="track.1.block1.li1">Managed a strategic project for the Ministry of Industry and Mineral Resources, implementing comprehensive governance across policies, KPIs, and risk management, while developing the overall project and program strategy.</li>
+              <li data-i18n="track.1.block1.li2">Oversaw the full project lifecycle, led 5 cross-functional teams with varying experience levels, optimized resource utilization, and managed consulting activities to ensure alignment with strategic objectives.</li>
+              <li data-i18n="track.1.block1.li3">Conducted assessments and research to initiate four new projects under a single program, including concept development and early-stage operating model design, while strengthening coordination with internal teams and government partners.</li>
+            </ul>
+          </div>
+          <div class="track-block">
+            <h4 data-i18n="track.1.block2.h4">Industrial Hackathon 2025 — Saudi Industrial Development Fund (SIDF)</h4>
+            <ul>
+              <li data-i18n="track.1.block2.li1">Directed end-to-end project operations including platform development, logistics planning, and team alignment.</li>
+              <li data-i18n="track.1.block2.li2">Coordinated with government and private stakeholders to ensure smooth execution across all project phases.</li>
+              <li data-i18n="track.1.block2.li3">Designed and implemented operational workflows that improved project readiness and delivery efficiency.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="track-item reveal">
+        <div class="track-period" data-i18n="track.2.period">May 2023 — Feb 2024</div>
+        <div>
+          <div class="track-role" data-i18n="track.2.role">Elm <span style="font-weight:500;color:var(--text-muted);font-size:14px;">(project based)</span></div>
+          <div class="track-org" data-i18n="track.2.org">Operations Specialist</div>
+          <div class="track-block">
+            <h4 data-i18n="track.2.block1.h4">Digitization of Real Estate Wealth Project — Vision Office 2030</h4>
+            <ul>
+              <li data-i18n="track.2.block1.li1">Managed end-to-end digital archiving operations for real estate deeds and instruments.</li>
+              <li data-i18n="track.2.block1.li2">Prepared daily operational and performance reports to support PMO oversight.</li>
+              <li data-i18n="track.2.block1.li3">Ensured full compliance with quality standards and contributed to continuous workflow improvements.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="track-item reveal">
+        <div class="track-period" data-i18n="track.3.period">Jun 2021 — Nov 2021</div>
+        <div>
+          <div class="track-role" data-i18n="track.3.role">Zakat, Tax and Customs Authority</div>
+          <div class="track-org" data-i18n="track.3.org">Business Development Specialist — Tamheer Program</div>
+          <div class="track-block">
+            <ul>
+              <li data-i18n="track.3.block1.li1">Provided logistics support and resolved shipment-related issues.</li>
+              <li data-i18n="track.3.block1.li2">Facilitated communication between internal teams and external stakeholders.</li>
+              <li data-i18n="track.3.block1.li3">Contributed to setting short- and long-term operational goals.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="track-item reveal">
+        <div class="track-period" data-i18n="track.4.period">May 2018 — May 2020</div>
+        <div>
+          <div class="track-role" data-i18n="track.4.role">Arab National Bank</div>
+          <div class="track-org" data-i18n="track.4.org">Customer Service</div>
+          <div class="track-block">
+            <ul>
+              <li data-i18n="track.4.block1.li1">Enhanced customer responsiveness to improve overall service experience.</li>
+              <li data-i18n="track.4.block1.li2">Guided and supported team members to achieve shared branch goals and maximize performance.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="freelance">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="kicker" data-i18n="free.kicker">Freelance &amp; Notable Engagements</div>
+      <h2 class="section-title" data-i18n="free.title">Independent Consulting</h2>
+      <p class="section-sub" data-i18n="free.sub">Click any engagement to expand full details.</p>
+    </div>
+
+    <div class="free-list">
+
+      <div class="free-item reveal">
+        <button class="free-header" aria-expanded="false">
+          <div class="free-period" data-i18n="free.1.period">Jul 2026 — Present</div>
+          <div>
+            <div class="free-role" data-i18n="free.1.role">Saudi Council of Engineers</div>
+            <div class="free-org" data-i18n="free.1.org">Project Manager &amp; Operations Consultant — Engineering Hackathon 2026</div>
+          </div>
+          <div class="free-chevron">⌄</div>
+        </button>
+        <div class="free-collapse"><div class="free-collapse-inner"><div class="free-body">
+          <ul>
+            <li data-i18n="free.1.li1">Corrected faulty operational workflows through hands-on management and strategic guidance.</li>
+            <li data-i18n="free.1.li2">Managed the consulting team and directly supervised deliverables and operational logistics.</li>
+            <li data-i18n="free.1.li3">Restructured action plans and timelines to align with the council's objectives.</li>
+          </ul>
+        </div></div></div>
+      </div>
+
+      <div class="free-item reveal">
+        <button class="free-header" aria-expanded="false">
+          <div class="free-period" data-i18n="free.2.period">Sep 2024 — Nov 2024</div>
+          <div>
+            <div class="free-role" data-i18n="free.2.role">Confidential Government Project — "Fakhoor Hackathon"</div>
+            <div class="free-org" data-i18n="free.2.org">Operations Manager (Project-Based)</div>
+          </div>
+          <div class="free-chevron">⌄</div>
+        </button>
+        <div class="free-collapse"><div class="free-collapse-inner"><div class="free-body">
+          <ul>
+            <li data-i18n="free.2.li1">Oversaw daily operations, resource allocation, and event readiness activities.</li>
+            <li data-i18n="free.2.li2">Resolved operational bottlenecks and ensured consistent workflow across multiple teams.</li>
+            <li data-i18n="free.2.li3">Supported planning activities and ensured alignment with project scope and requirements.</li>
+          </ul>
+        </div></div></div>
+      </div>
+
+      <div class="free-item reveal">
+        <button class="free-header" aria-expanded="false">
+          <div class="free-period" data-i18n="free.3.period">Beban 2023 &amp; 2024</div>
+          <div>
+            <div class="free-role" data-i18n="free.3.role">Beban Forum</div>
+            <div class="free-org" data-i18n="free.3.org">Operations Supervisor — General Authority for Small and Medium Enterprises (Monsha'at)</div>
+          </div>
+          <div class="free-chevron">⌄</div>
+        </button>
+        <div class="free-collapse"><div class="free-collapse-inner"><div class="free-body">
+          <ul>
+            <li data-i18n="free.3.li1">Managed consultant operations, including scheduling, resource allocation, access, and session coordination.</li>
+            <li data-i18n="free.3.li2">Monitored on-ground execution and resolved operational requirements to ensure efficient and seamless delivery.</li>
+          </ul>
+        </div></div></div>
+      </div>
+
+      <div class="free-item reveal">
+        <button class="free-header" aria-expanded="false">
+          <div class="free-period" data-i18n="free.4.period">2022</div>
+          <div>
+            <div class="free-role" data-i18n="free.4.role">FIFA World Cup 2022, Qatar</div>
+            <div class="free-org" data-i18n="free.4.org">VVIP Operations Officer</div>
+          </div>
+          <div class="free-chevron">⌄</div>
+        </button>
+        <div class="free-collapse"><div class="free-collapse-inner"><div class="free-body">
+          <ul>
+            <li data-i18n="free.4.li1">Managed VVIP guest operations and logistics, including travel, accommodation, transportation, and on-ground coordination with relevant stakeholders.</li>
+            <li data-i18n="free.4.li2">Oversaw on-ground operations, addressing guest requirements and operational challenges to ensure seamless service delivery.</li>
+          </ul>
+        </div></div></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="kicker" data-i18n="skills.kicker">Skills &amp; Tools</div>
+      <h2 class="section-title" data-i18n="skills.title">Technical &amp; Soft Skills</h2>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-col reveal">
+        <h4 data-i18n="skills.col1.h4">Project Management</h4>
+        <span class="tag" data-i18n="skills.col1.tag1">Risk &amp; Issue Management</span>
+        <span class="tag" data-i18n="skills.col1.tag2">Stakeholder Management</span>
+        <span class="tag" data-i18n="skills.col1.tag3">Scope, Schedule &amp; Budget Control</span>
+        <span class="tag" data-i18n="skills.col1.tag4">KPI Development &amp; Monitoring</span>
+        <span class="tag" data-i18n="skills.col1.tag5">Project Lifecycle Management</span>
+        <span class="tag" data-i18n="skills.col1.tag6">Cross-functional Team Leadership</span>
+      </div>
+      <div class="skill-col reveal">
+        <h4 data-i18n="skills.col2.h4">Supply Chain</h4>
+        <span class="tag" data-i18n="skills.col2.tag1">Procurement &amp; Vendor Management</span>
+        <span class="tag" data-i18n="skills.col2.tag2">Process Optimization</span>
+        <span class="tag" data-i18n="skills.col2.tag3">Inventory &amp; Logistics Operations</span>
+      </div>
+      <div class="skill-col reveal">
+        <h4 data-i18n="skills.col3.h4">Tools &amp; Software</h4>
+        <span class="tag">MS Project</span>
+        <span class="tag">Advanced Excel</span>
+      </div>
+      <div class="skill-col reveal">
+        <h4 data-i18n="skills.col4.h4">Soft Skills</h4>
+        <span class="tag" data-i18n="skills.col4.tag1">Leadership &amp; Team Management</span>
+        <span class="tag" data-i18n="skills.col4.tag2">Communication (Arabic &amp; English)</span>
+        <span class="tag" data-i18n="skills.col4.tag3">Data Analysis &amp; Decision Making</span>
+        <span class="tag" data-i18n="skills.col4.tag4">A High Level of Emotional Intelligence</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="education">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="kicker" data-i18n="edu.kicker">Education &amp; Professional Certifications</div>
+      <h2 class="section-title" data-i18n="edu.title">Credentials</h2>
+    </div>
+
+    <div class="ed-highlight reveal">
+      <div class="deg" data-i18n="edu.deg">Bachelor of Financial Management</div>
+      <div class="school" data-i18n="edu.school">Imam Muhammad Ibn Saud Islamic University — Riyadh, Saudi Arabia</div>
+    </div>
+
+    <div class="cert-grid reveal">
+      <div class="cert-item">
+        <div class="cert-item-top">
+          <span class="cert-logo-wrap"><img class="cert-logo" src="assets/pmp-seal.png" alt="PMI" /></span>
+          <div><span data-i18n="edu.cert1.main">Project Management Professional (PMP)</span><span class="cert-full" data-i18n="edu.cert1.sub">Project Management Institute</span></div>
+        </div>
+      </div>
+      <div class="cert-item">
+        <div class="cert-item-top">
+          <span class="cert-logo-wrap"><img class="cert-logo" src="https://www.ipscmi.org/static/images/logo.png" alt="IPSCMI" /></span>
+          <div><span data-i18n="edu.cert2.main">Certified International Supply Chain Professional (CISCP)</span><span class="cert-full" data-i18n="edu.cert2.sub">Supply Chain Certification</span></div>
+        </div>
+        <a class="cert-verify" href="https://www.ipscmi.org/Verify_Your_Certification/" target="_blank" rel="noopener" data-i18n="edu.certVerify">Verify credential ↗</a>
+      </div>
+      <div class="cert-item">
+        <div class="cert-item-top">
+          <span class="cert-logo-wrap"><img class="cert-logo" src="https://www.ipscmi.org/static/images/logo.png" alt="IPSCMI" /></span>
+          <div><span data-i18n="edu.cert3.main">Certified International Supply Chain Manager (CISCM)</span><span class="cert-full" data-i18n="edu.cert3.sub">Supply Chain Certification</span></div>
+        </div>
+        <a class="cert-verify" href="https://www.ipscmi.org/Verify_Your_Certification/" target="_blank" rel="noopener" data-i18n="edu.certVerify">Verify credential ↗</a>
+      </div>
+    </div>
+
+    <div class="lang-row reveal">
+      <div class="lang-item"><span data-i18n="edu.lang1.name">Arabic</span> <span class="lv" data-i18n="edu.lang1.lv">— Native</span></div>
+      <div class="lang-item"><span data-i18n="edu.lang2.name">English</span> <span class="lv" data-i18n="edu.lang2.lv">— Professional</span></div>
+    </div>
+  </div>
+</section>
+
+<footer class="contact" id="contact">
+  <div class="wrap">
+    <h2 data-i18n="footer.h2">Let's build the next initiative together</h2>
+    <p data-i18n="footer.p">Supporting public and private sector organizations across Saudi Arabia through project, operations, and strategic consulting expertise.</p>
+    <div class="contact-pills">
+      <a class="contact-pill" href="tel:+966566836783">+966 56 683 6783</a>
+      <a class="contact-pill" href="mailto:s.alraqas@outlook.sa">@ s.alraqas@outlook.sa</a>
+      <a class="contact-pill" href="https://www.linkedin.com/in/samer-alraqas-pmp®-ciscp-ciscm-294056158" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+    <div class="byline" data-i18n="footer.byline">Samer AlRaqas — Project Delivery, Operations &amp; Strategic Advisory</div>
+    <div class="copyright" data-i18n="footer.copyright">© 2026 Samer AlRaqas. All rights reserved.</div>
+  </div>
+</footer>
+
+<script>
+  // ---------- i18n (EN / AR) ----------
+  const I18N = {
+    ar: {
+      "brand": `سامر <span>الرقاص</span>`,
+      "nav.profile": `نبذة`,
+      "nav.expertise": `التخصصات`,
+      "nav.achievements": `الإنجازات`,
+      "nav.experience": `الخبرات العملية`,
+      "nav.freelance": `الأعمال الحرة`,
+      "nav.education": `المؤهلات`,
+      "nav.contact": `تواصل`,
+
+      "hero.eyebrow": `إدارة المشاريع والعمليات <span class="sep">·</span> تنفيذ البرامج الوطنية`,
+      "hero.name": `سامر الرقاص`,
+      "hero.role": `مدير مشاريع وعمليات <span class="sep">|</span> سلاسل الإمداد واللوجستيات <span class="sep">|</span> المبادرات الوطنية`,
+      "hero.tagline": `مدير مشاريع وعمليات يتمتع بنتائج ملموسة، يقود المشاريع الاستراتيجية والبرامج الوطنية في القطاعين الحكومي والخاص بالمملكة العربية السعودية — يجمع بين تنفيذ المشاريع وإدارة سلاسل الإمداد والحوكمة لتحقيق أثر منظم وقابل للقياس ومستدام.`,
+      "hero.cta1": `تواصل معي`,
+      "hero.cta2": `عرض الخبرات ←`,
+      "hero.location": `الرياض، المملكة العربية السعودية`,
+
+      "stats.lbl1": `سنوات الخبرة`,
+      "stats.lbl2": `مشاريع منجزة`,
+      "stats.lbl3": `مستفيد`,
+      "stats.lbl4": `شهادات احترافية`,
+
+      "summary.kicker": `الملخص المهني`,
+      "summary.title": `تحويل الاستراتيجية إلى تنفيذ عملي`,
+      "summary.p1": `مدير مشاريع وعمليات محترف بخبرة تمتد لأكثر من 5 سنوات في قيادة البرامج الحكومية والمبادرات الوطنية الكبرى في المملكة العربية السعودية، حاصل على شهادتَي PMP وCISCP، ولدي خبرة موثقة في تنفيذ المشاريع الاستراتيجية وإدارة سلاسل الإمداد والعمليات اللوجستية وتحسين الكفاءة التشغيلية، وقد أسهمت في قيادة مشاريع لوزارة الصناعة والثروة المعدنية ودعم أهداف رؤية 2030، مع قدرة عالية على بناء الفرق وضمان التسليم الاحترافي في القطاعين الحكومي والخاص.`,
+      "summary.p2": ``,
+
+      "expertise.kicker": `مجالات الخبرة`,
+      "expertise.title": `أين أضيف القيمة الأكبر`,
+      "expertise.1.h3": `البرامج والفعاليات الوطنية`,
+      "expertise.1.p": `قيادة وتنسيق برامج حكومية وصناعية واسعة النطاق في جميع أنحاء المملكة العربية السعودية.`,
+      "expertise.2.h3": `تطوير القدرات البشرية`,
+      "expertise.2.p": `بناء جاهزية الفرق وتعزيز قدراتها من خلال برامج تدريب وتطوير مهني منظمة.`,
+      "expertise.3.h3": `حوكمة المشاريع والاستراتيجية`,
+      "expertise.3.p": `وضع السياسات ومؤشرات الأداء وأطر الحوكمة التي تربط التنفيذ بالأهداف الاستراتيجية.`,
+      "expertise.4.h3": `إدارة المشاريع والعمليات`,
+      "expertise.4.p": `تسليم شامل عبر دورة حياة المشروع الكاملة، من التخطيط وحتى الإغلاق.`,
+      "expertise.5.h3": `سلاسل الإمداد واللوجستيات`,
+      "expertise.5.p": `إدارة علاقات الموردين والمشتريات وعمليات اللوجستيات من البداية إلى النهاية.`,
+      "expertise.6.h3": `مبادرات رؤية المملكة 2030`,
+      "expertise.6.p": `الإسهام في برامج التحول الوطني المتوافقة مع رؤية المملكة العربية السعودية 2030.`,
+
+      "ach.kicker": `أبرز الإنجازات`,
+      "ach.1.h3": `هاكاثون الهندسة 2026`,
+      "ach.1.p": `تصحيح مسارات العمل التشغيلية غير الفعالة لهاكاثون الهيئة السعودية للمهندسين من خلال قيادة استشارية ميدانية وإعادة هيكلة خطط العمل.`,
+      "ach.1.link": `زيارة صفحة الهاكاثون ↗`,
+      "ach.2.h3": `حوكمة مكتب تحقيق الرؤية 2030`,
+      "ach.2.p": `قيادة حوكمة استراتيجية للمشاريع لصالح وزارة الصناعة والثروة المعدنية — عبر السياسات ومؤشرات الأداء وإدارة المخاطر — ما أسفر عن إطلاق أربعة مشاريع جديدة ضمن برنامج واحد.`,
+      "ach.3.h3": `هاكاثون الصناعة 2025 — SIDF`,
+      "ach.3.p": `إدارة العمليات الكاملة لهاكاثون الصناعة التابع لصندوق التنمية الصناعية السعودي، من تطوير المنصة إلى التنسيق مع أصحاب المصلحة — موثق ضمن التغطية الإعلامية الرسمية للصندوق.`,
+      "ach.3.link": `مشاهدة التغطية على يوتيوب ↗`,
+      "ach.4.h3": `مشروع حكومي سري<br>"هاكاثون فخور"`,
+      "ach.4.p": `الإشراف على العمليات اليومية وتوزيع الموارد وأنشطة الجاهزية التشغيلية، ومعالجة الاختناقات التشغيلية عبر فرق متعددة.`,
+      "ach.5.h3": `ملتقى بيبان 2023 و 2024`,
+      "ach.5.p": `الإشراف على العمليات عبر نسختين متتاليتين من ملتقى بيبان — الفعالية الرائدة للمنشآت الصغيرة والمتوسطة وريادة الأعمال في المملكة العربية السعودية، التابعة للهيئة العامة للمنشآت الصغيرة والمتوسطة.`,
+      "ach.6.h3": `كأس العالم FIFA 2022، قطر`,
+      "ach.6.p": `العمل كمسؤول عمليات كبار الشخصيات (VVIP) في واحدة من أكبر الفعاليات الرياضية العالمية، وتنسيق لوجستيات كبار الضيوف على المستوى الدولي.`,
+
+      "exp.kicker": `الخبرة المهنية`,
+      "exp.title": `السجل الوظيفي`,
+      "track.1.period": `يونيو 2025 — حتى الآن`,
+      "track.1.role": `OceanX`,
+      "track.1.org": `مدير مشروع`,
+      "track.1.block1.h4": `وزارة الصناعة والثروة المعدنية — مكتب تحقيق الرؤية 2030`,
+      "track.1.block1.li1": `قيادة مشروع استراتيجي شمل تطبيق منظومة حوكمة متكاملة تضم السياسات ومؤشرات الأداء وإدارة المخاطر، وتطوير الاستراتيجية الشاملة للمشروع والبرنامج.`,
+      "track.1.block1.li2": `الإشراف على دورة حياة المشروع كاملة، وقيادة 5 فرق عمل متعددة التخصصات بمستويات خبرة متفاوتة، وتحسين توزيع الموارد، وإدارة الاستشارات لضمان التوافق مع الأهداف الاستراتيجية.`,
+      "track.1.block1.li3": `إجراء تحليل ودراسة لإطلاق أربعة مشاريع جديدة ضمن برنامج موحد، بمتابعة من مكتب تحقيق الرؤية 2030، مع إعداد التصورات التشغيلية اللازمة وتعزيز التكامل مع الشركاء الحكوميين.`,
+      "track.1.block2.h4": `هاكاثون الصناعة 2025 — صندوق التنمية الصناعية (SIDF)`,
+      "track.1.block2.li1": `إدارة عمليات المشروع من البداية إلى النهاية، بما يشمل تطوير المنصة والتخطيط اللوجستي وتنسيق الفريق.`,
+      "track.1.block2.li2": `التنسيق مع الجهات الحكومية والخاصة لضمان سلاسة التنفيذ في جميع مراحل المشروع.`,
+      "track.1.block2.li3": `تصميم وتطبيق آليات عمل تشغيلية رفعت من جاهزية المشروع وكفاءة التسليم.`,
+
+      "track.2.period": `مايو 2023 — فبراير 2024`,
+      "track.2.role": `شركة علم <span style="font-weight:500;color:var(--text-muted);font-size:14px;">(مشروع قصير)</span>`,
+      "track.2.org": `أخصائي عمليات`,
+      "track.2.block1.h4": `مشروع رقمنة والثروة العقارية — مكتب تحقيق الرؤية 2030`,
+      "track.2.block1.li1": `إدارة عمليات الأرشفة الرقمية الشاملة لصكوك العقارات والوثائق المتعلقة بها.`,
+      "track.2.block1.li2": `إعداد التقارير التشغيلية والأدائية اليومية لدعم مكتب إدارة البرامج (PMO).`,
+      "track.2.block1.li3": `ضمان الامتثال الكامل لمعايير الجودة والإسهام في تحسين مسارات العمل باستمرار.`,
+
+      "track.3.period": `يونيو 2021 — نوفمبر 2021`,
+      "track.3.role": `هيئة الزكاة والضريبة والجمارك`,
+      "track.3.org": `أخصائي تطوير أعمال — برنامج تمهير`,
+      "track.3.block1.li1": `تقديم الدعم اللوجستي ومعالجة التحديات المتعلقة بالشحنات.`,
+      "track.3.block1.li2": `تسهيل التواصل الفعّال بين الفرق الداخلية وأصحاب المصلحة الخارجيين.`,
+      "track.3.block1.li3": `المساهمة في وضع الأهداف التشغيلية قصيرة وطويلة الأمد.`,
+
+      "track.4.period": `مايو 2018 — مايو 2020`,
+      "track.4.role": `البنك العربي الوطني`,
+      "track.4.org": `ممثل خدمة العملاء`,
+      "track.4.block1.li1": `تعزيز مستوى استجابة العملاء وتحسين تجربتهم الشاملة.`,
+      "track.4.block1.li2": `قيادة أعضاء الفريق لتحقيق أهداف الفرع وتعظيم مستوى الأداء.`,
+
+      "free.kicker": `الأعمال الحرة والمشاركات البارزة`,
+      "free.title": `استشارات مستقلة`,
+      "free.sub": `اضغط على أي مشاركة لعرض التفاصيل الكاملة.`,
+      "free.1.period": `يوليو 2026 — حتى الآن`,
+      "free.1.role": `الهيئة السعودية للمهندسين`,
+      "free.1.org": `مدير مشروع ومستشار عمليات — هاكاثون الهندسة 2026`,
+      "free.1.li1": `تصحيح مسارات العمل التشغيلية غير الفعالة من خلال إدارة ميدانية وإرشاد استراتيجي مباشر.`,
+      "free.1.li2": `إدارة فريق الاستشاريين والإشراف المباشر على المخرجات واللوجستيات التشغيلية.`,
+      "free.1.li3": `إعادة هيكلة خطط العمل والجداول الزمنية بما يتوافق مع أهداف المجلس.`,
+
+      "free.2.period": `سبتمبر 2024 — نوفمبر 2024`,
+      "free.2.role": `مشروع حكومي سري "هاكاثون فخور"`,
+      "free.2.org": `مدير عمليات (مشروع قصير)`,
+      "free.2.li1": `الإشراف على العمليات اليومية وتوزيع الموارد وأنشطة الجاهزية التشغيلية للفعالية.`,
+      "free.2.li2": `معالجة الاختناقات التشغيلية وضمان انسياب العمل بشكل منتظم عبر الفرق المختلفة.`,
+      "free.2.li3": `دعم أنشطة التخطيط وضمان التوافق مع نطاق المشروع ومتطلباته.`,
+
+      "free.3.period": `بيبان 2023 و 2024`,
+      "free.3.role": `ملتقى بيبان`,
+      "free.3.org": `مشرف عمليات — الهيئة العامة للمنشآت الصغيرة والمتوسطة`,
+      "free.3.li1": `إدارة عمليات الاستشاريين شاملةً الجدولة وتوزيع الموارد والوصول وتنسيق الجلسات.`,
+      "free.3.li2": `متابعة التنفيذ الميداني ومعالجة المتطلبات التشغيلية لضمان تسليم فعّال وسلس.`,
+
+      "free.4.period": `2022`,
+      "free.4.role": `كأس العالم FIFA 2022، قطر`,
+      "free.4.org": `مسؤول عمليات كبار الشخصيات (VVIP)`,
+      "free.4.li1": `إدارة عمليات ولوجستيات كبار الضيوف شاملةً السفر والإقامة والتنقلات والتنسيق الميداني مع الجهات المعنية.`,
+      "free.4.li2": `الإشراف على العمليات الميدانية ومعالجة متطلبات الضيوف والتحديات التشغيلية لضمان تسليم خدمة سلس.`,
+
+      "skills.kicker": `المهارات والأدوات`,
+      "skills.title": `المهارات التقنية والشخصية`,
+      "skills.col1.h4": `إدارة المشاريع`,
+      "skills.col1.tag1": `إدارة المخاطر والقضايا`,
+      "skills.col1.tag2": `إدارة أصحاب المصلحة`,
+      "skills.col1.tag3": `التحكم في النطاق والجدول الزمني والميزانية`,
+      "skills.col1.tag4": `تطوير ومتابعة مؤشرات الأداء الرئيسية (KPIs)`,
+      "skills.col1.tag5": `إدارة دورة حياة المشروع`,
+      "skills.col1.tag6": `قيادة الفرق متعددة التخصصات`,
+      "skills.col2.h4": `سلاسل الإمداد`,
+      "skills.col2.tag1": `إدارة المشتريات والموردين`,
+      "skills.col2.tag2": `تحسين العمليات التشغيلية`,
+      "skills.col2.tag3": `عمليات المخزون واللوجستيك`,
+      "skills.col3.h4": `الأدوات والبرمجيات`,
+      "skills.col4.h4": `المهارات الشخصية`,
+      "skills.col4.tag1": `القيادة وإدارة الفرق`,
+      "skills.col4.tag2": `التواصل (عربي وإنجليزي)`,
+      "skills.col4.tag3": `تحليل البيانات واتخاذ القرار`,
+      "skills.col4.tag4": `مستوى عالٍ من الذكاء العاطفي`,
+
+      "edu.kicker": `المؤهل العلمي والشهادات الاحترافية`,
+      "edu.title": `المؤهلات`,
+      "edu.deg": `بكالوريوس إدارة مالية`,
+      "edu.school": `جامعة الإمام محمد بن سعود الإسلامية — الرياض، المملكة العربية السعودية`,
+      "edu.cert1.main": `محترف إدارة المشاريع (PMP)`,
+      "edu.cert1.sub": `معهد إدارة المشاريع`,
+      "edu.cert2.main": `أخصائي سلاسل الإمداد الدولية المعتمد (CISCP)`,
+      "edu.cert2.sub": `شهادة سلاسل الإمداد`,
+      "edu.cert3.main": `مدير سلاسل الإمداد الدولية المعتمد (CISCM)`,
+      "edu.cert3.sub": `شهادة سلاسل الإمداد`,
+      "edu.certVerify": `التحقق من الشهادة ↗`,
+      "edu.lang1.name": `العربية`,
+      "edu.lang1.lv": `— اللغة الأم`,
+      "edu.lang2.name": `الإنجليزية`,
+      "edu.lang2.lv": `— احترافي`,
+
+      "footer.h2": `لنبنِ المبادرة القادمة معًا`,
+      "footer.p": `دعم المؤسسات الحكومية والخاصة في المملكة العربية السعودية من خلال خبرة في إدارة المشاريع والعمليات والاستشارات الاستراتيجية.`,
+      "footer.byline": `سامر الرقاص — تسليم المشاريع والعمليات والاستشارات الاستراتيجية`,
+      "footer.copyright": `© 2026 سامر الرقاص. جميع الحقوق محفوظة.`,
+
+      "meta.title": `سامر الرقاص — مدير مشاريع وعمليات | PMP، CISCP، CISCM`,
+      "meta.desc": `سامر الرقاص — مدير مشاريع وعمليات يتمتع بنتائج ملموسة، يقود برامج حكومية ووطنية في جميع أنحاء المملكة العربية السعودية.`,
+      "toggle.label": `English`
+    }
+  };
+
+  let currentLang = 'en';
+  const ENGLISH_CACHE = {}; // stores original EN innerHTML per element on first switch
+  const langToggleBtn = document.getElementById('langToggle');
+  const pageTitleEl = document.getElementById('pageTitle');
+  const pageDescEl = document.getElementById('pageDesc');
+  const ORIGINAL_TITLE = pageTitleEl ? pageTitleEl.textContent : '';
+  const ORIGINAL_DESC = pageDescEl ? pageDescEl.getAttribute('content') : '';
+
+  function applyLang(lang) {
+    const nodes = document.querySelectorAll('[data-i18n]');
+    nodes.forEach(function (el) {
+      const key = el.getAttribute('data-i18n');
+      if (lang === 'en') {
+        if (ENGLISH_CACHE[key] !== undefined) el.innerHTML = ENGLISH_CACHE[key];
+      } else {
+        if (ENGLISH_CACHE[key] === undefined) ENGLISH_CACHE[key] = el.innerHTML;
+        if (I18N.ar[key] !== undefined) el.innerHTML = I18N.ar[key];
+      }
+    });
+    document.documentElement.lang = lang === 'ar' ? 'ar' : 'en';
+    document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
+    document.body.classList.toggle('lang-ar', lang === 'ar');
+    if (langToggleBtn) langToggleBtn.textContent = lang === 'ar' ? 'English' : 'العربية';
+    if (pageTitleEl) pageTitleEl.textContent = lang === 'ar' ? I18N.ar['meta.title'] : ORIGINAL_TITLE;
+    if (pageDescEl) pageDescEl.setAttribute('content', lang === 'ar' ? I18N.ar['meta.desc'] : ORIGINAL_DESC);
+    currentLang = lang;
+  }
+
+  if (langToggleBtn) {
+    langToggleBtn.addEventListener('click', function (e) {
+      e.preventDefault();
+      applyLang(currentLang === 'en' ? 'ar' : 'en');
+    });
+  }
+
+  // scroll progress bar
+  const progressEl = document.getElementById('progress');
+  function updateProgress() {
+    const h = document.documentElement;
+    const scrolled = (h.scrollTop) / (h.scrollHeight - h.clientHeight) * 100;
+    progressEl.style.width = scrolled + '%';
+  }
+  document.addEventListener('scroll', updateProgress);
+  updateProgress();
+
+  // freelance accordion
+  document.querySelectorAll('.free-header').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      const item = btn.closest('.free-item');
+      const isOpen = item.classList.contains('open');
+      item.classList.toggle('open', !isOpen);
+      btn.setAttribute('aria-expanded', String(!isOpen));
+    });
+  });
+
+  // reveal on scroll
+  const io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) {
+      if (e.isIntersecting) {
+        e.target.classList.add('in');
+        io.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.reveal').forEach(function (el) { io.observe(el); });
+</script>
+
+</body>
+</html>
