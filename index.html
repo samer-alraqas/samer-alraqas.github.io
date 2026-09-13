@@ -98,10 +98,19 @@
   .hero-grid { position: relative; z-index: 1; max-width: 640px; }
   .eyebrow { display: block; font-size: 14px; font-weight: 600; letter-spacing: 0.01em; color: var(--accent-2); }
   .eyebrow .sep { color: var(--text-muted); margin: 0 4px; }
+  .hero-name-row { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; margin: 18px 0 0 0; }
   .hero h1 {
     font-size: clamp(36px, 5.4vw, 58px);
-    line-height: 1.04; margin: 18px 0 0 0; font-weight: 800; letter-spacing: -0.02em;
+    line-height: 1.04; margin: 0; font-weight: 800; letter-spacing: -0.02em;
   }
+  .cv-download {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 42px; height: 42px; border-radius: 50%; flex-shrink: 0;
+    border: 1px solid var(--border-2); color: var(--accent-2);
+    transition: border-color .15s ease, color .15s ease, background .15s ease, transform .15s ease;
+  }
+  .cv-download:hover { border-color: var(--accent); color: var(--accent); background: var(--accent-dim); transform: translateY(-2px); }
+  .cv-download svg { width: 18px; height: 18px; }
   .hero .role {
     font-size: clamp(16px, 2.1vw, 19px); color: var(--text-secondary); font-weight: 400;
     max-width: 560px; margin-top: 14px;
@@ -406,7 +415,12 @@
   <div class="blob blob-2"></div>
   <div class="wrap hero-grid">
     <span class="eyebrow" data-i18n="hero.eyebrow">Project &amp; Operations Management <span class="sep">·</span> National Program Delivery</span>
-    <h1 data-i18n="hero.name">Samer AlRaqas</h1>
+    <div class="hero-name-row">
+      <h1 data-i18n="hero.name">Samer AlRaqas</h1>
+      <a class="cv-download" id="cvDownload" href="assets/Samer-AlRaqas-CV.pdf" download title="Download CV" aria-label="Download CV">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+      </a>
+    </div>
     <p class="role" data-i18n="hero.role">Project &amp; Operations Management <span class="sep">|</span> Supply Chain &amp; Logistics <span class="sep">|</span> National Initiatives</p>
     <p class="tagline" data-i18n="hero.tagline">A results-driven Project and Operations Manager who leads strategic projects and national programs across Saudi Arabia's government and private sectors — combining project execution, supply chain operations, and governance to deliver structured, measurable, and sustainable impact.</p>
     <div class="hero-cta">
@@ -984,6 +998,12 @@
     if (langToggleBtn) langToggleBtn.textContent = lang === 'ar' ? 'English' : 'العربية';
     if (pageTitleEl) pageTitleEl.textContent = lang === 'ar' ? I18N.ar['meta.title'] : ORIGINAL_TITLE;
     if (pageDescEl) pageDescEl.setAttribute('content', lang === 'ar' ? I18N.ar['meta.desc'] : ORIGINAL_DESC);
+    var cvBtn = document.getElementById('cvDownload');
+    if (cvBtn) {
+      var cvLabel = lang === 'ar' ? 'تحميل السيرة الذاتية' : 'Download CV';
+      cvBtn.setAttribute('title', cvLabel);
+      cvBtn.setAttribute('aria-label', cvLabel);
+    }
     currentLang = lang;
   }
 
