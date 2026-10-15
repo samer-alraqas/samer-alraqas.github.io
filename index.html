@@ -1022,10 +1022,10 @@ dialog.modal{border-radius:22px;background:var(--ink-2)}
     var en=(window.getLang&&getLang()==='en');
     var f=b.dataset.cv==='auto'?(en?'Samer_AlRaqas_CV.pdf':'Samer_AlRaqas_CV_Arabic.pdf'):b.dataset.cv;
     var nm=en?'Samer AlRaqas.pdf':'\u0633\u0627\u0645\u0631 \u0627\u0644\u0631\u0642\u0627\u0635.pdf';
-    function plain(){ var a=document.createElement('a'); a.href='files/'+f; a.download=nm; a.target='_blank'; document.body.appendChild(a); a.click(); a.remove(); }
+    function plain(){ var a=document.createElement('a'); a.href=f; a.download=nm; a.target='_blank'; document.body.appendChild(a); a.click(); a.remove(); }
     try{
       await ready;
-      if(dl){ var r=await fetch('files/'+f); var blob=await r.blob(); await dl.save({filename:nm,data:blob}); say('تم تجهيز الملف للتنزيل','The file is ready to save'); }
+      if(dl){ var r=await fetch(f); var blob=await r.blob(); await dl.save({filename:nm,data:blob}); say('تم تجهيز الملف للتنزيل','The file is ready to save'); }
       else { plain(); }
     }catch(e){ if(e&&e.code==='declined') return; plain(); }
   })});
