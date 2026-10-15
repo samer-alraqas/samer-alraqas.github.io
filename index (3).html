@@ -1,0 +1,1148 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="سامر الرقاص، مدير مشاريع وعمليات من الرياض | Samer AlRaqas, Project and Operations Manager, Riyadh">
+<title>سامر الرقاص</title>
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Samer AlRaqas">
+<meta property="og:url" content="https://samer-alraqas.github.io/">
+<meta property="og:title" content="سامر الرقاص | Samer AlRaqas — Project &amp; Operations Manager">
+<meta property="og:description" content="مدير مشاريع وعمليات من الرياض | Project &amp; Operations Manager leading national programs across Saudi Arabia.">
+<meta property="og:image" content="https://samer-alraqas.github.io/assets/og-image.png?v=2">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Samer AlRaqas — Project &amp; Operations Management">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="سامر الرقاص | Samer AlRaqas — Project &amp; Operations Manager">
+<meta name="twitter:description" content="مدير مشاريع وعمليات من الرياض | Project &amp; Operations Manager, Riyadh">
+<meta name="twitter:image" content="https://samer-alraqas.github.io/assets/og-image.png?v=2">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap">
+<style>
+/* Layout: one dark column with gold hairlines and V-shaped strokes (from his old site), sticky nav, interactive cards, timeline and modal */
+:root{
+  --ink:#0a0a13; --ink-2:#0e0f1c; --panel:#14162a; --panel-2:#1b1e3a; --line:rgba(255,255,255,0.08); --line-2:rgba(255,255,255,0.16);
+  --gold:#3f6fd6; --gold-soft:#7ea2e8; --gold-dim:rgba(63,111,214,0.16);
+  --text:#f4f5f9; --muted:#8f93b5; --sec:#a9adc9; --on-gold:#ffffff;
+  --band-1:#10122a; --band-2:#1b1e3a; --band-3:#14162a;
+  --f-ar:'Tajawal',system-ui,-apple-system,"Segoe UI",sans-serif;
+  --f-disp:'Tajawal',system-ui,-apple-system,"Segoe UI",sans-serif;
+  --f-num:system-ui,-apple-system,"Segoe UI",sans-serif;
+  --r:18px;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--ink);color:var(--text);font-family:var(--f-ar);font-size:16px;line-height:1.75;margin:0;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+::selection{background:var(--gold);color:var(--on-gold)}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:6px}
+.wrap{max-width:1080px;margin:0 auto;padding-inline:20px}
+.ltr{direction:ltr;unicode-bidi:isolate;display:inline-block}
+
+#progress{position:fixed;top:0;inset-inline-start:0;height:3px;width:0;background:linear-gradient(90deg,var(--gold),var(--gold-soft));z-index:100}
+#glow{position:fixed;width:520px;height:520px;border-radius:50%;pointer-events:none;z-index:0;background:radial-gradient(circle,rgba(63,111,214,.09),transparent 65%);transform:translate(-50%,-50%);left:-600px;top:-600px}
+header,main,footer{position:relative;z-index:1}
+
+/* nav */
+header.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:rgba(15,22,38,.78);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav-in{max-width:1080px;margin:0 auto;padding:12px 20px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.mono{font-family:var(--f-num);font-size:1.4rem;letter-spacing:.08em;color:var(--gold);font-weight:600}
+nav.links{display:flex;gap:20px;flex-wrap:wrap}
+nav.links a{font-size:.86rem;color:var(--muted);padding:4px 0;border-bottom:2px solid transparent;transition:color .15s,border-color .15s}
+nav.links a:hover,nav.links a.on{color:var(--gold-soft);border-color:var(--gold)}
+.lang{all:unset;cursor:pointer;border:1px solid var(--gold);color:var(--gold);border-radius:999px;padding:5px 15px;font:600 .82rem var(--f-ar);transition:background .15s,color .15s}
+.lang:hover{background:var(--gold);color:var(--on-gold)}
+@media (max-width:820px){nav.links{display:none}}
+
+/* hero */
+.hero{position:relative;overflow:hidden;border-bottom:1px solid var(--line)}
+.hero svg.vs{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.hero svg.vs path{stroke-dasharray:1600;stroke-dashoffset:0}
+.hero .wrap{position:relative;padding-block:76px 60px;display:grid;gap:18px;max-width:1080px}
+.eyebrow{color:var(--gold);font-size:.82rem;letter-spacing:.06em}
+h1{margin:0;font-family:var(--f-disp);font-weight:700;font-size:clamp(2.6rem,7vw,4.8rem);line-height:1.15;color:var(--gold-soft);text-wrap:balance}
+.en-mode h1{font-family:var(--f-num);letter-spacing:.01em}
+.creds{font-family:var(--f-num);color:var(--gold);font-size:1.2rem;letter-spacing:.1em}
+.typed-row{font-size:clamp(1.1rem,2.4vw,1.4rem);font-weight:600;min-height:1.8em}
+.caret{display:inline-block;width:2px;height:1.05em;background:var(--gold);vertical-align:-3px;margin-inline-start:3px;animation:blink 1s steps(1) infinite}
+@keyframes blink{50%{opacity:0}}
+.lede{color:var(--muted);max-width:62ch;margin:0}
+.verse{margin:4px 0 0;color:var(--gold-soft);font-size:1.15rem;font-family:var(--f-disp)}
+.cta{display:flex;gap:14px;flex-wrap:wrap;margin-top:6px}
+.btn{display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:.92rem;padding:11px 22px;border-radius:10px;border:1px solid var(--gold);transition:transform .15s,background .15s,color .15s}
+.btn.solid{background:var(--gold);color:var(--on-gold)}
+.btn:hover{transform:translateY(-2px)}
+.btn.ghost:hover{background:var(--gold-dim)}
+
+/* stats */
+.stats{border-bottom:1px solid var(--line);background:linear-gradient(120deg,var(--ink-2),var(--panel-2) 55%,var(--ink-2))}
+.stats .wrap{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px;padding-block:38px}
+.stat b{display:block;font-family:var(--f-num);font-size:clamp(2.4rem,5vw,3.4rem);font-weight:600;color:var(--gold);line-height:1;font-variant-numeric:tabular-nums;direction:ltr;unicode-bidi:isolate;text-align:start}
+.stat span{color:var(--muted);font-size:.86rem;display:block;margin-top:8px}
+@media (max-width:700px){.stats .wrap{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* partners marquee */
+.partners{padding-block:36px;border-bottom:1px solid var(--line);overflow:hidden}
+.partners-lbl{text-align:center;font-size:.8rem;color:var(--muted);margin-bottom:16px}
+.marquee{display:flex;width:max-content;gap:16px;animation:slide 40s linear infinite}
+.partners:hover .marquee,.partners:focus-within .marquee,.partners:active .marquee{animation-play-state:paused}
+[dir="rtl"] .marquee{animation-name:slide-rtl}
+@keyframes slide{to{transform:translateX(-50%)}}
+@keyframes slide-rtl{to{transform:translateX(50%)}}
+.tile{flex:0 0 auto;height:92px;min-width:190px;padding:0 26px;display:flex;align-items:center;justify-content:center;background:var(--panel);border:1px solid var(--line);border-radius:12px;font-family:var(--f-disp);font-size:1rem;white-space:nowrap;color:var(--text)}
+.tile img{max-height:54px;max-width:170px;object-fit:contain;display:block}
+.tile.img{background:#f4f1ea}
+
+/* sections */
+section{padding-block:72px;position:relative}
+.head{display:flex;align-items:center;gap:14px;margin-bottom:12px}
+.head .k{color:var(--gold);font-size:.8rem;font-weight:600;letter-spacing:.06em;white-space:nowrap}
+.head::after{content:"";flex:1;height:1px;background:linear-gradient(to left,transparent,var(--gold))}
+[dir="ltr"] .head::after{background:linear-gradient(to right,var(--gold),transparent)}
+h2{margin:0 0 30px;font-family:var(--f-disp);font-weight:600;font-size:clamp(1.5rem,3vw,2rem);color:var(--text);text-wrap:balance}
+.en-mode h2{font-family:var(--f-num);font-size:clamp(1.8rem,3.4vw,2.3rem)}
+p{margin:0}
+.reveal{transition:opacity .6s ease,transform .6s ease}
+.js .reveal.pending{opacity:0;transform:translateY(18px)}
+
+/* about */
+.about{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:40px;align-items:start}
+.about p{color:var(--muted);margin-bottom:14px}
+.about p strong{color:var(--text);font-weight:600}
+.pillars{display:grid;gap:12px}
+.pillar{border:1px solid var(--line);border-radius:12px;padding:16px 18px;background:var(--panel)}
+.pillar b{color:var(--gold-soft);font-weight:600;display:block;font-size:.95rem}
+.pillar span{color:var(--muted);font-size:.86rem}
+@media (max-width:820px){.about{grid-template-columns:1fr}}
+
+/* competencies */
+.comp{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.cc{position:relative;overflow:hidden;isolation:isolate;background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:22px;transition:transform .2s,border-color .2s}
+.cc::after{content:"";position:absolute;inset:0;z-index:-1;opacity:0;transition:opacity .25s;background:radial-gradient(240px circle at var(--mx,50%) var(--my,50%),rgba(126,162,232,.14),transparent 60%)}
+.cc:hover{transform:translateY(-3px);border-color:rgba(63,111,214,.5)}
+.cc:hover::after{opacity:1}
+.cc .i{width:34px;height:34px;border-radius:9px;background:var(--gold-dim);display:grid;place-items:center;margin-bottom:12px}
+.cc h3{margin:0 0 6px;font-size:1rem;font-weight:600}
+.cc p{color:var(--muted);font-size:.88rem;line-height:1.65}
+@media (max-width:900px){.comp{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:600px){.comp{grid-template-columns:1fr}}
+
+/* projects */
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:22px}
+.filter{all:unset;cursor:pointer;font-size:.84rem;font-weight:600;padding:7px 16px;border-radius:999px;border:1px solid var(--line-2);color:var(--muted);transition:all .15s}
+.filter:hover{border-color:var(--gold);color:var(--gold-soft)}
+.filter[aria-pressed="true"]{background:var(--gold);border-color:var(--gold);color:var(--on-gold)}
+.pgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.pc{all:unset;box-sizing:border-box;cursor:pointer;position:relative;overflow:hidden;isolation:isolate;display:flex;flex-direction:column;gap:8px;padding:22px;background:var(--panel);border:1px solid var(--line);border-radius:var(--r);transition:transform .2s,border-color .2s;min-width:0}
+.pc::after{content:"";position:absolute;inset:0;z-index:-1;opacity:0;transition:opacity .25s;background:radial-gradient(260px circle at var(--mx,50%) var(--my,50%),rgba(126,162,232,.14),transparent 60%)}
+.pc:hover{transform:translateY(-3px);border-color:rgba(63,111,214,.5)}
+.pc:hover::after{opacity:1}
+.pc.hide{display:none}
+.pc .top{display:flex;justify-content:space-between;gap:10px;align-items:center}
+.pc .cat{font-size:.76rem;color:var(--gold);font-weight:600}
+.pc .yr{font-family:var(--f-num);color:var(--gold-soft);font-size:1.05rem;font-variant-numeric:tabular-nums}
+.pc h3{margin:0;font-size:1.06rem;font-weight:600;line-height:1.45}
+.pc .org{font-size:.86rem;color:var(--muted)}
+.pc .fig{display:flex;gap:8px;flex-wrap:wrap;margin-top:4px}
+.pc .fig span{font-size:.78rem;border:1px solid var(--line-2);border-radius:999px;padding:2px 10px;color:var(--text)}
+.pc .more{margin-top:auto;padding-top:6px;font-size:.82rem;color:var(--gold-soft);font-weight:600}
+@media (max-width:760px){.pgrid{grid-template-columns:1fr}}
+
+dialog.modal{border:1px solid var(--line-2);border-radius:20px;padding:0;background:var(--ink-2);color:var(--text);width:min(680px,calc(100vw - 32px));max-height:calc(100vh - 48px);overflow:auto}
+dialog.modal::backdrop{background:rgba(5,8,16,.72);backdrop-filter:blur(5px)}
+.m-in{padding:28px}
+.m-close{all:unset;cursor:pointer;float:inline-end;width:34px;height:34px;border-radius:50%;border:1px solid var(--line-2);display:grid;place-items:center;font-size:18px}
+.m-close:hover{border-color:var(--gold);color:var(--gold)}
+.m-in h3{margin:8px 0 4px;font-size:1.35rem;font-weight:700;line-height:1.4}
+.m-in .org{color:var(--gold-soft);margin-bottom:16px}
+.m-in ul{margin:0;padding-inline-start:18px;display:grid;gap:8px;color:var(--muted)}
+.m-in li::marker{color:var(--gold)}
+
+/* timeline */
+.tl{position:relative;display:grid;gap:0}
+.tl::before{content:"";position:absolute;top:0;bottom:0;inset-inline-start:118px;width:1px;background:var(--line-2)}
+.ti{position:relative;display:grid;grid-template-columns:100px minmax(0,1fr);gap:38px;padding-bottom:30px}
+.ti::before{content:"";position:absolute;inset-inline-start:112px;top:8px;width:13px;height:13px;border-radius:50%;background:var(--ink);border:2px solid var(--gold);transition:background .2s}
+.ti:hover::before{background:var(--gold)}
+.ti .when{font-family:var(--f-num);color:var(--gold);font-size:1.1rem;font-variant-numeric:tabular-nums;line-height:1.5;text-align:end}
+.ti h3{margin:0;font-size:1.05rem;font-weight:600}
+.ti .org{color:var(--gold-soft);font-size:.9rem}
+.ti ul{margin:8px 0 0;padding-inline-start:18px;color:var(--muted);display:grid;gap:4px;font-size:.92rem}
+.ti li::marker{color:var(--gold)}
+@media (max-width:600px){
+  .tl::before{inset-inline-start:6px}
+  .ti{grid-template-columns:1fr;gap:2px;padding-inline-start:28px}
+  .ti::before{inset-inline-start:0}
+  .ti .when{text-align:start}
+}
+
+/* certs */
+.certs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.cert{perspective:900px;height:220px;cursor:pointer}
+.cert-in{position:relative;width:100%;height:100%;transition:transform .7s;transform-style:preserve-3d}
+.cert:hover .cert-in,.cert:focus-within .cert-in,.cert.flip .cert-in{transform:rotateY(180deg)}
+.face{position:absolute;inset:0;backface-visibility:hidden;border:1px solid var(--gold);border-radius:var(--r);display:grid;place-items:center;align-content:center;gap:6px;padding:20px;text-align:center;background:var(--panel)}
+.face.back{transform:rotateY(180deg);background:var(--panel-2)}
+.face b{font-family:var(--f-num);font-size:2rem;color:var(--gold);letter-spacing:.08em}
+.face span{font-size:.88rem}
+.face small{color:var(--muted);font-size:.8rem}
+.cert button{all:unset;position:absolute;inset:0;border-radius:var(--r)}
+@media (max-width:760px){.certs{grid-template-columns:1fr}.cert{height:180px}}
+
+/* skills */
+.skills{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.sk{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:18px;min-width:0}
+.sk h4{margin:0 0 10px;font-size:.88rem;color:var(--gold-soft);font-weight:600}
+.tag{display:inline-block;font-size:.8rem;border:1px solid var(--line-2);border-radius:999px;padding:3px 11px;margin:0 0 7px;margin-inline-end:5px;transition:border-color .15s,color .15s}
+.tag:hover{border-color:var(--gold);color:var(--gold-soft)}
+@media (max-width:900px){.skills{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:560px){.skills{grid-template-columns:1fr}}
+
+/* contact */
+footer.contact{border-top:1px solid var(--line);background:linear-gradient(170deg,var(--panel-2),var(--ink) 70%);padding-block:70px 34px;text-align:center}
+footer.contact h2{margin-bottom:12px}
+footer.contact .sub{color:var(--muted);max-width:560px;margin:0 auto}
+.pills{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:28px}
+.pill{all:unset;cursor:pointer;display:inline-flex;align-items:center;gap:9px;font-family:var(--f-num);font-size:1.12rem;padding:10px 20px;border:1px solid var(--line-2);border-radius:12px;transition:border-color .15s,color .15s}
+.pill:hover{border-color:var(--gold);color:var(--gold-soft)}
+.copied{min-height:1.4em;margin-top:12px;color:var(--gold-soft);font-size:.86rem}
+.copy-r{margin-top:30px;padding-top:18px;border-top:1px solid var(--line);color:var(--muted);font-size:.8rem}
+
+
+.extra{margin-top:20px;color:var(--muted);font-size:14px}.extra b{color:var(--gold-soft);font-weight:700}
+
+.pc .pimg{margin:-22px -22px 6px;aspect-ratio:16/9;max-width:none;overflow:hidden;border-bottom:1px solid var(--line)}
+.pc .pimg img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s}
+.pc:hover .pimg img{transform:scale(1.04)}
+.mimg{display:block;width:100%;border-radius:12px;margin:14px 0 6px;max-height:320px;object-fit:cover}
+.alula{display:flex;align-items:center;gap:16px;margin-top:18px;background:var(--panel);border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
+.alula img{width:180px;max-width:40%;aspect-ratio:3/2;object-fit:cover;display:block}
+.alula div{display:grid;gap:2px;padding:12px}
+.alula b{font-weight:800}.alula span{color:var(--muted);font-size:14px}
+.cv-row{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-top:16px}
+.btn.cv{border-color:var(--gold);color:var(--gold-soft)}
+.btn.cv:hover{background:var(--gold-dim)}
+.cv-msg{min-height:1.3em;font-size:13px;color:var(--gold-soft)}
+
+.name-row{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.cv-pill{all:unset;cursor:pointer;display:inline-flex;align-items:center;gap:8px;border:1px solid var(--gold);color:var(--gold-soft);border-radius:999px;padding:8px 16px;font:700 13px var(--f-ar);transition:background .15s,transform .15s}
+.cv-pill:hover{background:var(--gold-dim);transform:translateY(-2px)}
+.umb{display:grid;grid-template-columns:minmax(0,260px) minmax(0,1fr);gap:22px;align-items:center}
+.hub{aspect-ratio:1;max-width:260px;width:100%;border-radius:50%;padding:10px;background:conic-gradient(from 0deg,var(--gold),transparent 30%,var(--gold-soft) 55%,transparent 80%,var(--gold));animation:spin 14s linear infinite}
+.hub-in{width:100%;height:100%;border-radius:50%;background:var(--ink);display:grid;place-items:center;align-content:center;gap:6px;text-align:center;animation:spin 14s linear infinite reverse}
+.hub-in svg{width:42px;height:42px}
+.hub-in b{font-size:20px;font-weight:800}
+.hub-in span{color:var(--gold-soft);font-weight:700;font-size:13px}
+@keyframes spin{to{transform:rotate(360deg)}}
+.doms{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.dom{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px;transition:transform .2s,border-color .2s}
+.dom:hover{transform:translateY(-3px);border-color:rgba(63,111,214,.5)}
+.dom .i{width:38px;height:38px;border-radius:10px;background:var(--gold-dim);display:grid;place-items:center;margin-bottom:10px}
+.dom h3{margin:0 0 4px;font-size:14.5px;font-weight:800}
+.dom p{color:var(--muted);font-size:12.5px;line-height:1.6}
+@media (max-width:980px){.umb{grid-template-columns:1fr;justify-items:center}.doms{grid-template-columns:repeat(2,minmax(0,1fr));width:100%}}
+.ei{display:flex;gap:22px;align-items:center;padding:26px;border-radius:var(--r);border:1px solid rgba(63,111,214,.45);background:linear-gradient(120deg,var(--band-2),var(--panel) 60%);margin-bottom:22px;position:relative;overflow:hidden}
+.ei::after{content:"";position:absolute;width:260px;height:260px;border-radius:50%;background:var(--gold);filter:blur(90px);opacity:.18;inset-inline-end:-80px;top:-120px}
+.ei-icon{flex:none;width:78px;height:78px;border-radius:20px;background:var(--gold-dim);display:grid;place-items:center;animation:beat 2.4s ease-in-out infinite}
+@keyframes beat{50%{transform:scale(1.06)}}
+.ei-tag{display:inline-block;font-size:12px;font-weight:800;color:var(--on-gold);background:var(--gold);border-radius:999px;padding:3px 12px}
+.ei h3{margin:8px 0 6px;font-size:24px;font-weight:800}
+.ei p{color:var(--sec);font-size:14.5px;max-width:70ch}
+.sk-cols{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.sk-col{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:20px}
+.sk-col h4,.tools-h{margin:0 0 14px;font-size:13px;color:var(--gold-soft);font-weight:800}
+.sk-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.sk-item{display:flex;align-items:center;gap:10px;background:var(--panel-2);border:1px solid var(--line);border-radius:12px;padding:10px 12px;font-size:13.5px;transition:border-color .15s,transform .15s}
+.sk-item:hover{border-color:var(--gold);transform:translateY(-2px)}
+.sk-item svg{flex:none}
+.sk-hl{border-color:rgba(63,111,214,.45);background:linear-gradient(135deg,rgba(63,111,214,.10),var(--panel-2) 70%)}
+.sk-hl>div{display:flex;flex-direction:column;gap:2px}
+.sk-hl small{font-size:12px;color:var(--muted)}
+.tools-h{margin-top:26px}
+.tools{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.tool{display:flex;gap:12px;align-items:center;background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:14px}
+.tool .i{flex:none;width:42px;height:42px;border-radius:11px;background:var(--gold-dim);display:grid;place-items:center}
+.tool b{display:block;font-size:14px;font-weight:800}
+.tool span{color:var(--muted);font-size:12px}
+.langs{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-top:18px;color:var(--sec);font-size:14px}
+.langs .dot{width:5px;height:5px;background:var(--gold);transform:rotate(45deg)}
+@media (max-width:900px){.sk-cols{grid-template-columns:1fr}.tools{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:520px){.sk-grid{grid-template-columns:1fr}.tools{grid-template-columns:1fr}.ei{flex-direction:column;align-items:flex-start}}
+
+.gal{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin-top:8px}
+.gal img{width:100%;aspect-ratio:16/10;object-fit:cover;border-radius:10px;display:block}
+
+.pc .pimg{position:relative;background:linear-gradient(135deg,var(--band-1),var(--band-2) 60%,var(--band-3))}
+.pc .pimg .sl{position:absolute;inset:0;opacity:0;transition:opacity 1s ease}
+.pc .pimg .sl.on{opacity:1}
+.pc .pt,.m-in .pt{display:flex;align-items:center;gap:10px}
+.plogo{flex:none;height:48px;min-width:48px;max-width:120px;border-radius:12px;background:rgba(255,255,255,.06);border:1px solid var(--line);display:flex;align-items:center;justify-content:center;padding:6px 10px}
+.plogo img{height:34px;width:auto;max-width:100px;object-fit:contain;display:block}
+.pc .pimg.ph-none{display:grid;place-items:center;background:radial-gradient(circle at 30% 20%,rgba(63,111,214,.2),transparent 55%),repeating-linear-gradient(45deg,rgba(255,255,255,.025) 0 10px,transparent 10px 20px),linear-gradient(135deg,var(--band-1),var(--band-2) 60%,var(--band-3))}
+.pc .pimg.ph-none svg{opacity:.8;animation:pop 1.2s ease}
+.pc .pimg .sl img{width:100%;height:100%;object-fit:cover;display:block}
+.pc .pimg .sl.on:not(.logo) img{animation:kb 7s ease-in-out infinite alternate}
+@keyframes kb{from{transform:scale(1) translate(0,0)}to{transform:scale(1.13) translate(-2%,-2%)}}
+.pc .pimg .sl.logo{display:grid;place-items:center;background:radial-gradient(circle at 30% 20%,rgba(63,111,214,.22),transparent 55%),linear-gradient(135deg,var(--band-1),var(--band-2) 60%,var(--band-3))}
+.pc .pimg .sl.logo img{width:auto;height:auto;max-width:44%;max-height:42%;object-fit:contain}
+.pc .pimg .sl.logo.on img{animation:pop 1.1s ease}
+@keyframes pop{from{transform:scale(.85);opacity:.3}to{transform:none;opacity:1}}
+.pc .pimg .sl.logo::after{content:"";position:absolute;inset:0;background:linear-gradient(110deg,transparent 35%,rgba(255,255,255,.08) 50%,transparent 65%);background-size:250% 100%;animation:shine 3.5s linear infinite}
+@keyframes shine{from{background-position:120% 0}to{background-position:-120% 0}}
+.sdots{position:absolute;bottom:10px;inset-inline-start:12px;display:flex;gap:5px;z-index:2}
+.sdots i{width:6px;height:6px;border-radius:999px;background:rgba(244,245,249,.45);transition:width .3s,background .3s}
+.sdots i.on{width:18px;background:var(--gold)}
+
+a.tile{transition:border-color .15s,transform .15s}
+a.tile:hover{border-color:var(--gold);transform:translateY(-3px)}
+
+html{overflow-x:clip}
+.skbar{margin:24px 0 0;padding:16px 18px;background:var(--panel);border:1px solid var(--line);border-radius:var(--r)}
+.skbar-h{display:block;font-size:12.5px;color:var(--gold-soft);font-weight:700;margin-bottom:12px}
+.skchips{display:flex;flex-wrap:wrap;gap:8px}
+.skc{all:unset;cursor:pointer;font-size:13px;padding:6px 13px;border-radius:999px;border:1px solid var(--line-2);color:var(--text);background:var(--panel-2);transition:all .2s}
+.skc:hover{border-color:var(--gold)}
+.skc.ei{border-color:rgba(63,111,214,.5)}
+.skc[aria-pressed="true"]{background:var(--gold);color:var(--on-gold);border-color:var(--gold);font-weight:700}
+.pc .sks{display:flex;flex-wrap:wrap;gap:6px;margin-top:2px}
+.pc .sks i{font-style:normal;font-size:11.5px;color:var(--gold-soft);background:var(--gold-dim);border-radius:6px;padding:2px 8px;transition:all .2s}
+.pc .sks i.hit{background:var(--gold);color:var(--on-gold);font-weight:700}
+.pc{transition:opacity .35s,filter .35s,transform .35s,border-color .2s}
+.pc.dim{opacity:.28;filter:grayscale(.6);transform:scale(.98)}
+.m-in .msk{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+.m-in .msk i{font-style:normal;font-size:12px;color:var(--gold-soft);border:1px solid var(--line-2);border-radius:999px;padding:3px 10px}
+.m-in .msk-h{display:block;margin-top:16px;font-size:12.5px;color:var(--gold);font-weight:700}
+.tools-h{margin-top:34px!important}
+.xps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:8px}
+.xp{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:20px;display:flex;flex-direction:column;gap:8px;transition:border-color .2s,transform .2s}
+.xp:hover{border-color:var(--gold);transform:translateY(-3px)}
+.xp .xi{width:40px;height:40px;border-radius:12px;background:var(--gold-dim);display:grid;place-items:center}
+.xp h3{margin:6px 0 0;font-size:1rem;font-weight:700;line-height:1.5}
+.xp p{margin:0;color:var(--muted);font-size:.86rem;line-height:1.7}
+@media (max-width:900px){.xps{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:520px){.xps{grid-template-columns:1fr}}
+.orbit{position:relative;width:min(640px,100%);aspect-ratio:1;margin:10px auto 0}
+.orbit .rings{position:absolute;inset:0;width:100%;height:100%;overflow:visible}
+.orbit .rings circle{fill:none;stroke:rgba(63,111,214,.28);stroke-width:.25;stroke-dasharray:1 1.2;transform-origin:50% 50%;animation:spin 60s linear infinite}
+.orbit .rings circle.r2{stroke:rgba(63,111,214,.16);animation-direction:reverse;animation-duration:40s}
+.orbit .rings line{stroke:rgba(63,111,214,.18);stroke-width:.25;transition:stroke .3s}
+.orbit .rings line.on{stroke:var(--gold);stroke-width:.4}
+.core{position:absolute;left:50%;top:50%;width:40%;aspect-ratio:1;transform:translate(-50%,-50%);border-radius:50%;background:radial-gradient(circle at 50% 30%,var(--panel-2),var(--ink) 75%);border:1px solid rgba(63,111,214,.45);box-shadow:0 0 60px rgba(63,111,214,.12);display:grid;place-items:center;align-content:center;gap:6px;text-align:center;padding:8%}
+.core-i svg{width:34px;height:34px}
+.core b{font-size:clamp(15px,2.4vw,20px);font-weight:800}
+.core p{margin:0;color:var(--sec);font-size:clamp(11px,1.5vw,13px);line-height:1.6;min-height:3.2em}
+.node{all:unset;cursor:pointer;position:absolute;transform:translate(-50%,-50%);display:grid;justify-items:center;gap:6px;width:22%;text-align:center}
+.node .ni{width:clamp(40px,8vw,56px);height:clamp(40px,8vw,56px);border-radius:50%;display:grid;place-items:center;background:var(--panel);border:1px solid var(--line-2);transition:transform .25s,background .25s,border-color .25s,box-shadow .25s}
+.node .nl{font-size:clamp(10.5px,1.5vw,13px);font-weight:700;color:var(--sec);line-height:1.4;transition:color .25s}
+.node.on .ni,.node:hover .ni,.node:focus-visible .ni{transform:scale(1.12);background:var(--gold-dim);border-color:var(--gold);box-shadow:0 0 24px rgba(63,111,214,.35)}
+.node.on .nl,.node:hover .nl{color:var(--gold-soft)}
+@media (max-width:560px){.node .nl{display:none}.core{width:48%}}
+
+/* matched to Haya's site */
+body{line-height:1.7;-webkit-font-smoothing:antialiased}
+body.en-mode{font-family:var(--f-num);line-height:1.65}
+.mono{font-family:var(--f-ar);font-weight:800;font-size:15px;color:var(--text);letter-spacing:0}
+.en-mode .mono{letter-spacing:.04em}
+nav.links a{font-size:13.5px;font-weight:700;color:var(--sec)}
+.lang{border:1px solid var(--line-2);color:var(--text);font:700 12.5px var(--f-num);padding:7px 16px}
+.en-mode .lang{font-family:var(--f-ar)}
+.lang:hover{background:none;border-color:var(--gold-soft);color:var(--gold-soft)}
+.blob{position:absolute;border-radius:50%;filter:blur(100px);opacity:.3;z-index:0;pointer-events:none}
+.blob-1{width:480px;height:480px;background:var(--gold);top:-220px;inset-inline-start:-160px}
+.blob-2{width:420px;height:420px;background:var(--gold-soft);bottom:-280px;inset-inline-end:-140px;opacity:.2}
+.hero .wrap{padding-block:100px 84px;z-index:1}
+.eyebrow{font-size:14px;font-weight:700;color:var(--gold-soft);letter-spacing:0}
+h1,.en-mode h1{font-family:var(--f-ar);font-weight:800;font-size:clamp(36px,5.4vw,58px);line-height:1.25;color:var(--text)}
+.en-mode h1{font-family:var(--f-num);line-height:1.04;letter-spacing:-.02em}
+.creds{font-family:var(--f-num);font-weight:700;font-size:15px;letter-spacing:.06em;color:var(--gold-soft)}
+.typed-row{color:var(--sec);font-weight:500}
+.caret{background:var(--gold-soft)}
+.lede{color:var(--muted);font-size:15px}
+.verse{font-family:var(--f-ar);font-weight:700;color:var(--text)}
+.btn{border-radius:12px;font-weight:700;font-size:14px;border-color:var(--line-2)}
+.btn.solid{background:none;color:var(--text)}
+.btn.solid:hover{border-color:var(--gold)}
+.btn.ghost{border:none;color:var(--gold-soft)}
+.btn.ghost:hover{background:none;color:var(--gold)}
+.stats{background:linear-gradient(120deg,var(--band-1) 0%,var(--band-2) 55%,var(--band-3) 100%);box-shadow:inset 0 1px 0 rgba(63,111,214,0.25),inset 0 -1px 0 rgba(63,111,214,0.25);border-bottom:none}
+.stats .wrap{padding-block:44px}
+.stat b{display:inline-block;font-family:var(--f-num);font-weight:800;font-size:clamp(28px,3.6vw,40px);color:var(--text)}
+.stat span{font-size:12.5px;font-weight:700;color:rgba(244,245,249,0.62)}
+.en-mode .stat span{text-transform:uppercase;letter-spacing:.05em;font-size:12px}
+.partners-lbl{font-size:12.5px;font-weight:700}
+.tile{border-radius:14px;height:112px;min-width:210px;font-family:var(--f-ar);font-weight:800;font-size:17px;background:var(--panel)}
+.tile.img{background:var(--panel)}
+.tile img{max-height:64px;max-width:200px}
+section{padding-block:76px}
+.head{margin-bottom:0}
+.head::after{display:none}
+.head .k{display:inline-flex;align-items:center;gap:10px;font-size:12.5px;font-weight:700;color:var(--gold-soft);letter-spacing:0}
+.en-mode .head .k{text-transform:uppercase;letter-spacing:.1em;font-size:12px}
+.head .k::before{content:"";width:20px;height:2px;background:var(--gold-soft);display:inline-block}
+h2,.en-mode h2{font-family:var(--f-ar);font-weight:800;font-size:clamp(24px,3.2vw,32px);line-height:1.35;margin:10px 0 36px}
+.en-mode h2{font-family:var(--f-num)}
+.about p{color:var(--sec)}
+.pillar{border-radius:14px;background:var(--panel-2)}
+.pillar b{font-weight:700}
+.cc h3,.pc h3,.ti h3{font-weight:800}
+.cc .i{border-radius:9px}
+.pc .cat,.ti .org,.pc .yr{color:var(--gold-soft)}
+.pc .yr,.ti .when{font-family:var(--f-num);font-weight:700;font-size:13px}
+.ti .when{color:var(--gold-soft)}
+.pc .fig span{background:var(--panel-2);border-color:var(--line)}
+.filter{font-weight:700;font-size:13px}
+.face b{font-family:var(--f-num);font-weight:800;font-size:28px}
+.face{border-color:var(--line-2)}
+.sk h4{font-weight:800;font-size:13px}
+.en-mode .sk h4{text-transform:uppercase;letter-spacing:.06em;font-size:12.5px}
+.tag{background:var(--panel-2);border-color:var(--line);color:var(--sec);font-size:12.5px;padding:6px 12px}
+footer.contact{background:linear-gradient(160deg,var(--band-1) 0%,var(--ink-2) 65%)}
+.head[style]{justify-content:center}
+.pill{font-family:var(--f-num);font-weight:700;font-size:14px;padding:12px 20px}
+dialog.modal{border-radius:22px;background:var(--ink-2)}
+#glow{background:radial-gradient(circle,rgba(63,111,214,0.10),transparent 65%)}
+
+
+
+/* Mobile sizing */
+@media (max-width:600px){
+  section{padding-block:44px}
+  h1,.en-mode h1{font-size:30px}
+  h2,.en-mode h2{font-size:21px;margin:6px 0 22px}
+  .hero p,.lede{font-size:14px}
+  .stats .wrap{padding-block:26px;gap:14px}
+  .stat b{font-size:26px}
+  .stat span{font-size:11px;margin-top:4px}
+  .tile{height:70px;min-width:140px;padding:0 14px;border-radius:10px}
+  .tile img{max-height:44px}
+  .filter{font-size:12px;padding:5px 12px}
+  .filters{gap:6px}
+  .pgrid{gap:14px}
+  .pc{padding:16px;gap:6px}
+  .pc .pimg{margin:-16px -16px 4px;aspect-ratio:16/10}
+  .pc h3{font-size:.95rem}
+  .pc .org{font-size:.8rem}
+  .pc .fig span{font-size:.72rem;padding:1px 8px}
+  .pc .sks i{font-size:10.5px;padding:1px 6px}
+  .pc .more{font-size:.78rem}
+  .plogo{height:38px;min-width:38px;padding:4px 8px;border-radius:10px}
+  .plogo img{height:26px;max-width:80px}
+  .xps{gap:10px}
+  .xp{padding:14px;gap:4px;flex-direction:row;align-items:flex-start;flex-wrap:wrap}
+  .xp .xi{width:34px;height:34px;border-radius:10px}
+  .xp h3{font-size:.92rem;margin:4px 0 0;flex:1}
+  .xp p{font-size:.8rem;flex-basis:100%}
+  .tools{gap:10px}
+  .tool{padding:10px;gap:10px}
+  .tool b{font-size:14px}.tool span{font-size:12px}
+  .ti h3{font-size:1rem}.ti li{font-size:.86rem}
+  .cert{height:150px}
+  .m-in{padding:18px}.m-in h3{font-size:1rem}.m-in li{font-size:.86rem}
+  .mimg{max-height:200px;object-fit:cover;width:100%}
+}
+.pc .nb{margin:4px 0 0;font-size:.86rem;line-height:1.75;color:var(--sec,var(--muted))}
+.m-in .mnb{margin:12px 0 4px;line-height:1.8;color:var(--text);font-size:.95rem}
+@media (max-width:600px){.pc .nb{font-size:.8rem}}
+.face b{direction:ltr;unicode-bidi:isolate}
+.face .badge{width:78px;height:78px;margin-bottom:4px;object-fit:contain;background:#fff;border-radius:14px;padding:6px;box-shadow:0 4px 14px rgba(0,0,0,.25)}
+.cert{height:250px}
+@media (max-width:760px){.cert{height:200px}}
+@media (max-width:600px){.cert{height:190px}.face .badge{width:46px;height:46px;border-radius:11px}.face b{font-size:22px}}
+.achs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.ach{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column;transition:border-color .2s,transform .2s}
+.ach:hover{border-color:var(--gold);transform:translateY(-3px)}
+.ach.wide{grid-column:span 2}
+.ach .am{position:relative;aspect-ratio:4/3;overflow:hidden;background:linear-gradient(135deg,var(--band-1),var(--band-2) 60%,var(--band-3))}
+.ach.wide .am{aspect-ratio:16/9}
+.ach .am .sl{position:absolute;inset:0;opacity:0;transition:opacity 1s ease}
+.ach .am .sl.on{opacity:1}
+.ach .am .sl img{width:100%;height:100%;object-fit:cover;display:block}
+.ach .am .sl.on img{animation:kb 7s ease-in-out infinite alternate}
+.ach .am .sl.badge{display:grid;place-items:center;background:radial-gradient(circle at 50% 45%,rgba(124,77,255,.28),transparent 60%),linear-gradient(135deg,var(--band-1),var(--band-2) 60%,var(--band-3))}
+.ach .am .sl.badge img{position:absolute;inset:0;margin:auto;width:auto;height:74%;object-fit:contain;animation:none;filter:drop-shadow(0 10px 24px rgba(0,0,0,.45))}
+.ach .am .sdots{position:absolute;bottom:10px;inset-inline-start:12px;display:flex;gap:5px}
+.ach .am .sdots i{width:6px;height:6px;border-radius:9px;background:rgba(255,255,255,.45);transition:all .3s}
+.ach .am .sdots i.on{width:18px;background:var(--gold)}
+.ach .ab{padding:16px 18px 18px;display:flex;flex-direction:column;gap:8px}
+.ach .ay{font-size:.76rem;color:var(--gold);font-weight:700}
+.ach h3{margin:0;font-size:1.02rem;font-weight:700;line-height:1.5}
+.ach p{margin:0;color:var(--muted);font-size:.86rem;line-height:1.75}
+.ach .an{display:flex;flex-wrap:wrap;gap:6px;margin-top:2px}
+.ach .an span{font-size:.76rem;border:1px solid var(--line-2);border-radius:999px;padding:2px 10px}
+.ach .an b{color:var(--gold-soft);font-family:var(--f-num);direction:ltr;unicode-bidi:isolate}
+.certs{grid-template-columns:repeat(3,minmax(0,1fr))!important}
+.cert{height:280px!important}
+.face .badge{background:transparent!important;box-shadow:none!important;padding:0!important;border-radius:50%!important;width:92px!important;height:92px!important;filter:drop-shadow(0 6px 14px rgba(0,0,0,.35))}
+.face span{line-height:1.5}
+@media (max-width:980px){.achs{grid-template-columns:repeat(2,minmax(0,1fr))}.certs{grid-template-columns:repeat(3,minmax(0,1fr))!important}}
+@media (max-width:600px){.achs{grid-template-columns:1fr;gap:14px}.ach.wide{grid-column:auto}.ach.wide .am{aspect-ratio:4/3}.ach .ab{padding:14px}.ach h3{font-size:.95rem}.ach p{font-size:.8rem}
+  .face .badge{width:64px!important;height:64px!important}.xps{grid-template-columns:1fr}}
+@media (max-width:600px){.xps{grid-template-columns:repeat(2,minmax(0,1fr))!important}.xp{flex-direction:column!important;align-items:flex-start}.xp h3{font-size:.85rem!important}.xp p{display:none}
+  .cert{height:235px!important}.face{padding:12px!important}.face span{font-size:.78rem}.face small{font-size:.72rem}}
+@media (min-width:761px){.pc{padding:18px}.pc .pimg{margin:-18px -18px 4px;aspect-ratio:16/10}.pc h3{font-size:.95rem}.pc .org{font-size:.8rem}.pc .nb{font-size:.8rem;line-height:1.7}.plogo{height:40px;min-width:40px;padding:4px 8px}.plogo img{height:28px;max-width:84px}.pc .fig span{font-size:.72rem}}
+@media (min-width:761px) and (max-width:1020px){.pgrid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:600px){.certs{grid-template-columns:1fr!important}.cert{height:210px!important}}
+/* achievements bento */
+.achs{grid-template-columns:repeat(4,minmax(0,1fr))!important;grid-auto-rows:250px;gap:16px!important}
+.ach{position:relative;display:block!important;min-height:0}
+.ach.wide{grid-column:span 2!important;grid-row:span 2}
+.ach .am,.ach.wide .am{position:absolute!important;inset:0;aspect-ratio:auto!important}
+.ach .am::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(6,7,14,0) 35%,rgba(6,7,14,.55) 62%,rgba(6,7,14,.92) 100%);pointer-events:none}
+.ach .am .sdots{top:12px;bottom:auto!important;z-index:2}
+.ach .ab{position:absolute;inset:auto 0 0 0;z-index:2;padding:16px 18px!important;gap:6px!important}
+.ach h3{font-size:.98rem!important;color:#fff;text-shadow:0 1px 6px rgba(0,0,0,.4)}
+.ach .ay{color:var(--gold-soft)!important}
+.ach p{display:none;color:rgba(244,245,249,.82)!important}
+.ach.wide p{display:block;font-size:.9rem!important;max-width:560px}
+.ach.wide h3{font-size:1.35rem!important}
+.ach .an span{background:rgba(6,7,14,.45);border-color:rgba(255,255,255,.22)!important;color:#fff;backdrop-filter:blur(4px)}
+.ach.wide .ab{padding:24px!important}
+@media (max-width:980px){.achs{grid-template-columns:repeat(2,minmax(0,1fr))!important;grid-auto-rows:230px}.ach.wide{grid-column:span 2!important;grid-row:span 2}}
+@media (max-width:600px){.achs{grid-template-columns:1fr!important;grid-auto-rows:240px}.ach.wide{grid-column:auto!important;grid-row:span 1;}.ach.wide h3{font-size:1.05rem!important}.ach.wide p{font-size:.8rem!important}.ach.wide .ab{padding:16px!important}}
+@media (max-width:600px){.achs{grid-auto-rows:260px!important}.ach.wide p{display:none!important}.ach .am::after{background:linear-gradient(180deg,rgba(6,7,14,0) 30%,rgba(6,7,14,.7) 60%,rgba(6,7,14,.95) 100%)}}
+/* achievements equal */
+.achs{display:flex!important;flex-wrap:wrap;justify-content:center;gap:16px!important}
+.ach,.ach.wide{flex:0 0 calc((100% - 32px)/3);height:290px;grid-column:auto!important;grid-row:auto!important}
+.ach.wide p,.ach p{display:none!important}
+.ach.wide h3,.ach h3{font-size:1.02rem!important}
+.ach.wide .ab{padding:16px 18px!important}
+@media (max-width:980px){.ach,.ach.wide{flex-basis:calc((100% - 16px)/2)}}
+@media (max-width:600px){.ach,.ach.wide{flex-basis:100%;height:250px}}
+/* achievements slider */
+.achwrap{position:relative}
+.achs{display:flex!important;flex-wrap:nowrap!important;justify-content:flex-start!important;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;scrollbar-width:none;padding-bottom:4px}
+.achs::-webkit-scrollbar{display:none}
+.ach,.ach.wide{flex:0 0 calc((100% - 32px)/3)!important;scroll-snap-align:start}
+.achnav{all:unset;cursor:pointer;position:absolute;top:50%;transform:translateY(-50%);z-index:5;width:42px;height:42px;border-radius:50%;display:grid;place-items:center;font-size:26px;line-height:1;color:var(--on-gold);background:var(--gold);box-shadow:0 6px 18px rgba(0,0,0,.35);transition:transform .15s,opacity .2s}
+.achnav:hover{transform:translateY(-50%) scale(1.08)}
+.achnav.prev{inset-inline-start:-14px}.achnav.next{inset-inline-end:-14px}
+.en-mode .achnav.prev{transform:translateY(-50%) scaleX(-1)}.en-mode .achnav.next{transform:translateY(-50%) scaleX(-1)}
+.achnav[disabled]{opacity:0;pointer-events:none}
+@media (max-width:980px){.ach,.ach.wide{flex-basis:calc((100% - 16px)/2)!important}}
+@media (max-width:600px){.ach,.ach.wide{flex-basis:84%!important}.achnav{display:none}}
+/* AI band */
+.aiband{margin-top:34px;padding:22px;border-radius:var(--r);border:1px solid rgba(63,111,214,.35);background:radial-gradient(circle at 10% 0%,rgba(63,111,214,.14),transparent 50%),var(--panel)}
+.aih{display:flex;align-items:center;gap:10px;margin-bottom:16px}
+.aih b{font-size:1.02rem;font-weight:800}
+.spark{color:var(--gold);font-size:20px;animation:spk 2.6s ease-in-out infinite}
+@keyframes spk{0%,100%{transform:scale(1) rotate(0);opacity:.8}50%{transform:scale(1.25) rotate(20deg);opacity:1}}
+.aisteps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;position:relative}
+.ais{position:relative;padding:14px;border-radius:12px;background:var(--panel-2);border:1px solid var(--line);display:flex;flex-direction:column;gap:4px;transition:all .5s}
+.ais i{font-style:normal;font-family:var(--f-num);font-size:12px;color:var(--gold);font-weight:800;letter-spacing:.1em}
+.ais b{font-size:.95rem}
+.ais span{font-size:.8rem;color:var(--muted);line-height:1.6}
+.ais.on{border-color:var(--gold);background:linear-gradient(135deg,rgba(63,111,214,.16),var(--panel-2));transform:translateY(-3px)}
+.ais::after{content:"";position:absolute;bottom:0;inset-inline-start:0;height:2px;width:0;background:var(--gold);border-radius:2px}
+.ais.on::after{animation:fillb 2.4s linear forwards}
+@keyframes fillb{to{width:100%}}
+@media (max-width:760px){.aisteps{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+.ph-live{background:radial-gradient(circle at 50% 55%,rgba(63,111,214,.28),transparent 55%),linear-gradient(135deg,#12142a,#1e2448 60%,#0e0f1c)!important}
+.ph-live svg{animation:bolt 1.8s ease-in-out infinite!important}
+@keyframes bolt{0%,100%{transform:scale(1);filter:drop-shadow(0 0 0 rgba(126,162,232,0))}50%{transform:scale(1.12);filter:drop-shadow(0 0 14px rgba(126,162,232,.7))}}
+.livebadge{z-index:3;position:absolute;top:12px;inset-inline-start:12px;display:flex;align-items:center;gap:6px;font-size:12px;font-weight:800;color:var(--on-gold);background:var(--gold);border-radius:999px;padding:3px 10px}
+.livebadge i{width:7px;height:7px;border-radius:50%;background:#c0392b;animation:blink 1.2s infinite}
+@keyframes blink{50%{opacity:.25}}
+/* mobile polish */
+.mnav{display:none}
+@media (max-width:820px){
+  .mnav{display:flex;position:fixed;z-index:60;bottom:calc(10px + env(safe-area-inset-bottom));left:50%;transform:translateX(-50%);gap:2px;padding:6px;border-radius:999px;background:rgba(14,15,28,.88);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(63,111,214,.35);box-shadow:0 10px 30px rgba(0,0,0,.45)}
+  .mnav a{display:flex;flex-direction:column;align-items:center;gap:2px;padding:6px 10px;border-radius:999px;color:var(--muted);text-decoration:none;font-size:10.5px;font-weight:700;transition:all .2s;min-width:54px}
+  .mnav svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+  .mnav a.on{color:var(--on-gold);background:var(--gold)}
+  body{padding-bottom:84px}
+}
+@media (max-width:600px){
+  .hero .wrap{padding-block:34px 40px!important;gap:14px}
+  .hero h1{font-size:34px!important}
+  .partners{padding-block:22px!important}
+  .tile{height:62px!important;min-width:120px!important}
+  .tile img{max-height:38px!important}
+  .marquee{animation-duration:28s!important}
+  .stats .wrap{padding-block:22px!important}
+  section{padding-block:40px!important}
+}
+/* stats blended */
+.hero{border-bottom:0!important}
+.stats{background:transparent!important;box-shadow:none!important;border:0!important}
+.stats .wrap{padding-block:10px 34px!important}
+.stat{position:relative;padding-inline-start:18px}
+.stat::before{content:"";position:absolute;inset-inline-start:0;top:6px;bottom:6px;width:2px;border-radius:2px;background:linear-gradient(180deg,var(--gold),transparent)}
+.partners{border-top:0!important}
+.hero .stats{position:relative;z-index:1}
+.hero .wrap{padding-bottom:30px!important}
+.hero::after{content:"";position:absolute;left:0;right:0;bottom:0;height:220px;background:linear-gradient(180deg,rgba(0,0,0,0),var(--ink));z-index:0;pointer-events:none}
+.hero .wrap,.hero .stats{z-index:1}
+.btn.cv{-webkit-appearance:none;appearance:none;background:transparent!important;color:var(--gold-soft)!important;border:1px solid var(--gold)!important;font-family:inherit;font-weight:700;cursor:pointer;display:inline-flex;align-items:center;gap:8px;padding:11px 20px;border-radius:999px;transition:background .2s,color .2s}
+.btn.cv:hover{background:var(--gold)!important;color:var(--on-gold)!important}
+.cv-pill{-webkit-appearance:none;appearance:none;background:transparent;font-family:inherit}
+.tools{grid-template-columns:repeat(5,minmax(0,1fr))!important}
+@media (max-width:900px){.tools{grid-template-columns:repeat(2,minmax(0,1fr))!important}}
+.art-dg{display:grid!important;place-items:center;background:radial-gradient(circle at 70% 40%,rgba(63,111,214,.18),transparent 55%),linear-gradient(135deg,#0e0f1c,#1b1e3a 60%,#0e0f1c)!important}
+.art-dg svg{width:88%;height:auto;max-height:92%}
+.dg-scan{animation:dgscan 2.6s ease-in-out infinite}
+@keyframes dgscan{0%{transform:translateY(0);opacity:0}10%{opacity:1}90%{opacity:1}100%{transform:translateY(116px);opacity:0}}
+.dg-flow circle{animation:dgflow 1.4s ease-in-out infinite}
+.dg-flow circle:nth-child(2){animation-delay:.2s}.dg-flow circle:nth-child(3){animation-delay:.4s}
+@keyframes dgflow{0%,100%{opacity:.2;transform:translateX(0)}50%{opacity:1;transform:translateX(4px)}}
+.dg-b{transform-box:fill-box;transform-origin:bottom;animation:dgbar 2.6s ease-in-out infinite}
+.dg-b.b2{animation-delay:.2s}.dg-b.b3{animation-delay:.4s}.dg-b.b4{animation-delay:.6s}
+@keyframes dgbar{0%,100%{transform:scaleY(.35)}50%{transform:scaleY(1)}}
+.dg-l{transform-box:fill-box;transform-origin:right;animation:dgline 2.6s ease-in-out infinite}
+.dg-l.l2{animation-delay:.3s}.dg-l.l3{animation-delay:.6s}
+@keyframes dgline{0%{transform:scaleX(0)}40%,100%{transform:scaleX(1)}}
+.vplay{position:absolute;z-index:3;left:50%;top:50%;transform:translate(-50%,-50%);width:54px;height:54px;border-radius:50%;display:grid;place-items:center;background:rgba(63,111,214,.9);color:#fff;font-size:20px;padding-inline-start:3px;box-shadow:0 0 0 8px rgba(63,111,214,.25);animation:vpulse 2s infinite}
+@keyframes vpulse{50%{box-shadow:0 0 0 14px rgba(63,111,214,.05)}}
+.vbtn{display:inline-flex;align-items:center;gap:10px;margin:6px 0 4px;padding:10px 18px;border-radius:999px;background:var(--gold);color:#fff;text-decoration:none;font-weight:700}
+.vbtn span{font-size:13px}
+.pc .pvid video{width:100%;height:100%;object-fit:cover;display:block}
+.mute{position:absolute;z-index:4;bottom:10px;inset-inline-start:10px;width:36px;height:36px;border-radius:50%;display:grid;place-items:center;background:rgba(6,7,14,.7);border:1px solid rgba(255,255,255,.25);font-size:16px;cursor:pointer;user-select:none}
+.mvid{position:relative;margin:0 0 12px;border-radius:14px;overflow:hidden;background:#000}
+.mvid video{width:100%;display:block;max-height:60vh}
+.mute.big{all:unset;cursor:pointer;position:absolute;top:10px;inset-inline-start:10px;padding:7px 14px;border-radius:999px;background:rgba(63,111,214,.92);color:#fff;font-weight:700;font-size:13px}
+.pc.feat{grid-column:span 2;border-color:rgba(63,111,214,.55);box-shadow:0 0 0 1px rgba(63,111,214,.25),0 18px 40px rgba(20,40,110,.25)}
+.pc.feat .pimg{aspect-ratio:16/8}
+.pc.feat h3{font-size:1.2rem}
+.pc.feat .nb{font-size:.92rem;color:var(--text)}
+.featb{align-self:flex-start;font-size:12px;font-weight:800;color:#fff;background:var(--gold);border-radius:999px;padding:3px 12px}
+@media (max-width:760px){.pc.feat{grid-column:auto}.pc.feat .pimg{aspect-ratio:16/10}}
+</style>
+
+<div id="progress"></div>
+<div id="glow" aria-hidden="true"></div>
+
+<header class="nav">
+  <div class="nav-in">
+    <a href="#top" class="mono" data-en="SAMER ALRAQAS">سامر الرقاص</a>
+    <nav class="links" id="links">
+      <a href="#about" data-en="About">النبذة</a>
+      <a href="#projects" data-en="Projects">المشاريع</a>
+      <a href="#achievements" data-en="Achievements">المنجزات</a>
+      <a href="#journey" data-en="Journey">المسيرة</a>
+      <a href="#certs" data-en="Certifications">الشهادات</a>
+      <a href="#contact" data-en="Contact">التواصل</a>
+    </nav>
+    <button class="lang" id="langBtn" type="button">English</button>
+  </div>
+</header>
+
+<main id="top">
+  <div class="hero">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="wrap">
+      <div class="eyebrow" data-en="Project Management · Operations · Supply Chain · National Events">إدارة المشاريع · العمليات · سلاسل الإمداد · الفعاليات الوطنية</div>
+      <div class="name-row"><h1 data-en="Samer AlRaqas">سامر الرقاص</h1><button class="cv-pill" type="button" data-cv="auto" aria-label="Download CV"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#7ea2e8" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6M8 13h8M8 17h5"/></svg><span data-en="Download CV">تحميل السيرة</span></button></div>
+      <div class="creds">PMP® · CISCP · CISCM</div>
+      
+      <p class="lede" data-en="I turn ideas into projects that get delivered. I have worked with ministries, industry and national events, and I bring the same discipline to every role: a clear plan, a team that believes in it, and results you can measure.">أحوّل الأفكار إلى مشاريع تُنجز على أرض الواقع. عملت مع الوزارات والقطاع الصناعي والفعاليات الوطنية، وأحمل في كل دور المنهجية نفسها: خطة واضحة، وفريق يؤمن بها، ونتائج يمكن قياسها.</p>
+      <p class="verse" id="verse">﴿وَأَن لَّيْسَ لِلْإِنسَانِ إِلَّا مَا سَعَىٰ * وَأَنَّ سَعْيَهُ سَوْفَ يُرَىٰ﴾</p>
+      <div class="cta">
+        <a class="btn solid" href="#projects" data-en="View projects">استعراض المشاريع</a>
+        <a class="btn ghost" href="#contact" data-en="Get in touch">للتواصل</a>
+      </div>
+    </div>
+    <div class="stats">
+    <div class="wrap">
+      <div class="stat"><b data-count="10">10</b><span data-en="National and international projects and events">مشاريع وفعاليات وطنية ودولية</span></div>
+      <div class="stat"><b data-count="4">4</b><span data-en="Strategic initiatives in my current portfolio">مبادرات استراتيجية في محفظتي الحالية</span></div>
+      <div class="stat"><b data-count="9600" data-suffix="+">9,600+</b><span data-en="Registrants in the SIDF Industrial Hackathon">مسجّل في هاكاثون الصناعة</span></div>
+      <div class="stat"><b data-count="3">3</b><span data-en="Professional certifications">شهادات احترافية</span></div>
+    </div>
+  </div>
+  </div>
+
+  <div class="partners">
+    <div class="partners-lbl" data-en="Organisations I have worked with">جهات عملت معها</div>
+    <div class="marquee" id="marquee"></div>
+  </div>
+
+  <section id="about">
+    <div class="wrap">
+      <div class="head reveal"><span class="k" data-en="ABOUT">النبذة المهنية</span></div>
+      <h2 class="reveal" data-en="From idea to impact">من الفكرة إلى الأثر</h2>
+      <div class="about">
+        <div class="reveal">
+          <p data-en="I am Samer AlRaqas, a project and operations manager based in Riyadh. I turn plans into delivered results, and across <strong>10 national and international projects and events</strong> I have worked on government programs, Vision 2030 initiatives and national hackathons.">أنا سامر الرقاص، مدير مشاريع وعمليات من الرياض. أحوّل الخطط إلى نتائج على أرض الواقع، وشاركت في <strong>10 مشاريع وفعاليات وطنية ودولية</strong> ضمن البرامج الحكومية ومبادرات رؤية 2030 والهاكاثونات الوطنية.</p>
+          <p data-en="I bring the same method to every role: control scope, schedule, budget and risk, build a team that believes in the plan, and give decision makers reports they can act on.">أعمل بمنهجية واحدة في كل دور: أضبط النطاق والجدول والميزانية والمخاطر، وأبني فريقًا يؤمن بالخطة، وأقدّم تقارير تساعد صنّاع القرار.</p>
+          <p data-en="My background combines project management (PMP), supply chain (CISCP and CISCM) and financial management, so I see every project as a whole: budget, resources and people.">تجمع خبرتي بين إدارة المشاريع (PMP) وسلاسل الإمداد (CISCP وCISCM) وخلفية في الإدارة المالية، فأرى المشروع كاملًا: الميزانية، والموارد، والناس.</p>
+          <p data-en="And I use AI tools in planning, reporting and workflow automation to deliver faster and more accurately.">وأوظّف أدوات الذكاء الاصطناعي في التخطيط والتقارير وأتمتة سير العمل، لأسلّم أسرع وبدقة أعلى.</p>
+        </div>
+        <div class="pillars reveal">
+          <div class="pillar"><b data-en="Government programs">البرامج الحكومية</b><span data-en="Vision 2030 offices, ministries and national strategies">مكاتب تحقيق الرؤية والوزارات والاستراتيجيات الوطنية</span></div>
+          <div class="pillar"><b data-en="National events and hackathons">الفعاليات الوطنية والهاكاثونات</b><span data-en="From the SIDF Hackathon (9,600+ registrants), Energy and Engineering hackathons, Fakhoor to Biban and the World Cup">من هاكاثون الصناعة (أكثر من 9,600 مسجّل) والطاقة والهندسي وفخور إلى بيبان وكأس العالم</span></div>
+          <div class="pillar"><b data-en="Supply chain and logistics">سلاسل الإمداد والخدمات اللوجستية</b><span data-en="Procurement, vendors, logistics and operations">المشتريات والموردون والعمليات اللوجستية</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="expertise" style="padding-top:0">
+    <div class="wrap">
+      <div class="head reveal"><span class="k" data-en="AREAS OF EXPERTISE">مجالات الخبرة</span></div>
+      <h2 class="reveal" data-en="From planning to the field">خبرة تمتد من التخطيط إلى الميدان</h2>
+      <div class="xps"><div class="xp reveal"><span class="xi"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#7ea2e8" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M3 9h18M8 2v4M16 2v4M8 14h3"/></svg></span><h3 data-en="National Events & Hackathons">الفعاليات الوطنية والهاكاثونات</h3><p data-en="From the SIDF Hackathon to Biban and the World Cup">من هاكاثون الصناعة إلى بيبان وكأس العالم</p></div><div class="xp reveal"><span class="xi"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#7ea2e8" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 4v5c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7z"/><path d="M9 12l2 2 4-4"/></svg></span><h3 data-en="Governance & Risk">الحوكمة والمخاطر</h3><p data-en="PMO governance, KPIs, risk registers and change control">حوكمة مكتب المشاريع ومؤشرات الأداء والمخاطر وضبط التغيير</p></div><div class="xp reveal"><span class="xi"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#7ea2e8" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M5 19l2-2M17 7l2-2"/></svg></span><h3 data-en="Operations Management">إدارة العمليات</h3><p data-en="Daily operations, resources, quality and service compliance">العمليات اليومية والموارد والجودة والامتثال</p></div><div class="xp reveal"><span class="xi"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#7ea2e8" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6M8 13h8M8 17h5"/></svg></span><h3 data-en="Bids & Proposals">العروض والمقترحات</h3><p data-en="RFI, RFP and RFQ responses and technical proposals">العروض الفنية وطلبات RFI · RFP · RFQ</p></div><div class="xp reveal"><span class="xi"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#7ea2e8" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><circle cx="17" cy="9" r="2.5"/><path d="M15.5 14.2c3 .2 5.5 2.6 5.5 5.8"/></svg></span><h3 data-en="Stakeholder & Partner Management">إدارة أصحاب المصلحة والشركاء</h3><p data-en="Aligning ministries, sponsors and partners">مواءمة الوزارات والرعاة والشركاء</p></div><div class="xp reveal"><span class="xi"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#7ea2e8" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></svg></span><h3 data-en="Digital Transformation">التحول الرقمي</h3><p data-en="Digitization programs and digital platforms">برامج الرقمنة والمنصات الرقمية</p></div><div class="xp reveal"><span class="xi"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#7ea2e8" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></span><h3 data-en="Strategy & Reporting">الاستراتيجية والتقارير</h3><p data-en="Feasibility studies, executive reports and decision support">دراسات الجدوى والتقارير التنفيذية ودعم القرار</p></div><div class="xp reveal"><span class="xi"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#7ea2e8" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l1.8 4.7L18.5 9.5l-4.7 1.8L12 16l-1.8-4.7L5.5 9.5l4.7-1.8z"/><path d="M19 15l.8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8z"/></svg></span><h3 data-en="AI & Automation">الذكاء الاصطناعي والأتمتة</h3><p data-en="Bringing AI tools into project workflows and building automated solutions">دمج أدوات الذكاء الاصطناعي في سير العمل وبناء حلول مؤتمتة</p></div><div class="xp reveal"><span class="xi"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#7ea2e8" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7h11v9H3zM14 10h4l3 3v3h-7"/><circle cx="7" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></svg></span><h3 data-en="Supply Chain & Logistics">سلاسل الإمداد والخدمات اللوجستية</h3><p data-en="Procurement, vendors, logistics and inventory (CISCP, CISCM)">المشتريات والموردون واللوجستيات والمخزون</p></div></div>
+    </div>
+  </section>
+
+  <section id="projects" style="padding-top:0">
+    <div class="wrap">
+      <div class="head reveal"><span class="k" data-en="SELECTED PROJECTS">مشاريع مختارة</span></div>
+      <h2 class="reveal" data-en="Key projects and engagements">أبرز المشاريع والمشاركات</h2>
+      <div class="filters" id="filters" role="group"></div>
+      <div class="pgrid" id="pgrid"></div>
+      <h4 class="tools-h reveal" data-en="Tools">الأدوات</h4>
+      <div class="tools"><div class="tool reveal"><div class="i"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#7ea2e8" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l1.8 4.7L18.5 9.5l-4.7 1.8L12 16l-1.8-4.7L5.5 9.5l4.7-1.8z"/><path d="M19 15l.8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8z"/></svg></div><div><b data-en="AI tools">أدوات الذكاء الاصطناعي</b><span data-en="Planning, reporting and automation">التخطيط والتقارير والأتمتة</span></div></div><div class="tool reveal"><div class="i"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#7ea2e8" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 5h8M6 10h10M10 15h8M3 20h18"/></svg></div><div><b>MS Project</b><span data-en="Scheduling and Gantt">الجدولة ومخططات جانت</span></div></div><div class="tool reveal"><div class="i"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#7ea2e8" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M8 8l8 8M16 8l-8 8"/></svg></div><div><b>Advanced Excel</b><span data-en="Analysis and financial models">التحليل والنماذج المالية</span></div></div><div class="tool reveal"><div class="i"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#7ea2e8" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M9 4v16M15 4v16"/></svg></div><div><b>PMO platforms</b><span data-en="Portfolio tracking and dashboards">متابعة المحافظ ولوحات المعلومات</span></div></div><div class="tool reveal"><div class="i"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#7ea2e8" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 0 1-15.5 6.3M3 12A9 9 0 0 1 18.5 5.7"/><path d="M18 2v4h-4M6 22v-4h4"/></svg></div><div><b>Agile boards</b><span data-en="Scrum and Kanban">Scrum · Kanban</span></div></div></div>
+      <div class="langs reveal"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#7ea2e8" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h9M8.5 3v2M6 5c0 4 3 7 6 8M11 5c0 4-3 7-6 8"/><path d="M13 21l4-9 4 9M14.5 18h5"/></svg><span data-en="Arabic · native">العربية · اللغة الأم</span><span class="dot"></span><span data-en="English · professional">الإنجليزية · مستوى مهني</span></div>
+      <p class="extra reveal" data-en="<b>Additional engagements:</b> Project Manager, Mediazone · Operations Specialist, Rowad AlUla Incubator"><b>مشاركات إضافية:</b> مدير مشروع، ميديازون · أخصائي عمليات، حاضنة رواد العلا</p>
+    </div>
+  </section>
+
+  <section id="achievements" style="padding-top:0">
+    <div class="wrap">
+      <div class="head reveal"><span class="k" data-en="ACHIEVEMENTS">المنجزات</span></div>
+      <h2 class="reveal" data-en="Moments I am proud of">محطات أعتز بها</h2>
+      <div class="achwrap"><button class="achnav prev" type="button" aria-label="Previous">›</button><div class="achs" id="achs"></div><button class="achnav next" type="button" aria-label="Next">‹</button></div>
+    </div>
+  </section>
+
+  <section id="journey" style="padding-top:0">
+    <div class="wrap">
+      <div class="head reveal"><span class="k" data-en="CAREER JOURNEY">المسيرة المهنية</span></div>
+      <h2 class="reveal" data-en="Professional experience">الخبرات العملية</h2>
+      <div class="tl">
+        <div class="ti reveal">
+          <div class="when" data-en="Jun 2025<br>to Present">يونيو 2025<br>إلى الآن</div>
+          <div><h3 data-en="Project Management Consultant">استشاري في إدارة المشاريع</h3><div class="org" data-en="Ocean X">أوشن إكس</div>
+            <ul>
+              <li data-en="Manages a portfolio of four strategic initiatives across four deputyships at the Ministry of Industry and Mineral Resources.">إدارة محفظة من أربع مبادرات استراتيجية عبر أربع وكالات في وزارة الصناعة والثروة المعدنية.</li>
+              <li data-en="Directed operations of the SIDF Industrial Hackathon 2025 (9,600+ registrants, 960+ teams) and the Energy Hackathon 2026 (6,700+ registrants, 1,200+ teams).">إدارة عمليات هاكاثون الصناعة 2025 (أكثر من 9,600 مسجّل و960 فريقًا) وهاكاثون الطاقة 2026 (أكثر من 6,700 مسجّل و1,200 فريق).</li>
+              <li data-en="Preparation of RFP, RFQ, RFI">إعداد RFP, RFQ, RFI</li>
+            </ul></div>
+        </div>
+        <div class="ti reveal">
+          <div class="when" data-en="May 2023<br>to Feb 2024">مايو 2023<br>إلى فبراير 2024</div>
+          <div><h3 data-en="Operations Specialist">أخصائي عمليات</h3><div class="org" data-en="Elm Company · Real Estate Wealth Digitization">شركة علم · مشروع رقمنة الثروة العقارية</div>
+            <ul>
+              <li data-en="Digital archiving of hundreds of thousands of real estate deeds within a team of 10+.">أرشفة رقمية لمئات الآلاف من الصكوك العقارية ضمن فريق من أكثر من 10 أعضاء.</li>
+              <li data-en="Daily performance reports for PMO oversight and quality control.">تقارير أداء يومية لإشراف مكتب إدارة المشاريع وضبط الجودة.</li>
+            </ul></div>
+        </div>
+        <div class="ti reveal">
+          <div class="when">2021</div>
+          <div><h3 data-en="Business Development Specialist">أخصائي تطوير أعمال</h3><div class="org" data-en="Zakat, Tax and Customs Authority · Tamheer Program">هيئة الزكاة والضريبة والجمارك · برنامج تمهير</div>
+            <ul><li data-en="Provided logistics support, resolved shipment and operational issues, and contributed to operational goals and control mechanisms.">تقديم الدعم اللوجستي، وحل مشكلات الشحنات والعمليات، والمساهمة في صياغة الأهداف التشغيلية وآليات الرقابة.</li></ul></div>
+        </div>
+        <div class="ti reveal">
+          <div class="when">2018</div>
+          <div><h3 data-en="Operations and Customer Service Specialist">أخصائي عمليات وخدمة عملاء</h3><div class="org" data-en="Arab National Bank">البنك العربي الوطني</div><ul><li data-en="Resolved client account issues and helped the branch meet its KPIs; promoted to Supervisor (Feb to May 2020), leading the front-line team.">حل مشكلات حسابات العملاء والمساهمة في تحقيق مؤشرات أداء الفرع، والترقية إلى مشرف (من فبراير إلى مايو 2020) لقيادة فريق الخدمة.</li></ul></div>
+        </div>
+        <div class="ti reveal">
+          <div class="when">2018</div>
+          <div><h3 data-en="Bachelor of Business Administration, Financial Management">بكالوريوس إدارة الأعمال، تخصص الإدارة المالية</h3><div class="org" data-en="Imam Muhammad ibn Saud Islamic University">جامعة الإمام محمد بن سعود الإسلامية</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="certs" style="padding-top:0">
+    <div class="wrap">
+      <div class="head reveal"><span class="k" data-en="CERTIFICATIONS">الشهادات الاحترافية</span></div>
+      <h2 class="reveal" data-en="Professional certifications">شهادات معتمدة دوليًا</h2>
+      <div class="certs">
+        <div class="cert reveal"><div class="cert-in">
+          <div class="face"><img class="badge" src="badge-pmp.png" alt="PMP badge"><b>PMP®</b><span>Project Management Professional</span><small data-en="Tap to flip">اضغط للقلب</small></div>
+          <div class="face back"><span data-en="Project Management Institute (PMI)">معهد إدارة المشاريع (PMI)</span><small data-en="Issued June 2025 · valid to 2028">صدرت يونيو 2025 · سارية حتى 2028</small></div>
+        </div><button type="button" aria-label="PMP"></button></div>
+        <div class="cert reveal"><div class="cert-in">
+          <div class="face"><img class="badge" src="badge-ciscm.svg" alt=""><b>CISCM</b><span>Certified International Supply Chain Manager</span><small data-en="Tap to flip">اضغط للقلب</small></div>
+          <div class="face back"><span>IPSCMI</span><small data-en="Issued January 2024 · valid to 2029">صدرت يناير 2024 · سارية حتى 2029</small></div>
+        </div><button type="button" aria-label="CISCM"></button></div>
+        <div class="cert reveal"><div class="cert-in">
+          <div class="face"><img class="badge" src="badge-ciscp.svg" alt=""><b>CISCP</b><span>Certified International Supply Chain Professional</span><small data-en="Tap to flip">اضغط للقلب</small></div>
+          <div class="face back"><span>IPSCMI</span><small data-en="Issued January 2024 · valid to 2029">صدرت يناير 2024 · سارية حتى 2029</small></div>
+        </div><button type="button" aria-label="CISCP"></button></div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="contact" id="contact">
+  <div class="wrap">
+    <div class="head" style="justify-content:center"><span class="k" data-en="CONTACT">للتعاون والشراكات</span></div>
+    <h2 data-en="Let's work together">لنعمل معًا</h2>
+    <p class="sub" data-en="Open to project management roles, national initiatives, operations consulting and partnerships that create lasting impact.">أرحب بفرص إدارة المشاريع، والمبادرات الوطنية، والاستشارات التشغيلية، والشراكات التي تحقق أثرًا مستدامًا ونتائج ملموسة.</p>
+    <div class="pills">
+      <button class="pill" type="button" data-copy="s.alraqas@outlook.sa"><span class="ltr">s.alraqas@outlook.sa</span></button>
+      <button class="pill" type="button" data-copy="+966 56 683 6783"><span class="ltr">+966 56 683 6783</span></button>
+      <a class="pill" href="https://www.linkedin.com/in/samer-alraqas" target="_blank" rel="noopener"><span class="ltr">LinkedIn ↗</span></a>
+    </div>
+    <div class="copied" id="copied" aria-live="polite"></div>
+    <div class="cv-row"><button class="btn cv" type="button" data-cv="auto" data-en="Download CV (PDF)">تحميل السيرة الذاتية (PDF)</button></div>
+    <div class="cv-msg" id="cvMsg" aria-live="polite"></div>
+    <div class="copy-r" data-en="Samer AlRaqas · Riyadh, Saudi Arabia">سامر الرقاص · الرياض، المملكة العربية السعودية</div>
+  </div>
+</footer>
+
+<nav class="mnav" aria-label="Sections">
+  <a href="#about"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg><span data-en="About">النبذة</span></a>
+  <a href="#projects"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18"/></svg><span data-en="Projects">المشاريع</span></a>
+  <a href="#achievements"><svg viewBox="0 0 24 24"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0z"/><path d="M17 5h3v2a3 3 0 0 1-3 3M7 5H4v2a3 3 0 0 0 3 3"/></svg><span data-en="Wins">المنجزات</span></a>
+  <a href="#certs"><svg viewBox="0 0 24 24"><circle cx="12" cy="9" r="6"/><path d="M8.5 14.5L7 22l5-3 5 3-1.5-7.5"/></svg><span data-en="Certs">الشهادات</span></a>
+  <a href="#contact"><svg viewBox="0 0 24 24"><path d="M4 6h16v12H4z"/><path d="M4 7l8 6 8-6"/></svg><span data-en="Contact">تواصل</span></a>
+</nav>
+<dialog class="modal" id="modal"><div class="m-in" id="mIn"></div></dialog>
+
+<script>
+(function(){
+  var root=document.documentElement; root.classList.add('js');
+  var reduce=false;
+  var els=[].slice.call(document.querySelectorAll('[data-en]'));
+  els.forEach(function(e){e.dataset.ar=e.innerHTML});
+  var btn=document.getElementById('langBtn'), lang='ar';
+  if(location.hash==='#en') lang='en'; else { try{ if(localStorage.getItem('sa-lang')==='en') lang='en'; }catch(e){} }
+  function apply(l){
+    lang=l;
+    els.forEach(function(e){e.innerHTML = l==='en'?e.dataset.en:e.dataset.ar});
+    root.lang=l; root.dir = l==='en'?'ltr':'rtl';
+    document.body.classList.toggle('en-mode',l==='en');
+    document.getElementById('verse').hidden = l==='en';
+    btn.textContent = l==='en'?'العربية':'English';
+    try{localStorage.setItem('sa-lang',l)}catch(e){}
+    window.dispatchEvent(new Event('langchange'));
+  }
+  window.getLang=function(){return lang};
+  root.dir='rtl'; root.lang='ar';
+  if(lang==='en') apply('en');
+  btn.addEventListener('click',function(){apply(lang==='en'?'ar':'en')});
+
+  // progress + active nav
+  var bar=document.getElementById('progress'), links=[].slice.call(document.querySelectorAll('#links a'));
+  function onScroll(){
+    var h=root.scrollHeight-innerHeight; bar.style.width=(h>0?scrollY/h*100:0)+'%';
+    var cur=null; links.forEach(function(a){var s=document.querySelector(a.getAttribute('href')); if(s&&s.getBoundingClientRect().top<140) cur=a;});
+    links.forEach(function(a){a.classList.toggle('on',a===cur)});
+  }
+  addEventListener('scroll',onScroll,{passive:true}); onScroll();
+
+  // cursor glow + card spotlight
+  var glow=document.getElementById('glow');
+  if(!reduce && matchMedia('(pointer:fine)').matches){
+    addEventListener('pointermove',function(e){glow.style.left=e.clientX+'px';glow.style.top=e.clientY+'px'});
+  }
+  document.addEventListener('pointermove',function(e){
+    var c=e.target.closest&&e.target.closest('.cc,.pc'); if(!c) return;
+    var r=c.getBoundingClientRect(); c.style.setProperty('--mx',(e.clientX-r.left)+'px'); c.style.setProperty('--my',(e.clientY-r.top)+'px');
+  });
+
+  // hero lines draw in
+  if(false){ document.querySelectorAll('.vs path').forEach(function(p,i){
+    p.animate([{strokeDashoffset:1600},{strokeDashoffset:0}],{duration:2200,delay:i*180,easing:'ease-out',fill:'backwards'});
+  });}
+
+  // reveal below the fold only
+  if('IntersectionObserver' in window && !reduce){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.remove('pending');io.unobserve(e.target)}})},{threshold:.12});
+    document.querySelectorAll('.reveal').forEach(function(el){ if(el.getBoundingClientRect().top>innerHeight){el.classList.add('pending');io.observe(el)} });
+  }
+
+  // count-up
+  function count(el){
+    var t=+el.dataset.count, s=el.dataset.suffix||''; if(reduce){el.textContent=t.toLocaleString('en-US')+s;return}
+    var t0=performance.now(); (function step(n){var p=Math.min(1,(n-t0)/2000);el.textContent=Math.round(t*(1-Math.pow(1-p,3))).toLocaleString('en-US')+s;if(p<1)requestAnimationFrame(step)})(t0);
+  }
+  if('IntersectionObserver' in window){
+    var io2=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){count(e.target)}})},{threshold:.6});
+    document.querySelectorAll('[data-count]').forEach(function(n){io2.observe(n); n.closest('.stat').addEventListener('mouseenter',function(){count(n)})});
+  }
+
+  // cert flip on tap
+  document.querySelectorAll('.cert button').forEach(function(b){b.addEventListener('click',function(){b.parentNode.classList.toggle('flip')})});
+
+  // copy contact
+  var msg=document.getElementById('copied');
+  document.querySelectorAll('[data-copy]').forEach(function(b){b.addEventListener('click',function(){
+    var v=b.dataset.copy, ok=function(){msg.textContent=(lang==='en'?'Copied: ':'تم النسخ: ')+v};
+    if(navigator.clipboard&&navigator.clipboard.writeText) navigator.clipboard.writeText(v).then(ok,function(){msg.textContent=v}); else msg.textContent=v;
+  })});
+})();
+</script>
+<script>
+(function(){
+  var L=function(){return window.getLang()}, t=function(o){return L()==='en'?o.en:o.ar};
+  var esc=function(s){return String(s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})};
+  var reduce=false;
+
+  // typed roles
+  var ROLES={ar:['مدير مشاريع','مدير عمليات','مدير فعاليات وهاكاثونات','خبير سلاسل إمداد','مستشار في إدارة المشاريع'],en:['Project Manager','Operations Manager','Events & Hackathons Manager','Supply Chain Specialist','Project & Operations Consultant']};
+  var typed=document.getElementById('typed'), ri=0, ci=0, del=false, timer;
+  function tick(){var w=ROLES[L()][ri%ROLES[L()].length]; ci+=del?-1:1; typed.textContent=w.slice(0,ci);
+    var d=del?45:95; if(!del&&ci===w.length){del=true;d=1600}else if(del&&ci===0){del=false;ri++;d=350} timer=setTimeout(tick,d)}
+  function startTyping(){if(!typed)return;clearTimeout(timer);ri=0;ci=0;del=false; if(reduce){typed.textContent=ROLES[L()].join(' · ');return} tick()}
+
+  // organisations strip
+  var ORG=[
+    {ar:'أوشن إكس',en:'Ocean X',url:'https://oceanx.sa',logo:'logo-oceanx2.png'},
+    {ar:'وزارة الصناعة والثروة المعدنية',en:'Ministry of Industry and Mineral Resources',url:'https://mim.gov.sa',logo:'logo-mimr2.png'},
+    {ar:'رؤية السعودية 2030',en:'Saudi Vision 2030',url:'https://www.vision2030.gov.sa',logo:'logo-v2030.png'},
+    {ar:'صندوق التنمية الصناعية',en:'Saudi Industrial Development Fund',url:'https://www.sidf.gov.sa',logo:'logo-sidf2.png'},
+    {ar:'هاكاثون الصناعة',en:'Industrial Hackathon',url:'https://www.youtube.com/hashtag/%D9%81%D9%83%D8%B1%D8%AA%D9%83_%D8%AA%D8%B5%D9%86%D8%B9',logo:'logo-hackathon2.png'},
+    {ar:'الهيئة السعودية للمهندسين',en:'Saudi Council of Engineers',url:'https://www.saudieng.sa',logo:'logo-sce.png'},
+    {ar:'منشآت · بيبان',en:"Monsha'at · Biban",url:'https://www.monshaat.gov.sa',logo:'logo-monshaat.png'},
+    {ar:'وزارة الدفاع',en:'Ministry of Defense',url:'https://www.mod.gov.sa',logo:'logo-mod.png'},
+    {ar:'برنامج فخور',en:'Fakhoor Program',url:'https://www.mod.gov.sa',logo:'logo-fakhoor.png'},
+    {ar:'شركة علم',en:'Elm',url:'https://www.elm.sa',logo:'logo-elm.png'},
+    {ar:'هيئة الزكاة والضريبة والجمارك',en:'ZATCA',url:'https://zatca.gov.sa',logo:'logo-zatca.png'},
+    {ar:'البنك العربي الوطني',en:'Arab National Bank',url:'https://www.anb.com.sa',logo:'logo-anb.png'},
+    {ar:'مركز التواصل الحكومي',en:'Center for Government Communication',url:'https://cgc.gov.sa',logo:'logo-cgc.png'},
+    {ar:'وزارة الرياضة',en:'Ministry of Sport',url:'https://www.mos.gov.sa',logo:'logo-sport.png'},
+    {ar:'وزارة الإعلام',en:'Ministry of Media',url:'https://www.media.gov.sa',logo:'logo-media.png'}
+  ];
+  function renderOrgs(){
+    var one=ORG.map(function(o){var inner=o.logo?'<img src="'+o.logo+'" alt="'+esc(t(o))+'">':esc(t(o)); var cls='tile'+(o.logo?' img':''); return o.url?'<a class="'+cls+'" href="'+o.url+'" target="_blank" rel="noopener" title="'+esc(t(o))+'">'+inner+'</a>':'<div class="'+cls+'" title="'+esc(t(o))+'">'+inner+'</div>'}).join('');
+    document.getElementById('marquee').innerHTML=one+one.replace(/<(a|div) class="tile/g,'<$1 aria-hidden="true" tabindex="-1" class="tile');
+  }
+
+  // projects
+  var CATS=[{id:'all',ar:'الكل',en:'All'},{id:'gov',ar:'برامج حكومية',en:'Government programs'},{id:'event',ar:'فعاليات وهاكاثونات',en:'Events and hackathons'},{id:'ops',ar:'عمليات',en:'Operations'}];
+  var P=[
+    {cat:'event',yr:{ar:'منذ يوليو 2026',en:'Since Jul 2026'},img:'sce-poster.jpg',mp4:'sce-launch.mp4',logos:['logo-sce.png'],ar:{t:'الهاكاثون الهندسي 2026',o:'الهيئة السعودية للمهندسين · مستشار إدارة المشاريع وقائد الفريق الاستشاري',f:['النسخة الأولى','تسجيل +75% فوق المستهدف','ضمن IECE 2026'],b:['قيادة البرنامج من التأسيس حتى الإطلاق، بتسجيل تجاوز المستهدف بنسبة 75%، والإشراف على خطط التشغيل والحوكمة وإدارة المخاطر بما يتوافق مع الأهداف الاستراتيجية للهيئة.','إدارة العمليات والخدمات اللوجستية، بما يشمل تنفيذ الفعاليات وتوجيه الفرق متعددة التخصصات في الأنشطة الميدانية والافتراضية.','بناء العلاقات مع كبار المسؤولين والقيادات التنفيذية والجهات المستفيدة في القطاعين العام والخاص، وتحويل توجيهات القيادة إلى برامج عمل.','تصميم منظومة الابتكار ومعايير الفرز والتحكيم، وإدارة شبكة الخبراء والمرشدين والحكّام.','الإشراف على تجربة المستخدم في منصات التسجيل والتقديم والتقييم لضمان سلاسة رحلة المشاركين.','إعادة هيكلة سير العمل وخطط العمل والجداول الزمنية والموارد بما يحقق معايير الحوكمة في الهيئة.']},en:{t:'Engineering Hackathon 2026',o:'Saudi Council of Engineers · Project Management Consultant and Consulting Team Lead',f:['First edition','Registrations 75% above target','Part of IECE 2026'],b:['Lead the program end to end, from setup through launch, with registrations exceeding target by 75%, overseeing operating plans, governance and risk management aligned with the Council\'s strategic objectives.','Manage operations and logistics, including event delivery and direction of multidisciplinary teams across on-site and virtual activities.','Build relationships with senior officials, executives and beneficiary entities across the public and private sectors, turning leadership direction into workable programs.','Design the innovation framework and the screening and judging criteria, and manage the network of experts, mentors and judges.','Oversee the user experience of the registration, application and evaluation platforms for a smooth participant journey.','Restructured workflows, action plans, timelines and resources to meet the Council\'s governance standards.']}},
+    {cat:'gov',yr:{ar:'منذ 2025',en:'Since 2025'},img:'ph-mimr.jpg',logos:['logo-mimr2.png','logo-v2030.png','logo-oceanx2.png'],ar:{t:'محفظة المبادرات الاستراتيجية للاستراتيجية الوطنية للصناعة',o:'وزارة الصناعة والثروة المعدنية · مكتب تحقيق رؤية 2030',f:['4 مبادرات','+5 جهات'],b:['إدارة محفظة من أربع مبادرات استراتيجية عبر أربع وكالات (تنمية القدرات البشرية، وتنمية التعدين، والرقابة على العمليات التعدينية، وإدارة الموارد المعدنية)، وحوكمة النطاق والجدول والميزانية والمخاطر من التخطيط حتى التسليم.','قيادة التقييمات الاستكشافية وأبحاث الجدوى وتطوير المفاهيم لمشاريع استراتيجية جديدة تحت مظلة برنامج واحد، وتحديد نماذجها التشغيلية.','التنسيق مع أكثر من 5 جهات حكومية ومنفذة، ومتابعة انحرافات الميزانية واتفاقيات مستوى الخدمة.','تقارير تنفيذية دورية ودراسات دعم القرار للقيادات العليا.']},en:{t:'Strategic portfolio for the National Industrial Strategy',o:'Ministry of Industry and Mineral Resources · Vision 2030 Office',f:['4 initiatives','5+ entities'],b:['Manages a portfolio of four strategic initiatives, governing scope, schedule, budget and risk from planning through delivery.','Led exploratory assessments, feasibility research and concept development that shaped new strategic projects under one program umbrella.','Coordinates 5+ government and implementing entities, tracking budget deviations and SLAs.','Periodic executive reports and decision support studies for senior leadership.']}},
+    {cat:'event',yr:{ar:'أكتوبر 2026',en:'Oct 2026'},img:'ph-energy-samer.jpg',gal:['ph-energy-team.jpg','ph-energy-win1.jpg','ph-energy-hall.jpg','ph-energy-win2.jpg','ph-energy-stage.jpg','ph-energy-venue.jpg'],ar:{t:'مدير عمليات هاكاثون الطاقة 2026',o:'وزارة الطاقة · بالشراكة مع كابسارك',f:['+6,700 مسجّل','+1,200 فريق','560 فكرة مقيّمة'],b:['إدارة العمليات والخدمات اللوجستية للنسخة الأولى من هاكاثون الطاقة بالتزامن مع مؤتمر البترول العالمي الخامس والعشرين، بأكثر من 1,200 فريق و560 فكرة مقيّمة و6 تحديات ضمن 3 مسارات، وقيادة فرق متعددة التخصصات ميدانيًا.','التنسيق مع كبار أصحاب المصلحة والمرشدين والحكّام، والإشراف على رحلة المشاركين في المنصة الرقمية وفق معايير الحوكمة.']},en:{t:'Operations Manager, Energy Hackathon 2026',o:'Ministry of Energy · with KAPSARC',f:['6,700+ registrants','1,200+ teams','560+ ideas evaluated'],b:['Managed operations and logistics for the first Energy Hackathon, held alongside the 25th World Petroleum Congress, with 1,200+ teams, 560+ evaluated ideas and 6 challenges across 3 tracks.','Coordinated senior stakeholders, mentors and judges, and oversaw the participant journey on the digital platform.']}},
+    {cat:'event',yr:'2025',img:'ph-sidf-team.jpg',gal:['ph-sidf-stage.jpg','ph-sidf-reception.jpg','ph-sidf-stage2.jpg','ph-sidf-final.jpg','ph-sidf.jpg'],logos:['logo-sidf2.png','logo-hackathon2.png'],ar:{t:'هاكاثون الصناعة 2025',o:'صندوق التنمية الصناعية السعودي · أوشن إكس',f:['+9,600 مسجّل','+960 فريق','1.7 مليون ريال جوائز'],b:['التسليم في الوقت والميزانية المحددين، بتسجيل تجاوز المستهدف بنسبة 50%، وأكثر من 960 فريقًا، ومعسكر تدريبي لـ60 فريقًا، و12 فريقًا فائزًا في 4 مسارات تقاسموا جوائز تتجاوز 1.7 مليون ريال.','إدارة العمليات من البداية حتى النهاية: تطوير المنصة الرقمية، والخدمات اللوجستية، والجدولة، والتنفيذ الميداني.','إدارة رحلة المشاركين والمرشدين والحكّام على المنصة الرقمية.','التنسيق مع أكثر من 5 رعاة وشركاء من القطاعين العام والخاص.','قيادة المحتوى الإعلامي والسرد القصصي: قصص النجاح، ومحتوى الموقع، ومنصات التواصل.']},en:{t:'Industrial Hackathon 2025',o:'Saudi Industrial Development Fund (SIDF) · Ocean X',f:['9,600+ registrants','960+ teams','SAR 1.7M+ prizes'],b:['Delivered on time and within budget, with registrations 50% above target, 960+ teams, a 60-team bootcamp and 12 winning teams across 4 tracks sharing SAR 1.7M+ in prizes.','End-to-end operations: digital platform development, logistics, scheduling and on-ground execution.','Managed participant, mentor and judge journeys on the digital platform.','Coordinated 5+ public and private sponsors and partners.','Led media content and storytelling: success stories, website and social media.']}},
+    {cat:'event',yr:'2024',img:'ph-fakhoor.jpg',gal:['ph-fakhoor-guide.jpg'],logos:['logo-fakhoor.png','logo-mod.png'],ar:{t:'مدير عمليات هاكاثون برنامج فخور',o:'وزارة الدفاع',f:['مدير عمليات'],b:['إدارة العمليات اليومية للهاكاثون، وتوزيع الموارد وضبط الميزانية.','وضع الجداول الزمنية وتنسيق فرق العمل، وحل التحديات التشغيلية وضمان الامتثال لمعايير الخدمة.']},en:{t:'Operations Manager, Fakhoor Program Hackathon',o:'Ministry of Defense',f:['Operations Manager'],b:['Directed the hackathon\'s daily operations, resource allocation and budget control.','Set timelines, coordinated teams, resolved operational issues and ensured service compliance.']}},
+    {cat:'ops',yr:'2023 · 2024',img:'ac-biban-samer.jpg',gal:['ac-biban-team.jpg','ph-biban.jpg','ac-biban-trophy.jpg'],logos:['logo-monshaat.png'],ar:{t:'مشرف عمليات منتدى بيبان',o:'منشآت · بيبان 2023 و2024',f:['نسختان'],b:['الإشراف على مستشاري المنتدى.','إدارة الجدولة وتوزيع الموارد وتنظيم الدخول وتنفيذ الجلسات.']},en:{t:'Operations Supervisor, Biban Forum',o:"Monsha'at · Biban 2023 and 2024",f:['Two editions'],b:["Supervised the forum's consultants.",'Managed scheduling, resource allocation, access control and session delivery.']}},
+    {cat:'gov',yr:'2023',art:'digitize',logos:['logo-elm.png','logo-v2030.png'],ar:{t:'مشروع رقمنة الثروة العقارية',o:'شركة علم · مكتب تحقيق رؤية 2030',f:['مئات الآلاف من الصكوك','فريق +10'],b:['إدارة عمليات الأرشفة الرقمية لمئات الآلاف من الصكوك والوثائق العقارية.','إعداد تقارير الأداء اليومية لدعم إشراف مكتب إدارة المشاريع وضمان الامتثال.','تطبيق معايير الجودة وتحسين سير العمل.']},en:{t:'Real Estate Wealth Digitization',o:'Elm Company · Vision 2030 Office',f:['Hundreds of thousands of deeds','Team of 10+'],b:['Managed digital archiving of hundreds of thousands of real estate deeds and instruments.','Daily performance reports for PMO oversight and compliance.','Enforced quality standards and improved workflows.']}},
+    {cat:'event',yr:'2022',img:'ph-wc-trophy.jpg',gal:['ph-wc-stadium.jpg','ph-worldcup.jpg'],logos:['logo-sport.png'],ar:{t:'مدير عمليات',o:'كأس العالم FIFA 2022، قطر · ومسؤول أيضًا عن كبار الشخصيات (VVIP)',f:['VVIP'],b:['إدارة عمليات ضيوف كبار الشخصيات والمراسم والترتيبات اللوجستية للسفر.','التنسيق الميداني بين أصحاب المصلحة في بيئة عالية الضغط.']},en:{t:'Operations Manager',o:'FIFA World Cup 2022, Qatar · also responsible for VVIP guests',f:['VVIP'],b:['Handled VVIP guest operations, protocol and travel logistics.','On-ground coordination across stakeholders in a high-pressure environment.']}}
+  ];
+
+  function slidesOf(p){var a=[];if(p.img)a.push(p.img);(p.gal||[]).forEach(function(g){a.push(g)});return a}
+  function media(p){var a=slidesOf(p);
+    if(!a.length&&p.art==='digitize') return '<div class="pimg art-dg"><svg viewBox="0 0 320 200" aria-hidden="true">'
+      +'<defs><linearGradient id="dgS" x1="0" x2="1"><stop offset="0" stop-color="#7ea2e8" stop-opacity="0"/><stop offset=".5" stop-color="#7ea2e8"/><stop offset="1" stop-color="#7ea2e8" stop-opacity="0"/></linearGradient></defs>'
+      +'<g class="dg-paper"><rect x="40" y="38" width="88" height="118" rx="6" fill="#efe6d2"/><rect x="52" y="54" width="52" height="5" rx="2" fill="#b9a57a"/><rect x="52" y="68" width="64" height="4" rx="2" fill="#cdbd98"/><rect x="52" y="78" width="58" height="4" rx="2" fill="#cdbd98"/><rect x="52" y="88" width="62" height="4" rx="2" fill="#cdbd98"/><rect x="52" y="98" width="44" height="4" rx="2" fill="#cdbd98"/><circle cx="104" cy="132" r="11" fill="none" stroke="#3f6fd6" stroke-width="2"/><circle cx="104" cy="132" r="6" fill="#3f6fd6" opacity=".5"/></g>'
+      +'<rect class="dg-scan" x="34" y="38" width="100" height="3" fill="url(#dgS)"/>'
+      +'<g class="dg-flow"><circle cx="150" cy="97" r="2.5" fill="#7ea2e8"/><circle cx="162" cy="97" r="2.5" fill="#7ea2e8"/><circle cx="174" cy="97" r="2.5" fill="#7ea2e8"/></g>'
+      +'<g class="dg-file"><rect x="192" y="38" width="88" height="118" rx="10" fill="#161a33" stroke="#7ea2e8" stroke-width="1.5"/><rect x="204" y="54" width="40" height="6" rx="3" fill="#7ea2e8"/><rect class="dg-l l1" x="204" y="70" width="64" height="4" rx="2" fill="#4b5487"/><rect class="dg-l l2" x="204" y="80" width="54" height="4" rx="2" fill="#4b5487"/><rect class="dg-l l3" x="204" y="90" width="60" height="4" rx="2" fill="#4b5487"/><rect x="204" y="108" width="64" height="30" rx="5" fill="#1e2448"/><rect class="dg-b b1" x="210" y="124" width="8" height="10" fill="#7ea2e8"/><rect class="dg-b b2" x="222" y="118" width="8" height="16" fill="#7ea2e8"/><rect class="dg-b b3" x="234" y="113" width="8" height="21" fill="#7ea2e8"/><rect class="dg-b b4" x="246" y="120" width="8" height="14" fill="#7ea2e8"/><circle cx="270" cy="48" r="7" fill="#2e7d5b"/><path d="M266.5 48l2.5 2.5 4.5-5" stroke="#fff" stroke-width="1.6" fill="none" stroke-linecap="round"/></g>'
+      +'</svg></div>';
+    if(!a.length&&p.live) return '<div class="pimg ph-none ph-live"><span class="livebadge"><i></i>'+(L()==='en'?'Live now':'جارٍ الآن')+'</span><svg width="58" height="58" viewBox="0 0 24 24" fill="none" stroke="#7ea2e8" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2L4 14h7l-1 8 9-12h-7z"/></svg></div>';
+    if(!a.length) return '<div class="pimg ph-none"><svg width="54" height="54" viewBox="0 0 24 24" fill="none" stroke="#7ea2e8" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h4"/></svg></div>';
+    if(p.mp4) return '<div class="pimg pvid"><video src="'+p.mp4+'" poster="'+(p.img||'')+'" autoplay muted loop playsinline preload="metadata"></video><span class="mute" role="button" tabindex="0" aria-label="Sound">🔇</span></div>';
+    var vb='';
+    var lb=p.live?'<span class="livebadge"><i></i>'+(L()==='en'?'Live now':'جارٍ الآن')+'</span>':'';
+    return '<div class="pimg">'+lb+vb+a.map(function(src,k){return '<div class="sl'+(k===0?' on':'')+'"><img src="'+src+'" alt="" loading="lazy"></div>'}).join('')+(a.length>1?'<div class="sdots">'+a.map(function(_,k){return '<i'+(k===0?' class="on"':'')+'></i>'}).join('')+'</div>':'')+'</div>'}
+  function ttl(p,d){var lg=(p.logos||[])[0];return '<div class="pt">'+(lg?'<span class="plogo"><img src="'+lg+'" alt=""></span>':'')+'<h3>'+esc(d.t)+'</h3></div>'}
+  var tick=0;
+  setInterval(function(){ if(false) return; tick++;
+    document.querySelectorAll('.pc:not(.hide) .pimg').forEach(function(m,ci){var sl=m.querySelectorAll('.sl'); if(sl.length<2) return; if((tick+ci)%2) return;
+      var cur=[].findIndex.call(sl,function(x){return x.classList.contains('on')}); var nx=(cur+1)%sl.length;
+      sl[cur].classList.remove('on'); sl[nx].classList.add('on');
+      var d=m.querySelectorAll('.sdots i'); if(d.length){d[cur].classList.remove('on'); d[nx].classList.add('on');}
+    });
+  },1700);
+  var SK=[
+    {k:'ei',ar:'الذكاء العاطفي',en:'Emotional intelligence',p:[5,6,1]},
+    {k:'lead',ar:'قيادة الفريق وتمكينه',en:'Team leadership',p:[2,3,1]},
+    {k:'pm',ar:'إدارة المشاريع والبرامج',en:'Project & program management',p:[0,2]},
+    {k:'stake',ar:'إشراك أصحاب المصلحة',en:'Stakeholder engagement',p:[0,1]},
+    {k:'gov',ar:'الحوكمة والمخاطر',en:'Governance & risk',p:[0,2]},
+    {k:'comm',ar:'التواصل الفعّال',en:'Communication',p:[1,0,5]},
+    {k:'evt',ar:'عمليات الفعاليات',en:'Event operations',p:[1,4,6,5]},
+    {k:'vip',ar:'مراسم كبار الشخصيات',en:'VVIP protocol',p:[5]},
+    {k:'press',ar:'العمل تحت الضغط',en:'Working under pressure',p:[5,1,4]},
+    {k:'crisis',ar:'إدارة الأزمات',en:'Crisis management',p:[4,5]},
+    {k:'prob',ar:'حل المشكلات',en:'Problem solving',p:[4,6]},
+    {k:'dec',ar:'اتخاذ القرار',en:'Decision making',p:[4,0]},
+    {k:'neg',ar:'التفاوض',en:'Negotiation',p:[1,0]},
+    {k:'mentor',ar:'التوجيه والإشراف',en:'Coaching & supervision',p:[6,2]},
+    {k:'sc',ar:'سلاسل الإمداد واللوجستيات',en:'Supply chain & logistics',p:[1,5]},
+    {k:'vendor',ar:'إدارة الموردين',en:'Vendor management',p:[1,4]},
+    {k:'budget',ar:'الميزانية والموارد',en:'Budget & resources',p:[4,0,6]},
+    {k:'kpi',ar:'التقارير ومؤشرات الأداء',en:'Reporting & KPIs',p:[3,0,2]},
+    {k:'qual',ar:'إدارة الجودة',en:'Quality management',p:[3,6]},
+    {k:'feas',ar:'دراسات الجدوى',en:'Feasibility studies',p:[0]},
+    {k:'agile',ar:'Agile · Waterfall',en:'Agile · Waterfall',p:[2,0]},
+    {k:'digital',ar:'المنصات الرقمية',en:'Digital platforms',p:[1,3]}
+  ];
+  function skOf(i){return SK.filter(function(x){return x.p.indexOf(i)>-1})}
+  var curSk=null;
+  function renderSkills(){
+    if(!document.getElementById('skchips')) return;
+    document.getElementById('skchips').innerHTML=SK.map(function(x){return '<button type="button" class="skc'+(x.k==='ei'?' ei':'')+'" data-k="'+x.k+'" aria-pressed="'+(x.k===curSk)+'">'+esc(t(x))+'</button>'}).join('');
+    document.querySelectorAll('.skc').forEach(function(b){b.addEventListener('click',function(){curSk=curSk===b.dataset.k?null:b.dataset.k; if(curSk&&cur!=='all'){cur='all';renderFilters();applyFilter()} renderSkills(); applySkill(); if(curSk){var f=[].filter.call(document.querySelectorAll('.pc:not(.dim):not(.hide)'),function(){return 1})[0]; if(f) f.scrollIntoView({behavior:'smooth',block:'center'})}})});
+  }
+  function applySkill(){var x=SK.filter(function(y){return y.k===curSk})[0];
+    document.querySelectorAll('.pc').forEach(function(c){var i=+c.dataset.i; c.classList.toggle('dim',!!x&&x.p.indexOf(i)<0);
+      var box=c.querySelector('.sks'); if(box){var ex=box.querySelector('.extra'); if(ex) ex.remove(); if(x&&x.p.indexOf(i)>-1&&!box.querySelector('[data-k="'+curSk+'"]')){var e=document.createElement('i'); e.className='extra'; e.dataset.k=curSk; e.textContent=t(x); box.appendChild(e);} }
+      c.querySelectorAll('.sks i').forEach(function(z){z.classList.toggle('hit',!!x&&z.dataset.k===curSk)})});
+  }
+  var NB=[
+    {ar:'أقود النسخة الأولى من الهاكاثون الهندسي للهيئة السعودية للمهندسين ضمن المؤتمر الهندسي الدولي IECE 2026، من التأسيس حتى الإطلاق، وتجاوز التسجيل المستهدف بنسبة 75%.',en:'I lead the first Engineering Hackathon for the Saudi Council of Engineers within IECE 2026, from setup through launch, with registrations 75% above target.'},
+    {ar:'أدير أربع مبادرات ضمن الاستراتيجية الوطنية للصناعة، وأتابع كل مبادرة من الفكرة ودراسة الجدوى حتى التسليم، مع تنسيق مستمر بين أكثر من 4 وكالات.',en:'I run four initiatives under the National Industrial Strategy, taking each one from idea and feasibility to delivery while keeping more than four agencies aligned.'},
+    {ar:'أدرت عمليات النسخة الأولى من هاكاثون الطاقة في كابسارك، حيث تحولت ستة تحديات في قطاع الطاقة إلى حلول ونماذج أولية.',en:'I ran operations for the first Energy Hackathon at KAPSARC, where six energy-sector challenges turned into solutions and prototypes.'},
+    {ar:'من أكبر التجارب الميدانية في مسيرتي: هاكاثون بأكثر من 9,600 مسجّل، أدرت عملياته من إطلاق المنصة الرقمية حتى يوم الختام، وكنت حلقة الوصل بين الفريق والرعاة والحكّام.',en:'One of the biggest field experiences of my career: a hackathon with 9,600+ registrants. I ran its operations from the platform launch to closing day, linking the team, sponsors and judges.'},
+    {ar:'أدرت العمليات اليومية لهاكاثون برنامج فخور، من توزيع الموارد وضبط الميزانية إلى حل التحديات أولًا بأول على أرض الحدث.',en:'I ran the daily operations of the Fakhoor Program hackathon, from resources and budget to solving issues on the ground as they came up.'},
+    {ar:'نسختان من بيبان أشرفت فيهما على مستشاري المنتدى، ونظّمت الجدولة والدخول والجلسات لتكون تجربة الزوار سلسة.',en:'Across two editions of Biban I supervised the forum’s consultants and organized scheduling, access and sessions for a smooth visitor experience.'},
+    {ar:'مشروع علّمني قيمة التفاصيل: رقمنة مئات الآلاف من الصكوك العقارية، بتقارير يومية ومعايير جودة تضمن دقة كل وثيقة.',en:'A project that taught me the value of detail: digitizing hundreds of thousands of real estate deeds, with daily reporting and quality checks on every document.'},
+    {ar:'رافقت ضيوف كبار الشخصيات خطوة بخطوة، من المراسم إلى ترتيبات السفر، في بيئة لا تحتمل الخطأ.',en:'I looked after VVIP guests step by step, from protocol to travel arrangements, in an environment with no room for error.'}
+  ];
+  var cur='all';
+  function renderFilters(){
+    document.getElementById('filters').innerHTML=CATS.map(function(c){return '<button class="filter" type="button" data-f="'+c.id+'" aria-pressed="'+(c.id===cur)+'">'+esc(t(c))+'</button>'}).join('');
+    document.querySelectorAll('.filter').forEach(function(b){b.addEventListener('click',function(){cur=b.dataset.f;renderFilters();applyFilter()})});
+  }
+  function renderProjects(){
+    document.getElementById('pgrid').innerHTML=P.map(function(p,i){var d=t(p);
+      return '<button class="pc'+(p.mp4?' feat':'')+'" type="button" data-i="'+i+'" data-c="'+p.cat+'">'+media(p)+(p.mp4?'<span class="featb">'+(L()==='en'?'★ Flagship project':'★ أبرز مشروع')+'</span>':'')+'<div class="top"><span class="cat">'+esc(t(CATS.filter(function(c){return c.id===p.cat})[0]))+'</span><span class="yr">'+esc(typeof p.yr==='string'?p.yr:t(p.yr))+'</span></div>'+ttl(p,d)+'<div class="org">'+esc(d.o)+'</div><div class="fig">'+d.f.map(function(x){return '<span>'+esc(x)+'</span>'}).join('')+'</div><p class="nb">'+esc(t(NB[i]))+'</p><span class="more">'+(L()==='en'?'Details →':'التفاصيل ←')+'</span></button>'}).join('');
+    document.querySelectorAll('.pc').forEach(function(b){b.addEventListener('click',function(){openModal(+b.dataset.i)})});
+    applyFilter(); applySkill();
+  }
+  function applyFilter(){document.querySelectorAll('.pc').forEach(function(c){c.classList.toggle('hide',cur!=='all'&&c.dataset.c!==cur)})}
+  var modal=document.getElementById('modal');
+  function openModal(i){var p=P[i],d=t(p);
+    document.getElementById('mIn').innerHTML='<button class="m-close" type="button" aria-label="Close">×</button>'+(p.img&&!p.mp4?'<img class="mimg" src="'+p.img+'" alt="">':'')+'<span class="cat" style="color:var(--gold);font-size:.8rem">'+esc(t(CATS.filter(function(c){return c.id===p.cat})[0]))+' · '+esc(typeof p.yr==='string'?p.yr:t(p.yr))+'</span>'+ttl(p,d)+'<div class="org">'+esc(d.o)+'</div><p class="mnb">'+esc(t(NB[i]))+'</p>'+(p.mp4?'<div class="mvid"><video src="'+p.mp4+'" poster="'+(p.img||'')+'" autoplay muted loop playsinline controls></video><button type="button" class="mute big">'+(L()==='en'?'🔇 Turn sound on':'🔇 تشغيل الصوت')+'</button></div>':'')+'<ul>'+d.b.map(function(x){return '<li>'+esc(x)+'</li>'}).join('')+'</ul>';
+    modal.querySelector('.m-close').addEventListener('click',function(){modal.close()});
+    if(modal.showModal) modal.showModal(); else modal.setAttribute('open','');
+  }
+  modal.addEventListener('click',function(e){if(e.target===modal) modal.close()});
+
+  function renderAll(){renderOrgs();renderFilters();renderSkills();renderProjects();startTyping()}
+  renderAll();
+  addEventListener('langchange',renderAll);
+})();
+</script>
+
+<script>
+(function(){
+  var dl=null; var ready=(window.claude&&claude.use)?claude.use('downloads').then(function(d){dl=d}).catch(function(){}):Promise.resolve();
+  var msg=document.getElementById('cvMsg');
+  function say(ar,en){msg.textContent=(window.getLang&&getLang()==='en')?en:ar}
+  document.querySelectorAll('[data-cv]').forEach(function(b){b.addEventListener('click',async function(){
+    var en=(window.getLang&&getLang()==='en');
+    var f=b.dataset.cv==='auto'?(en?'Samer_AlRaqas_CV.pdf':'Samer_AlRaqas_CV_Arabic.pdf'):b.dataset.cv;
+    var nm=en?'Samer AlRaqas.pdf':'\u0633\u0627\u0645\u0631 \u0627\u0644\u0631\u0642\u0627\u0635.pdf';
+    function plain(){ var a=document.createElement('a'); a.href='files/'+f; a.download=nm; a.target='_blank'; document.body.appendChild(a); a.click(); a.remove(); }
+    try{
+      await ready;
+      if(dl){ var r=await fetch('files/'+f); var blob=await r.blob(); await dl.save({filename:nm,data:blob}); say('تم تجهيز الملف للتنزيل','The file is ready to save'); }
+      else { plain(); }
+    }catch(e){ if(e&&e.code==='declined') return; plain(); }
+  })});
+})();
+</script>
+
+<script>
+document.addEventListener('click',function(e){
+  var a=e.target.closest&&e.target.closest('a[href^="http"]'); if(!a) return;
+  try{ var w=window.open(a.href,'_blank'); if(w){ try{w.opener=null}catch(_){} e.preventDefault(); } }catch(_){}
+},true);
+</script>
+
+<script>
+(function(){
+  var orbit=document.getElementById('orbit'); if(!orbit) return;
+  var nodes=[].slice.call(orbit.querySelectorAll('.node')), sp=document.getElementById('spokes'), n=nodes.length;
+  var lines=[];
+  nodes.forEach(function(el,i){var ang=-Math.PI/2+i*2*Math.PI/n, x=50+38*Math.cos(ang), y=50+38*Math.sin(ang);
+    el.style.left=x+'%'; el.style.top=y+'%';
+    var l=document.createElementNS('http://www.w3.org/2000/svg','line'); l.setAttribute('x1',50+20*Math.cos(ang)); l.setAttribute('y1',50+20*Math.sin(ang)); l.setAttribute('x2',50+33*Math.cos(ang)); l.setAttribute('y2',50+33*Math.sin(ang)); sp.appendChild(l); lines.push(l);});
+  var T=document.getElementById('coreT'), D=document.getElementById('coreD'), cur=-1, hold=false;
+  var defT={ar:T.dataset.ar||T.innerHTML,en:T.dataset.en}, defD={ar:D.dataset.ar||D.innerHTML,en:D.dataset.en};
+  function L(){return window.getLang?getLang():'ar'}
+  function show(i){cur=i; nodes.forEach(function(e,k){e.classList.toggle('on',k===i)}); lines.forEach(function(e,k){e.classList.toggle('on',k===i)});
+    if(i<0){T.innerHTML=L()==='en'?defT.en:defT.ar; D.innerHTML=L()==='en'?defD.en:defD.ar; return}
+    var e=nodes[i]; T.textContent=L()==='en'?e.dataset.ten:e.dataset.tar; D.textContent=L()==='en'?e.dataset.den:e.dataset.dar;}
+  nodes.forEach(function(e,i){e.addEventListener('mouseenter',function(){hold=true;show(i)}); e.addEventListener('focus',function(){hold=true;show(i)}); e.addEventListener('click',function(){hold=true;show(i)});});
+  orbit.addEventListener('mouseleave',function(){hold=false});
+  var reduce=false;
+  if(!reduce) setInterval(function(){ if(!hold) show((cur+1)%n) },2600);
+  addEventListener('langchange',function(){defT={ar:T.dataset.ar,en:T.dataset.en};defD={ar:D.dataset.ar,en:D.dataset.en}; show(cur)});
+})();
+</script>
+<script>
+(function(){
+  function L(){return window.getLang?getLang():'ar'}
+  function t(o){return o[L()]||o.ar}
+  function esc(x){return String(x).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+  var A=[
+    {y:{ar:'2026',en:'2026'},img:['ph-energy-win1.jpg','ph-energy-win2.jpg','ph-energy-samer.jpg','ph-energy-team.jpg','ph-energy-hall.jpg'],
+     t:{ar:'ختام هاكاثون الطاقة 2026',en:'Energy Hackathon 2026 finale'},
+     d:{ar:'لحظة تتويج الفرق الفائزة في النسخة الأولى من هاكاثون الطاقة بكابسارك.',en:'Crowning the winning teams of the first Energy Hackathon at KAPSARC.'},
+     n:[{v:'6,700+',ar:'مسجّل',en:'registrants'},{v:'145+',ar:'متأهلًا للنهائيات',en:'finalists'}]},
+    {y:{ar:'2025',en:'2025'},img:['ac-sidf-samer.jpg','ph-sidf-team.jpg','ac-sidf-hall.jpg','ac-sidf-audience.jpg','ac-sidf-wall.jpg'],
+     t:{ar:'ختام هاكاثون الصناعة 2025',en:'Industrial Hackathon 2025 finale'},
+     d:{ar:'لحظة فخر بعد رحلة بدأت بخطة تشغيلية دقيقة وانتهت بتتويج الفرق الفائزة، مع فريق جمع بين الخبرة والشغف.',en:'A proud moment after a journey that began with a detailed operating plan and ended with crowning the winning teams, alongside a team full of experience and passion.'},
+     n:[{v:'12',ar:'فريقًا فائزًا',en:'winning teams'},{v:'9,600+',ar:'مسجّل',en:'registrants'},{v:'1,800+',ar:'ساعة إرشاد',en:'mentoring hours'}]},
+    {y:{ar:'2025',en:'2025'},img:['ac-alula-samer.jpg','ac-alula-team.jpg','ac-alula-stage.jpg','ac-alula-site.jpg'],
+     t:{ar:'الحفل الختامي لحاضنة رواد العلا',en:'Rowad AlUla Incubator closing ceremony'},
+     d:{ar:'شاركت ضمن فريق أوشن إكس في تنفيذ الحفل الختامي للحاضنة.',en:'With the Ocean X team, I helped deliver the incubator\'s closing ceremony.'},
+     n:[]},
+    {y:{ar:'2024',en:'2024'},img:['ac-biban-samer.jpg','ac-biban-trophy.jpg','ac-biban-team.jpg','ph-biban.jpg'],
+     t:{ar:'تكريم في ملتقى بيبان الرياض 2024',en:'Recognition at Biban Riyadh 2024'},
+     d:{ar:'كرّمتني توطين القدرات تقديرًا لمشاركتي وعطائي في ملتقى بيبان الرياض 2024، بعد نسختين أشرفت فيهما على مستشاري المنتدى وتنظيم جلساته.',en:'Tawteen Alqudrat recognized my contribution to Biban Riyadh 2024, after two editions supervising the forum\'s consultants and sessions.'},
+     n:[{v:'2',ar:'نسختان',en:'editions'}]},
+    {y:{ar:'منذ 2025',en:'Since 2025'},img:['ph-mimr.jpg'],
+     t:{ar:'مشاريع وزارة الصناعة والثروة المعدنية',en:'Ministry of Industry and Mineral Resources projects'},
+     d:{ar:'فخور بالعمل ضمن مشاريع الوزارة، من حوكمة المبادرات إلى قيادة البرامج نحو مستهدفات رؤية 2030.',en:'Proud to work on the Ministry\'s projects, from initiative governance to steering programs toward Vision 2030 targets.'},
+     n:[{v:'4',ar:'مبادرات',en:'initiatives'}]},
+    {y:{ar:'2022',en:'2022'},img:['ph-wc-trophy.jpg','ph-wc-stadium.jpg','ph-worldcup.jpg'],
+     t:{ar:'كأس العالم FIFA قطر 2022',en:'FIFA World Cup Qatar 2022'},
+     d:{ar:'تجربة دولية في تنسيق ضيوف كبار الشخصيات ومراسمهم في واحدة من أكبر البطولات في العالم.',en:'An international experience coordinating VVIP guests and protocol at one of the world\'s biggest tournaments.'},
+     n:[{v:'VVIP',ar:'',en:''}]}
+  ];
+  function media(a){var s=a.badge?[{b:1,src:a.badge}]:a.img.map(function(x){return {src:x}});
+    return '<div class="am">'+s.map(function(x,k){return '<div class="sl'+(x.b?' badge':'')+(k?'':' on')+'"><img src="'+x.src+'" alt="" loading="lazy"></div>'}).join('')+(s.length>1?'<div class="sdots">'+s.map(function(_,k){return '<i'+(k?'':' class="on"')+'></i>'}).join('')+'</div>':'')+'</div>'}
+  function render(){var el=document.getElementById('achs'); if(!el) return;
+    el.innerHTML=A.map(function(a){return '<article class="ach'+(a.wide?' wide':'')+'">'+media(a)+'<div class="ab"><span class="ay">'+esc(t(a.y))+'</span><h3>'+esc(t(a.t))+'</h3><p>'+esc(t(a.d))+'</p>'+(a.n.length?'<div class="an">'+a.n.map(function(n){var l=t(n);return '<span><b>'+esc(n.v)+'</b>'+(l?' '+esc(l):'')+'</span>'}).join('')+'</div>':'')+'</div></article>'}).join('');
+  }
+  render(); addEventListener('langchange',render);
+  var tk=0; setInterval(function(){ if(false) return; tk++;
+    document.querySelectorAll('.ach .am').forEach(function(m,ci){var sl=m.querySelectorAll('.sl'); if(sl.length<2||(tk+ci)%2) return;
+      var c=[].findIndex.call(sl,function(x){return x.classList.contains('on')}),n=(c+1)%sl.length; sl[c].classList.remove('on'); sl[n].classList.add('on');
+      var d=m.querySelectorAll('.sdots i'); if(d.length){d[c].classList.remove('on'); d[n].classList.add('on')}});
+  },1900);
+})();
+</script>
+<script>
+(function(){
+  var w=document.getElementById('achs'); if(!w) return;
+  var prev=document.querySelector('.achnav.prev'), next=document.querySelector('.achnav.next');
+  function step(){var c=w.querySelector('.ach'); return c?c.getBoundingClientRect().width+16:300}
+  function dir(){return document.documentElement.dir==='rtl'?-1:1}
+  function go(n){w.scrollBy({left:n*step()*dir(),behavior:'smooth'})}
+  function atEnd(){return Math.abs(w.scrollLeft)+w.clientWidth>=w.scrollWidth-4}
+  function upd(){prev.disabled=Math.abs(w.scrollLeft)<4; next.disabled=atEnd()}
+  prev.addEventListener('click',function(){go(-1)}); next.addEventListener('click',function(){go(1)});
+  w.addEventListener('scroll',upd,{passive:true}); setTimeout(upd,300); addEventListener('resize',upd); addEventListener('langchange',function(){setTimeout(upd,100)});
+  var hold=false; w.addEventListener('mouseenter',function(){hold=true}); w.addEventListener('mouseleave',function(){hold=false}); w.addEventListener('touchstart',function(){hold=true},{passive:true});
+  setInterval(function(){ if(hold||false) return; if(atEnd()) w.scrollTo({left:0,behavior:'smooth'}); else go(1)},4200);
+  // AI band
+  var st=[].slice.call(document.querySelectorAll('.ais')),k=0;
+  if(st.length) setInterval(function(){st[k].classList.remove('on');k=(k+1)%st.length;st[k].classList.add('on')},2400);
+  st.forEach(function(e,i){e.addEventListener('mouseenter',function(){st.forEach(function(x){x.classList.remove('on')});k=i;e.classList.add('on')})});
+})();
+</script>
+<script>
+(function(){
+  var links=[].slice.call(document.querySelectorAll('.mnav a')); if(!links.length) return;
+  var secs=links.map(function(a){return document.querySelector(a.getAttribute('href'))});
+  function upd(){var y=innerHeight*.35,on=-1; secs.forEach(function(sec,i){if(sec&&sec.getBoundingClientRect().top<y) on=i}); links.forEach(function(a,i){a.classList.toggle('on',i===on)})}
+  addEventListener('scroll',upd,{passive:true}); upd();
+})();
+</script>
+<script>
+(function(){
+  function lbl(v){var en=(window.getLang&&getLang()==='en');return v.muted?(en?'🔇 Turn sound on':'🔇 تشغيل الصوت'):(en?'🔊 Mute':'🔊 كتم الصوت')}
+  document.addEventListener('click',function(e){var m=e.target.closest&&e.target.closest('.mute'); if(!m) return; e.preventDefault(); e.stopPropagation();
+    var v=m.parentElement.querySelector('video'); if(!v) return; v.muted=!v.muted; if(!v.muted){v.volume=1; v.play&&v.play().catch(function(){});}
+    m.textContent=m.classList.contains('big')?lbl(v):(v.muted?'🔇':'🔊');},true);
+  document.addEventListener('keydown',function(e){var m=e.target.closest&&e.target.closest('.mute'); if(m&&(e.key==='Enter'||e.key===' ')){m.click();e.preventDefault()}});
+  var modal=document.getElementById('modal'); if(modal) modal.addEventListener('close',function(){modal.querySelectorAll('video').forEach(function(v){v.pause()})});
+})();
+</script>
+</html>
