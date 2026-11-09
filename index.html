@@ -604,6 +604,24 @@ dialog.modal{border-radius:22px;background:var(--ink-2)}
 .pc.feat .nb{font-size:.92rem;color:var(--text)}
 .featb{align-self:flex-start;font-size:12px;font-weight:800;color:#fff;background:var(--gold);border-radius:999px;padding:3px 12px}
 @media (max-width:760px){.pc.feat{grid-column:auto}.pc.feat .pimg{aspect-ratio:16/10}}
+/* crisis protocol */
+.cp{position:relative;padding:24px;border-radius:var(--r);background:var(--panel);border:1px solid var(--line);overflow:hidden}
+.cp-status{display:inline-flex;align-items:center;gap:10px;padding:7px 16px;border-radius:999px;border:1px solid var(--cpc,#e5484d);color:var(--cpc,#e5484d);font-weight:800;font-size:13.5px;margin-bottom:22px;transition:color .5s,border-color .5s}
+.cp-dot{width:9px;height:9px;border-radius:50%;background:var(--cpc,#e5484d);box-shadow:0 0 0 0 var(--cpc,#e5484d);animation:cpPulse 1.4s infinite;transition:background .5s}
+@keyframes cpPulse{70%{box-shadow:0 0 0 9px transparent}100%{box-shadow:0 0 0 0 transparent}}
+.cp-track{position:relative;height:4px;border-radius:4px;background:var(--line-2);margin-bottom:20px;overflow:hidden}
+.cp-fill{position:absolute;top:0;bottom:0;inset-inline-start:0;width:25%;border-radius:4px;background:var(--cpc,#e5484d);transition:width .8s ease,background .5s}
+.cp-steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.cp-step{all:unset;box-sizing:border-box;cursor:pointer;display:flex;flex-direction:column;gap:6px;padding:16px;border-radius:14px;background:var(--panel-2);border:1px solid var(--line);transition:border-color .4s,transform .4s,background .4s}
+.cp-step i{font-style:normal;font-family:var(--f-num);font-size:12px;font-weight:800;letter-spacing:.1em;color:var(--muted)}
+.cp-step b{font-size:1.05rem;font-weight:800}
+.cp-step span{font-size:.84rem;color:var(--muted);line-height:1.65}
+.cp-step small{margin-top:auto;padding-top:8px;border-top:1px dashed var(--line-2);font-size:.76rem;color:var(--sec);line-height:1.6}
+.cp-step small em{font-style:normal;color:var(--gold-soft);font-weight:700}
+.cp-step.on{border-color:var(--cpc);transform:translateY(-3px);background:linear-gradient(160deg,color-mix(in srgb,var(--cpc) 14%,transparent),var(--panel-2) 70%)}
+.cp-step.on i{color:var(--cpc)}
+@media (max-width:760px){.cp-steps{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:600px){.cp{padding:16px}.cp-step{padding:12px}.cp-step span{font-size:.78rem}.cp-step small{font-size:.72rem}}
 </style>
 
 <div id="progress"></div>
@@ -680,6 +698,18 @@ dialog.modal{border-radius:22px;background:var(--ink-2)}
       <div class="head reveal"><span class="k" data-en="AREAS OF EXPERTISE">مجالات الخبرة</span></div>
       <h2 class="reveal" data-en="From planning to the field">خبرة تمتد من التخطيط إلى الميدان</h2>
       <div class="xps"><div class="xp reveal"><span class="xi"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#7ea2e8" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M3 9h18M8 2v4M16 2v4M8 14h3"/></svg></span><h3 data-en="National Events & Hackathons">الفعاليات الوطنية والهاكاثونات</h3><p data-en="From the SIDF Hackathon to Biban and the World Cup">من هاكاثون الصناعة إلى بيبان وكأس العالم</p></div><div class="xp reveal"><span class="xi"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#7ea2e8" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 4v5c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7z"/><path d="M9 12l2 2 4-4"/></svg></span><h3 data-en="Governance & Risk">الحوكمة والمخاطر</h3><p data-en="PMO governance, KPIs, risk registers and change control">حوكمة مكتب المشاريع ومؤشرات الأداء والمخاطر وضبط التغيير</p></div><div class="xp reveal"><span class="xi"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#7ea2e8" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M5 19l2-2M17 7l2-2"/></svg></span><h3 data-en="Operations Management">إدارة العمليات</h3><p data-en="Daily operations, resources, quality and service compliance">العمليات اليومية والموارد والجودة والامتثال</p></div><div class="xp reveal"><span class="xi"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#7ea2e8" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6M8 13h8M8 17h5"/></svg></span><h3 data-en="Bids & Proposals">العروض والمقترحات</h3><p data-en="RFI, RFP and RFQ responses and technical proposals">العروض الفنية وطلبات RFI · RFP · RFQ</p></div><div class="xp reveal"><span class="xi"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#7ea2e8" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><circle cx="17" cy="9" r="2.5"/><path d="M15.5 14.2c3 .2 5.5 2.6 5.5 5.8"/></svg></span><h3 data-en="Stakeholder & Partner Management">إدارة أصحاب المصلحة والشركاء</h3><p data-en="Aligning ministries, sponsors and partners">مواءمة الوزارات والرعاة والشركاء</p></div><div class="xp reveal"><span class="xi"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#7ea2e8" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></svg></span><h3 data-en="Digital Transformation">التحول الرقمي</h3><p data-en="Digitization programs and digital platforms">برامج الرقمنة والمنصات الرقمية</p></div><div class="xp reveal"><span class="xi"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#7ea2e8" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></span><h3 data-en="Strategy & Reporting">الاستراتيجية والتقارير</h3><p data-en="Feasibility studies, executive reports and decision support">دراسات الجدوى والتقارير التنفيذية ودعم القرار</p></div><div class="xp reveal"><span class="xi"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#7ea2e8" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l1.8 4.7L18.5 9.5l-4.7 1.8L12 16l-1.8-4.7L5.5 9.5l4.7-1.8z"/><path d="M19 15l.8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8z"/></svg></span><h3 data-en="AI & Automation">الذكاء الاصطناعي والأتمتة</h3><p data-en="Bringing AI tools into project workflows and building automated solutions">دمج أدوات الذكاء الاصطناعي في سير العمل وبناء حلول مؤتمتة</p></div><div class="xp reveal"><span class="xi"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#7ea2e8" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7h11v9H3zM14 10h4l3 3v3h-7"/><circle cx="7" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></svg></span><h3 data-en="Supply Chain & Logistics">سلاسل الإمداد والخدمات اللوجستية</h3><p data-en="Procurement, vendors, logistics and inventory (CISCP, CISCM)">المشتريات والموردون واللوجستيات والمخزون</p></div></div>
+    </div>
+  </section>
+
+  <section id="crisis" style="padding-top:0">
+    <div class="wrap">
+      <div class="head reveal"><span class="k" data-en="CRISIS MANAGEMENT">إدارة الأزمات</span></div>
+      <h2 class="reveal" data-en="The crisis protocol">بروتوكول الأزمة</h2>
+      <div class="cp reveal" id="cp">
+        <div class="cp-status" aria-live="polite"><span class="cp-dot"></span><b id="cpState">حالة طارئة: تم رصد المشكلة</b></div>
+        <div class="cp-track"><div class="cp-fill" id="cpFill"></div></div>
+        <div class="cp-steps"><button type="button" class="cp-step"><i>01</i><b data-en="Detect">رصد</b><span data-en="Daily indicators that catch a deviation before it becomes a crisis.">مؤشرات يومية تكشف الانحراف قبل أن يتحول إلى أزمة.</span><small data-en="<em>In the field:</em> daily performance reports on the Real Estate Wealth Digitization project"><em>من الميدان:</em> تقارير الأداء اليومية في مشروع رقمنة الثروة العقارية</small></button><button type="button" class="cp-step"><i>02</i><b data-en="Contain">احتواء</b><span data-en="Immediate action on the ground that contains the issue and protects the experience.">تحرك فوري على أرض الحدث يحصر المشكلة ويحمي تجربة المستفيدين.</span><small data-en="<em>In the field:</em> resolving operational issues as they arose at the Fakhoor Hackathon"><em>من الميدان:</em> حل التحديات التشغيلية أولًا بأول في هاكاثون فخور</small></button><button type="button" class="cp-step"><i>03</i><b data-en="Decide">قرار</b><span data-en="A clear, fast decision, with coordination that keeps every stakeholder aligned.">قرار واضح وسريع، وتنسيق يوحّد أصحاب المصلحة.</span><small data-en="<em>In the field:</em> coordinating VVIP guests at the FIFA World Cup 2022, with no room for error"><em>من الميدان:</em> تنسيق ضيوف كبار الشخصيات في كأس العالم 2022، في بيئة لا تحتمل الخطأ</small></button><button type="button" class="cp-step"><i>04</i><b data-en="Learn">تعلّم</b><span data-en="Turning the lesson into a lasting improvement in the workflow.">تحويل الدرس إلى تحسين دائم في سير العمل.</span><small data-en="<em>In the field:</em> restructuring workflows and plans for the Engineering Hackathon to meet governance standards"><em>من الميدان:</em> إعادة هيكلة سير العمل والخطط في الهاكاثون الهندسي وفق معايير الحوكمة</small></button></div>
+      </div>
     </div>
   </section>
 
@@ -1137,6 +1167,21 @@ document.addEventListener('click',function(e){
     m.textContent=m.classList.contains('big')?lbl(v):(v.muted?'🔇':'🔊');},true);
   document.addEventListener('keydown',function(e){var m=e.target.closest&&e.target.closest('.mute'); if(m&&(e.key==='Enter'||e.key===' ')){m.click();e.preventDefault()}});
   var modal=document.getElementById('modal'); if(modal) modal.addEventListener('close',function(){modal.querySelectorAll('video').forEach(function(v){v.pause()})});
+})();
+</script>
+<script>
+(function(){
+  var st=[].slice.call(document.querySelectorAll('.cp-step')); if(!st.length) return;
+  var box=document.getElementById('cp'), lbl=document.getElementById('cpState'), fill=document.getElementById('cpFill');
+  var S=[{c:'#e5484d',ar:'حالة طارئة: تم رصد المشكلة',en:'Alert: issue detected'},{c:'#f5a524',ar:'جارٍ الاحتواء',en:'Containing'},{c:'#7ea2e8',ar:'تم اتخاذ القرار',en:'Decision made'},{c:'#30a46c',ar:'الوضع مستقر',en:'Situation stable'}];
+  var k=0, hold=0;
+  function L(){return window.getLang?getLang():'ar'}
+  function show(i){k=i; var s=S[i]; box.style.setProperty('--cpc',s.c); lbl.textContent=s[L()]; fill.style.width=((i+1)*25)+'%';
+    st.forEach(function(e,j){e.classList.toggle('on',j===i)})}
+  st.forEach(function(e,i){e.addEventListener('click',function(){hold=Date.now();show(i)}); e.addEventListener('mouseenter',function(){hold=Date.now();show(i)})});
+  setInterval(function(){ if(Date.now()-hold<6000) return; show((k+1)%st.length) },2600);
+  addEventListener('langchange',function(){show(k)});
+  show(0);
 })();
 </script>
 </html>
