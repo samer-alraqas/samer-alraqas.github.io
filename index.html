@@ -647,6 +647,17 @@ dialog.modal{border-radius:22px;background:var(--ink-2)}
 @media (max-width:620px){.tw-grid.m{grid-template-columns:1fr}}
 @media (max-width:960px){.tw-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (max-width:620px){.tw-grid{grid-template-columns:1fr}}
+/* freelance accordion */
+.fls{display:grid;gap:10px}
+.fl{border-radius:14px;background:var(--panel);border:1px solid var(--line)}
+.fl summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:16px;padding:16px 20px}
+.fl summary::-webkit-details-marker{display:none}
+.fl-t{flex:1;min-width:0}.fl-t h3{margin:0 0 4px;font-size:1.02rem}
+.fl-w{flex:none;font-family:var(--f-num);font-size:.82rem;font-weight:700;color:var(--gold-soft);white-space:nowrap}
+.fl-i{flex:none;width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;transition:transform .25s}
+.fl[open] .fl-i{transform:rotate(180deg)}
+.fl-b{padding:0 20px 16px}.fl-b ul{margin:0;padding-inline-start:18px}.fl-b li{color:var(--muted);line-height:1.8;font-size:.92rem}
+@media (max-width:600px){.fl summary{flex-wrap:wrap;gap:6px 12px;padding:14px 16px}.fl-t{flex-basis:calc(100% - 34px)}.fl-w{order:3}.fl-b{padding:0 16px 14px}}
 </style>
 
 <div id="progress"></div>
@@ -794,27 +805,11 @@ dialog.modal{border-radius:22px;background:var(--ink-2)}
     <div class="wrap">
       <div class="head reveal"><span class="k" data-en="FREELANCE">العمل الحر</span></div>
       <h2 class="reveal" data-en="Freelance and advisory projects">مشاريع حرة واستشارية</h2>
-      <div class="tl">
-        <div class="ti reveal">
-          <div class="when" data-en="Jul 2026<br>to Present">يوليو 2026<br>إلى الآن</div>
-          <div><h3 data-en="Project Management Consultant and Advisory Team Lead">مستشار إدارة المشاريع وقائد الفريق الاستشاري</h3><div class="org" data-en="Engineering Hackathon 2026 · Saudi Council of Engineers">الهاكاثون الهندسي 2026 · الهيئة السعودية للمهندسين</div>
-            <ul><li data-en="Led the programme from set-up to launch, with registrations 75% above target, overseeing operations, governance and risk plans.">قيادة البرنامج من التأسيس حتى الإطلاق، بتسجيل تجاوز المستهدف بنسبة 75٪، والإشراف على خطط التشغيل والحوكمة وإدارة المخاطر.</li><li data-en="Built relationships with senior officials, executive leaders and stakeholders across the public and private sectors.">بناء العلاقات مع كبار المسؤولين والقيادات التنفيذية والجهات المستفيدة في القطاعين العام والخاص.</li></ul></div>
-        </div>
-        <div class="ti reveal">
-          <div class="when" data-en="Sep 2024<br>to Nov 2024">سبتمبر 2024<br>إلى نوفمبر 2024</div>
-          <div><h3 data-en="Operations Manager">مدير عمليات</h3><div class="org" data-en="Fakhoor Programme Hackathon · Government project">هاكاثون برنامج فخور · مشروع حكومي</div>
-            <ul><li data-en="Ran daily operations, resource allocation and budget control, resolving operational issues and ensuring service standards.">إدارة العمليات اليومية وتوزيع الموارد وضبط الميزانية، وحل التحديات التشغيلية وضمان الامتثال لمعايير الخدمة.</li></ul></div>
-        </div>
-        <div class="ti reveal">
-          <div class="when" data-en="2023 and 2024">2023 و2024</div>
-          <div><h3 data-en="Operations Supervisor">مشرف عمليات</h3><div class="org" data-en="Biban Forum · Monsha'at">منتدى بيبان · منشآت</div>
-            <ul><li data-en="Supervised forum advisers on site, managing scheduling, resources, entry and sessions; recognised by Tawteen Al Qudurat at Biban Riyadh 2024.">الإشراف الميداني على مستشاري المنتدى، وإدارة الجدولة وتوزيع الموارد وتنظيم الدخول وتنفيذ الجلسات، وتكريم من توطين القدرات في بيبان الرياض 2024.</li></ul></div>
-        </div>
-        <div class="ti reveal">
-          <div class="when" data-en="2022">2022</div>
-          <div><h3 data-en="Operations Manager and VVIP Relations Coordinator">مدير عمليات ومنسق علاقات كبار الشخصيات</h3><div class="org" data-en="FIFA World Cup Qatar 2022">كأس العالم FIFA قطر 2022</div>
-            <ul><li data-en="Managed VVIP guest operations, protocol, travel logistics and on-site coordination in a high-pressure environment.">إدارة عمليات ضيوف كبار الشخصيات والمراسم والترتيبات اللوجستية للسفر والتنسيق الميداني في بيئة عالية الضغط.</li></ul></div>
-        </div>
+      <div class="fls">
+        <details class="fl reveal"><summary><div class="fl-t"><h3 data-en="Project Management Consultant and Advisory Team Lead">مستشار إدارة المشاريع وقائد الفريق الاستشاري</h3><div class="org" data-en="Engineering Hackathon 2026 · Saudi Council of Engineers">الهاكاثون الهندسي 2026 · الهيئة السعودية للمهندسين</div></div><span class="fl-w" data-en="Jul 2026 to Present">يوليو 2026 إلى الآن</span><svg class="fl-i" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary><div class="fl-b"><ul><li data-en="Led the programme from set-up to launch, with registrations 75% above target, overseeing operations, governance and risk plans.">قيادة البرنامج من التأسيس حتى الإطلاق، بتسجيل تجاوز المستهدف بنسبة 75٪، والإشراف على خطط التشغيل والحوكمة وإدارة المخاطر.</li><li data-en="Built relationships with senior officials, executive leaders and stakeholders across the public and private sectors.">بناء العلاقات مع كبار المسؤولين والقيادات التنفيذية والجهات المستفيدة في القطاعين العام والخاص.</li></ul></div></details>
+        <details class="fl reveal"><summary><div class="fl-t"><h3 data-en="Operations Manager">مدير عمليات</h3><div class="org" data-en="Fakhoor Programme Hackathon · Government project">هاكاثون برنامج فخور · مشروع حكومي</div></div><span class="fl-w" data-en="Sep 2024 to Nov 2024">سبتمبر 2024 إلى نوفمبر 2024</span><svg class="fl-i" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary><div class="fl-b"><ul><li data-en="Ran daily operations, resource allocation and budget control, resolving operational issues and ensuring service standards.">إدارة العمليات اليومية وتوزيع الموارد وضبط الميزانية، وحل التحديات التشغيلية وضمان الامتثال لمعايير الخدمة.</li></ul></div></details>
+        <details class="fl reveal"><summary><div class="fl-t"><h3 data-en="Operations Supervisor">مشرف عمليات</h3><div class="org" data-en="Biban Forum · Monsha'at">منتدى بيبان · منشآت</div></div><span class="fl-w" data-en="2023 and 2024">2023 و2024</span><svg class="fl-i" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary><div class="fl-b"><ul><li data-en="Supervised forum advisers on site, managing scheduling, resources, entry and sessions; recognised by Tawteen Al Qudurat at Biban Riyadh 2024.">الإشراف الميداني على مستشاري المنتدى، وإدارة الجدولة وتوزيع الموارد وتنظيم الدخول وتنفيذ الجلسات، وتكريم من توطين القدرات في بيبان الرياض 2024.</li></ul></div></details>
+        <details class="fl reveal"><summary><div class="fl-t"><h3 data-en="Operations Manager and VVIP Relations Coordinator">مدير عمليات ومنسق علاقات كبار الشخصيات</h3><div class="org" data-en="FIFA World Cup Qatar 2022">كأس العالم FIFA قطر 2022</div></div><span class="fl-w" data-en="2022">2022</span><svg class="fl-i" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary><div class="fl-b"><ul><li data-en="Managed VVIP guest operations, protocol, travel logistics and on-site coordination in a high-pressure environment.">إدارة عمليات ضيوف كبار الشخصيات والمراسم والترتيبات اللوجستية للسفر والتنسيق الميداني في بيئة عالية الضغط.</li></ul></div></details>
       </div>
     </div>
   </section>
