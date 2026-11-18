@@ -658,6 +658,9 @@ dialog.modal{border-radius:22px;background:var(--ink-2)}
 .fl[open] .fl-i{transform:rotate(180deg)}
 .fl-b{padding:0 20px 16px}.fl-b ul{margin:0;padding-inline-start:18px}.fl-b li{color:var(--muted);line-height:1.8;font-size:.92rem}
 @media (max-width:600px){.fl summary{flex-wrap:wrap;gap:6px 12px;padding:14px 16px}.fl-t{flex-basis:calc(100% - 34px)}.fl-w{order:3}.fl-b{padding:0 16px 14px}}
+/* no decorative lines */
+.head .k::before,.head::after,.tl::before,.ti::before{display:none!important}
+@media (max-width:760px){.ti{padding-inline-start:0}}
 </style>
 
 <div id="progress"></div>
